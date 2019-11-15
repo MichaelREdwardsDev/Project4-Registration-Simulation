@@ -31,6 +31,9 @@ namespace Project4 {
 				return Registrants.Count;
 			}
 		}
+		/// <summary>
+		/// The ID for a particular line, allows ease of differentiation between lines
+		/// </summary>
 		public int LineID { get; set; }
 		public Line(int lineID) {
 			LineID = lineID;
