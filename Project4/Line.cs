@@ -42,8 +42,18 @@ namespace Project4 {
 		public Line(int lineID) {
 			LineID = lineID;
 		}
+		/// <summary>
+		/// Adds a registrant to the line
+		/// </summary>
+		/// <param name="reg">The registrant to be added</param>
 		public void Enqueue(Registrant reg) {
 			Registrants.Enqueue(reg);
+		}
+		/// <summary>
+		/// Removes the Registrant from the front of the line
+		/// </summary>
+		public void Dequeue() {
+			Registrants.Dequeue();
 		}
 	}
 }
