@@ -20,11 +20,7 @@ namespace Project4 {
 	/// <summary>
 	/// A Registrant to be put through the registration system, determines the time taken to complete the registration process. as well as picks the shortest line
 	/// </summary>
-	class Registrant : IComparable {
-		/// <summary>
-		/// The priority of a registrant, will allow those with higher priority to move ahead in an already populated line
-		/// </summary>
-		public int Priority { get; set; }
+	class Registrant{
 		/// <summary>
 		/// Registrant's ID number
 		/// </summary>
@@ -39,18 +35,8 @@ namespace Project4 {
 		/// </summary>
 		/// <param name="registrantID"></param>
 		/// <param name="priority"></param>
-		public Registrant(int registrantID, int priority) {
-			Priority = priority;
+		public Registrant(int registrantID) {
 			RegistrantID = registrantID;
-		}
-		public int CompareTo(object obj) {
-			if(Priority > (obj as Registrant).Priority) {
-				return 1;
-			}else if(Priority == (obj as Registrant).Priority) {
-				return 0;
-			} else {
-				return -1;
-			}
 		}
 		public int Pickline(List<Line> lines) {
 			Line shortestLine = null;

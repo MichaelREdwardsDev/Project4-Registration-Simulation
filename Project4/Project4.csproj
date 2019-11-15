@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events.cs" />
     <Compile Include="Line.cs" />
     <Compile Include="PriorityQueue.cs" />
     <Compile Include="Probability.cs" />
