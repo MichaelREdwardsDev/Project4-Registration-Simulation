@@ -28,7 +28,7 @@ namespace Project4 {
 		/// <summary>
 		/// How long the registrant takes to complete the registration.
 		/// </summary>
-		public double CompletionTime { get; set; }
+		public TimeSpan CompletionTime { get; set; }
 
 		/// <summary>
 		/// Registrant Overloaded Constructor - takes in Registrant's ID number and their priority
@@ -37,6 +37,7 @@ namespace Project4 {
 		/// <param name="priority"></param>
 		public Registrant(int registrantID) {
 			RegistrantID = registrantID;
+			CompletionTime = DetermineCompletionTime();
 		}
 		public int Pickline(List<Line> lines) {
 			Line shortestLine = null;
@@ -49,6 +50,14 @@ namespace Project4 {
 			}
 			shortestLine.Enqueue(this);
 			return shortestLine.LineID;
+		}
+		public TimeSpan DetermineCompletionTime() {
+			//270 seconds
+			int timeInSeconds = (int)NegEx(270);
+			if(timeInSeconds < 90)
+				return new TimeSpan(0, 0, 90);
+			else
+				return new TimeSpan(0, 0, timeInSeconds);
 		}
 	}
 }
