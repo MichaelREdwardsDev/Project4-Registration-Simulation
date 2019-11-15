@@ -23,7 +23,7 @@ namespace Project4 {
 		/// <summary>
 		/// The queue containing the registrants already in this particular line
 		/// </summary>
-		public PriorityQueue<Registrant> Registrants { get; set; } = new PriorityQueue<Registrant>();
+		public Queue<Registrant> Registrants { get; set; } = new Queue<Registrant>();
 		/// <summary>
 		/// The number of registrants in the line
 		/// </summary>
