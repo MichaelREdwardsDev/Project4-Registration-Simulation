@@ -34,7 +34,10 @@ namespace Project4 {
 
         private void ButtonStart_Click(object sender, EventArgs e)
         {
+
             ConventionRegistration simulation = new ConventionRegistration();
+
+
         }
     }
 }
