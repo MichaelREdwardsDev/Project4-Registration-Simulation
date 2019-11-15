@@ -12,8 +12,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("Edwards and Jennings Corp.")]
 [assembly: AssemblyProduct("Convention Simulation")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("EwJen Corp")]
+[assembly: AssemblyTrademark("EwJen Corp")]
+[assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from
