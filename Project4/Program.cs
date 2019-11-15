@@ -29,7 +29,7 @@ namespace Project4 {
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new RegistrationSimulationForm());*/
 			Console.WriteLine(Probability.Poisson(1000));
-            //Comment
+            //Comments
 		}
 	}
 }
