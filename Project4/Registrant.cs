@@ -14,11 +14,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Utils.Probability;
 
 namespace Project4 {
+	/// <summary>
+	/// A Registrant to be put through the registration system, determines the time taken to complete the registration process. as well as picks the shortest line
+	/// </summary>
 	class Registrant : IComparable {
+		/// <summary>
+		/// The priority of a registrant, will allow those with higher priority to move ahead in an already populated line
+		/// </summary>
 		public int Priority { get; set; }
+		/// <summary>
+		/// Registrant's ID number
+		/// </summary>
 		public int RegistrantID { get; set; }
+		/// <summary>
+		/// How long the registrant takes to complete the registration.
+		/// </summary>
+		public double CompletionTime { get; set; }
+
+		/// <summary>
+		/// Registrant Overloaded Constructor - takes in Registrant's ID number and their priority
+		/// </summary>
+		/// <param name="registrantID"></param>
+		/// <param name="priority"></param>
 		public Registrant(int registrantID, int priority) {
 			Priority = priority;
 			RegistrantID = registrantID;
