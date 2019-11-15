@@ -24,6 +24,9 @@ namespace Project4 {
 		/// The queue containing the registrants already in this particular line
 		/// </summary>
 		public PriorityQueue<Registrant> Registrants { get; set; } = new PriorityQueue<Registrant>();
+		/// <summary>
+		/// The number of registrants in the line
+		/// </summary>
 		public int Count { get {
 				return Registrants.Count;
 			}
