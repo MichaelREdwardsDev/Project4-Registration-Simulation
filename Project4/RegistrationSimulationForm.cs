@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Utils.Probability;
 
 namespace Project4 {
 	public partial class RegistrationSimulationForm:Form {
@@ -34,11 +35,9 @@ namespace Project4 {
 
         private void ButtonStart_Click(object sender, EventArgs e)
         {
-            ConventionRegistration simulation = new ConventionRegistration();
         }
 
 		private void ButtonClear_Click(object sender, EventArgs e) {
-			MessageBox.Show(new Registrant(0).CompletionTime.ToString());
 		}
 	}
 }
