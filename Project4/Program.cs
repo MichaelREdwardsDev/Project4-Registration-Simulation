@@ -1,4 +1,16 @@
-﻿using System;
+﻿//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	Project:		Project 4 - Registration Simulation
+//	File Name:		Program.cs
+//	Description:	Runs the application.
+//	Course:			CSCI 2210-001 - Data Structures
+//	Author:			Michael Edwards, edwardsmr@etsu.edu
+//	Created:		Sunday November 14, 2019
+//	Copyright:		Michael Edwards, 2019
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
