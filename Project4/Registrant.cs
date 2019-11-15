@@ -53,7 +53,11 @@ namespace Project4 {
 		}
 		public TimeSpan DetermineCompletionTime() {
 			//270 seconds
-			return new TimeSpan(0, 0, (int)NegEx(270));
+			int timeInSeconds = (int)NegEx(270);
+			if(timeInSeconds < 90)
+				return new TimeSpan(0, 0, 90);
+			else
+				return new TimeSpan(0, 0, timeInSeconds);
 		}
 	}
 }

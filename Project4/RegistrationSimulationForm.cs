@@ -36,5 +36,9 @@ namespace Project4 {
         {
             ConventionRegistration simulation = new ConventionRegistration();
         }
-    }
+
+		private void ButtonClear_Click(object sender, EventArgs e) {
+			MessageBox.Show(new Registrant(0).CompletionTime.ToString());
+		}
+	}
 }
