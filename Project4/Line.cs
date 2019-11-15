@@ -20,6 +20,9 @@ namespace Project4 {
 	/// Encapsulates the PriorityQueue, as well as it's Count and ID for ease of differentiation between lines
 	/// </summary>
 	class Line {
+		/// <summary>
+		/// The queue containing the registrants already in this particular line
+		/// </summary>
 		public PriorityQueue<Registrant> Registrants { get; set; } = new PriorityQueue<Registrant>();
 		public int Count { get {
 				return Registrants.Count;
