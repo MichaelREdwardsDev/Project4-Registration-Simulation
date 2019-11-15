@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Line.cs" />
     <Compile Include="PriorityQueue.cs" />
+    <Compile Include="Probability.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registrant.cs" />

@@ -35,11 +35,25 @@ namespace Project4 {
 		/// The ID for a particular line, allows ease of differentiation between lines
 		/// </summary>
 		public int LineID { get; set; }
+		/// <summary>
+		/// Line Overloaded Constructor - Takes the ID for a line particular line
+		/// </summary>
+		/// <param name="lineID"></param>
 		public Line(int lineID) {
 			LineID = lineID;
 		}
+		/// <summary>
+		/// Adds a registrant to the line
+		/// </summary>
+		/// <param name="reg">The registrant to be added</param>
 		public void Enqueue(Registrant reg) {
 			Registrants.Enqueue(reg);
+		}
+		/// <summary>
+		/// Removes the Registrant from the front of the line
+		/// </summary>
+		public void Dequeue() {
+			Registrants.Dequeue();
 		}
 	}
 }
