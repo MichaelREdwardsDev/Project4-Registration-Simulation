@@ -57,9 +57,11 @@
             this.textBoxCheckoutDuration = new System.Windows.Forms.TextBox();
             this.textBoxHoursOpen = new System.Windows.Forms.TextBox();
             this.textBoxNumRegistrants = new System.Windows.Forms.TextBox();
-            this.listBoxDepartures = new System.Windows.Forms.ListBox();
-            this.listBoxArrivals = new System.Windows.Forms.ListBox();
-            this.listBoxEvents = new System.Windows.Forms.ListBox();
+            this.textBoxEvents = new System.Windows.Forms.TextBox();
+            this.textBoxArrivals = new System.Windows.Forms.TextBox();
+            this.textBoxDepartures = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listBoxWaitingLine0
@@ -71,7 +73,6 @@
             this.listBoxWaitingLine0.Name = "listBoxWaitingLine0";
             this.listBoxWaitingLine0.Size = new System.Drawing.Size(79, 388);
             this.listBoxWaitingLine0.TabIndex = 0;
-            this.listBoxWaitingLine0.SelectedIndexChanged += new System.EventHandler(this.ListBoxWaitingLine0_SelectedIndexChanged);
             // 
             // listBoxWaitingLine1
             // 
@@ -82,7 +83,6 @@
             this.listBoxWaitingLine1.Name = "listBoxWaitingLine1";
             this.listBoxWaitingLine1.Size = new System.Drawing.Size(79, 388);
             this.listBoxWaitingLine1.TabIndex = 1;
-            this.listBoxWaitingLine1.SelectedIndexChanged += new System.EventHandler(this.ListBoxWaitingLine1_SelectedIndexChanged);
             // 
             // listBoxWaitingLine3
             // 
@@ -93,7 +93,6 @@
             this.listBoxWaitingLine3.Name = "listBoxWaitingLine3";
             this.listBoxWaitingLine3.Size = new System.Drawing.Size(79, 388);
             this.listBoxWaitingLine3.TabIndex = 2;
-            this.listBoxWaitingLine3.SelectedIndexChanged += new System.EventHandler(this.ListBox3_SelectedIndexChanged);
             // 
             // listBoxWaitingList2
             // 
@@ -104,7 +103,6 @@
             this.listBoxWaitingList2.Name = "listBoxWaitingList2";
             this.listBoxWaitingList2.Size = new System.Drawing.Size(79, 388);
             this.listBoxWaitingList2.TabIndex = 3;
-            this.listBoxWaitingList2.SelectedIndexChanged += new System.EventHandler(this.ListBoxWaitingList2_SelectedIndexChanged);
             // 
             // listBoxWaitingList4
             // 
@@ -115,7 +113,6 @@
             this.listBoxWaitingList4.Name = "listBoxWaitingList4";
             this.listBoxWaitingList4.Size = new System.Drawing.Size(79, 388);
             this.listBoxWaitingList4.TabIndex = 4;
-            this.listBoxWaitingList4.SelectedIndexChanged += new System.EventHandler(this.ListBoxWaitingList4_SelectedIndexChanged);
             // 
             // listBoxWaitingList5
             // 
@@ -126,7 +123,6 @@
             this.listBoxWaitingList5.Name = "listBoxWaitingList5";
             this.listBoxWaitingList5.Size = new System.Drawing.Size(79, 388);
             this.listBoxWaitingList5.TabIndex = 5;
-            this.listBoxWaitingList5.SelectedIndexChanged += new System.EventHandler(this.ListBoxWaitingList5_SelectedIndexChanged);
             // 
             // listBoxWaitingList6
             // 
@@ -137,7 +133,6 @@
             this.listBoxWaitingList6.Name = "listBoxWaitingList6";
             this.listBoxWaitingList6.Size = new System.Drawing.Size(79, 388);
             this.listBoxWaitingList6.TabIndex = 6;
-            this.listBoxWaitingList6.SelectedIndexChanged += new System.EventHandler(this.ListBoxWaitingList6_SelectedIndexChanged);
             // 
             // listBoxWaitingList7
             // 
@@ -148,7 +143,6 @@
             this.listBoxWaitingList7.Name = "listBoxWaitingList7";
             this.listBoxWaitingList7.Size = new System.Drawing.Size(79, 388);
             this.listBoxWaitingList7.TabIndex = 7;
-            this.listBoxWaitingList7.SelectedIndexChanged += new System.EventHandler(this.ListBoxWaitingList7_SelectedIndexChanged);
             // 
             // listBoxWaitingList8
             // 
@@ -159,7 +153,6 @@
             this.listBoxWaitingList8.Name = "listBoxWaitingList8";
             this.listBoxWaitingList8.Size = new System.Drawing.Size(79, 388);
             this.listBoxWaitingList8.TabIndex = 8;
-            this.listBoxWaitingList8.SelectedIndexChanged += new System.EventHandler(this.ListBoxWaitingList8_SelectedIndexChanged);
             // 
             // listBox1WaitingList9
             // 
@@ -170,7 +163,6 @@
             this.listBox1WaitingList9.Name = "listBox1WaitingList9";
             this.listBox1WaitingList9.Size = new System.Drawing.Size(79, 388);
             this.listBox1WaitingList9.TabIndex = 9;
-            this.listBox1WaitingList9.SelectedIndexChanged += new System.EventHandler(this.ListBox1WaitingList9_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -181,7 +173,6 @@
             this.label1.Size = new System.Drawing.Size(37, 17);
             this.label1.TabIndex = 10;
             this.label1.Text = "W  0";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
@@ -192,7 +183,6 @@
             this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 11;
             this.label2.Text = "W  1";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
             // 
@@ -203,7 +193,6 @@
             this.label3.Size = new System.Drawing.Size(37, 17);
             this.label3.TabIndex = 12;
             this.label3.Text = "W  3";
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // label4
             // 
@@ -214,7 +203,6 @@
             this.label4.Size = new System.Drawing.Size(37, 17);
             this.label4.TabIndex = 13;
             this.label4.Text = "W  4";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // label5
             // 
@@ -225,7 +213,6 @@
             this.label5.Size = new System.Drawing.Size(37, 17);
             this.label5.TabIndex = 14;
             this.label5.Text = "W  5";
-            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // label6
             // 
@@ -236,7 +223,6 @@
             this.label6.Size = new System.Drawing.Size(37, 17);
             this.label6.TabIndex = 15;
             this.label6.Text = "W  6";
-            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
             // label7
             // 
@@ -247,7 +233,6 @@
             this.label7.Size = new System.Drawing.Size(37, 17);
             this.label7.TabIndex = 16;
             this.label7.Text = "W  7";
-            this.label7.Click += new System.EventHandler(this.Label7_Click);
             // 
             // label8
             // 
@@ -258,7 +243,6 @@
             this.label8.Size = new System.Drawing.Size(37, 17);
             this.label8.TabIndex = 17;
             this.label8.Text = "W  8";
-            this.label8.Click += new System.EventHandler(this.Label8_Click);
             // 
             // label9
             // 
@@ -269,7 +253,6 @@
             this.label9.Size = new System.Drawing.Size(37, 17);
             this.label9.TabIndex = 18;
             this.label9.Text = "W  9";
-            this.label9.Click += new System.EventHandler(this.Label9_Click);
             // 
             // label10
             // 
@@ -280,7 +263,6 @@
             this.label10.Size = new System.Drawing.Size(41, 17);
             this.label10.TabIndex = 19;
             this.label10.Text = "W 10";
-            this.label10.Click += new System.EventHandler(this.Label10_Click);
             // 
             // label11
             // 
@@ -291,7 +273,6 @@
             this.label11.Size = new System.Drawing.Size(37, 17);
             this.label11.TabIndex = 20;
             this.label11.Text = "W  2";
-            this.label11.Click += new System.EventHandler(this.Label11_Click);
             // 
             // listBox1WaitingList10
             // 
@@ -302,7 +283,6 @@
             this.listBox1WaitingList10.Name = "listBox1WaitingList10";
             this.listBox1WaitingList10.Size = new System.Drawing.Size(79, 388);
             this.listBox1WaitingList10.TabIndex = 21;
-            this.listBox1WaitingList10.SelectedIndexChanged += new System.EventHandler(this.ListBox1WaitingList10_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -343,6 +323,7 @@
             this.buttonStart.TabIndex = 25;
             this.buttonStart.Text = "Start";
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.ButtonStart_Click);
             // 
             // buttonClear
             // 
@@ -419,44 +400,62 @@
             this.textBoxNumRegistrants.Size = new System.Drawing.Size(100, 23);
             this.textBoxNumRegistrants.TabIndex = 36;
             // 
-            // listBoxDepartures
+            // textBoxEvents
             // 
-            this.listBoxDepartures.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxDepartures.FormattingEnabled = true;
-            this.listBoxDepartures.ItemHeight = 16;
-            this.listBoxDepartures.Location = new System.Drawing.Point(1120, 609);
-            this.listBoxDepartures.Name = "listBoxDepartures";
-            this.listBoxDepartures.Size = new System.Drawing.Size(120, 20);
-            this.listBoxDepartures.TabIndex = 37;
+            this.textBoxEvents.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEvents.Location = new System.Drawing.Point(1135, 485);
+            this.textBoxEvents.Name = "textBoxEvents";
+            this.textBoxEvents.ReadOnly = true;
+            this.textBoxEvents.Size = new System.Drawing.Size(100, 23);
+            this.textBoxEvents.TabIndex = 37;
             // 
-            // listBoxArrivals
+            // textBoxArrivals
             // 
-            this.listBoxArrivals.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxArrivals.FormattingEnabled = true;
-            this.listBoxArrivals.ItemHeight = 16;
-            this.listBoxArrivals.Location = new System.Drawing.Point(1120, 548);
-            this.listBoxArrivals.Name = "listBoxArrivals";
-            this.listBoxArrivals.Size = new System.Drawing.Size(120, 20);
-            this.listBoxArrivals.TabIndex = 38;
+            this.textBoxArrivals.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxArrivals.Location = new System.Drawing.Point(1135, 545);
+            this.textBoxArrivals.Name = "textBoxArrivals";
+            this.textBoxArrivals.ReadOnly = true;
+            this.textBoxArrivals.Size = new System.Drawing.Size(100, 23);
+            this.textBoxArrivals.TabIndex = 38;
             // 
-            // listBoxEvents
+            // textBoxDepartures
             // 
-            this.listBoxEvents.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxEvents.FormattingEnabled = true;
-            this.listBoxEvents.ItemHeight = 16;
-            this.listBoxEvents.Location = new System.Drawing.Point(1120, 488);
-            this.listBoxEvents.Name = "listBoxEvents";
-            this.listBoxEvents.Size = new System.Drawing.Size(120, 20);
-            this.listBoxEvents.TabIndex = 39;
+            this.textBoxDepartures.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDepartures.Location = new System.Drawing.Point(1135, 606);
+            this.textBoxDepartures.Name = "textBoxDepartures";
+            this.textBoxDepartures.ReadOnly = true;
+            this.textBoxDepartures.Size = new System.Drawing.Size(100, 23);
+            this.textBoxDepartures.TabIndex = 39;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(544, 491);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(241, 17);
+            this.label18.TabIndex = 40;
+            this.label18.Text = "Longest Queue Encountered So Far:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(608, 523);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 41;
             // 
             // RegistrationSimulationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1361, 749);
-            this.Controls.Add(this.listBoxEvents);
-            this.Controls.Add(this.listBoxArrivals);
-            this.Controls.Add(this.listBoxDepartures);
+            this.ClientSize = new System.Drawing.Size(1359, 749);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.textBoxDepartures);
+            this.Controls.Add(this.textBoxArrivals);
+            this.Controls.Add(this.textBoxEvents);
             this.Controls.Add(this.textBoxNumRegistrants);
             this.Controls.Add(this.textBoxHoursOpen);
             this.Controls.Add(this.textBoxCheckoutDuration);
@@ -535,9 +534,11 @@
         private System.Windows.Forms.TextBox textBoxCheckoutDuration;
         private System.Windows.Forms.TextBox textBoxHoursOpen;
         private System.Windows.Forms.TextBox textBoxNumRegistrants;
-        private System.Windows.Forms.ListBox listBoxDepartures;
-        private System.Windows.Forms.ListBox listBoxArrivals;
-        private System.Windows.Forms.ListBox listBoxEvents;
+        private System.Windows.Forms.TextBox textBoxEvents;
+        private System.Windows.Forms.TextBox textBoxArrivals;
+        private System.Windows.Forms.TextBox textBoxDepartures;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
