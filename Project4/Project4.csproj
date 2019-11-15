@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConventionRegistration.cs" />
     <Compile Include="Events.cs" />
     <Compile Include="Line.cs" />
     <Compile Include="PriorityQueue.cs" />
