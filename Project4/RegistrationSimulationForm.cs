@@ -45,7 +45,7 @@ namespace Project4 {
 		}
 
 		private void ButtonClear_Click(object sender, EventArgs e) {
-			MessageBox.Show(new Registrant(0).CompletionTime.ToString());
+			
 		}
 	}
 }
