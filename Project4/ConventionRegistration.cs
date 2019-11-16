@@ -19,15 +19,36 @@ namespace Project4
 {
     class ConventionRegistration
     {
+        /// <summary>
+        /// Gets or sets the time started.
+        /// </summary>
+        /// <value>
+        /// The time started.
+        /// </value>
         public DateTime TimeStarted { get; set; }
 
+        /// <summary>
+        /// Gets or sets the closing time.
+        /// </summary>
+        /// <value>
+        /// The closing time.
+        /// </value>
         public DateTime ClosingTime { get; set; }
 
+        /// <summary>
+        /// Gets or sets the current time.
+        /// </summary>
+        /// <value>
+        /// The current time.
+        /// </value>
         public DateTime CurrentTime { get; set; }
 
 
         //public PriorityQueue<Events> RegistrationQueue { get; set; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConventionRegistration"/> class.
+        /// </summary>
         public ConventionRegistration()
         {
             TimeStarted = DateTime.Today;
