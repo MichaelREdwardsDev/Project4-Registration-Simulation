@@ -39,16 +39,10 @@ namespace Project4
 
             DateTime CurrentTime = TimeStarted;
 
-            //RegistrationQueue = new ProrityQueue<Events>();
-
             while (CurrentTime != ClosingTime)
             {
                 //if enough time has passed for an arrival of a registrant occurs, then add registrant to shortest line
             }
-
-            //if tick occurs, check priority queue for ending registration time
-
-            //if
 
         }
     }
