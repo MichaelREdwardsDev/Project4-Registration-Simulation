@@ -45,7 +45,7 @@ namespace Project4 {
 			int idIndex;
 			String currID;
 			Event tempEvent;
-			while((CurrentTime < ClosingTime && PossibleIDs.Count > 0) || Events.Count > 0) {
+			while((CurrentTime < ClosingTime && PossibleIDs.Count > 0)) {
 				form.CurrentTimeLabel.Text = CurrentTime.ToLongTimeString();
 				form.textBoxEvents.Text = EventCount.ToString();
 				if(CurrentTime >= nextEntrance && CurrentTime <= ClosingTime) {
@@ -61,10 +61,7 @@ namespace Project4 {
 					Events.Enqueue(new Event(idIndex, "arrival", currReg, CurrentTime));
 					nextEntrance = CurrentTime + new TimeSpan(0, 0, Rand.Next(75));
 				}
-				foreach(Line line in Lines) {
-					MessageBox.Show(line.Peek().RegistrantID);
-				}
-				await Task.Delay(10);
+				await Task.Delay(0);
 				CurrentTime += new TimeSpan(0, 0, 1);
 			}
 		}
@@ -91,7 +88,7 @@ namespace Project4 {
 
 		private static List<String> GenerateList() {
 			List<String> retList = new List<String>();
-			for(int i = 1; i <= Poisson(100); i++) {
+			for(int i = 1; i <= Poisson(1000); i++) {
 				retList.Add(i.ToString().PadLeft(4, '0'));
 			}
 			return retList;
