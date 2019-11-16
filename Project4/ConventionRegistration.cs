@@ -44,11 +44,12 @@ namespace Project4
             while (CurrentTime != ClosingTime)
             {
                 //if enough time has passed for an arrival of a registrant occurs, then add registrant to shortest line
-
-                //if tick occurs, check priority queue for ending registration time
-
-                //if
             }
+
+            //if tick occurs, check priority queue for ending registration time
+
+            //if
+
         }
     }
 }
