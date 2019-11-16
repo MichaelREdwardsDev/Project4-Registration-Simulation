@@ -52,8 +52,8 @@ namespace Project4 {
 
 		private void ButtonStart_Click(object sender, EventArgs e) {
 			ConventionRegistration Conv = new ConventionRegistration(this);
-			Conv.HandleEntrances(this);
-			Conv.HandleDepartures(this);
+			Conv.HandleRegistrants(this);
+			//Conv.HandleDepartures(this);
 		}
 		private void ButtonClear_Click(object sender, EventArgs e) {
 			

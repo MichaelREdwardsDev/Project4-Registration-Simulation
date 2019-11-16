@@ -18,12 +18,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Utils.Probability;
 
-namespace Project4
-{
+namespace Project4 {
 	class ConventionRegistration {
+		private static int NumOfLines = 11;
 		private List<String> PossibleIDs = GenerateList();
-		public List<Line> Lines = OpenLines(11);
+		public List<Line> Lines = OpenLines(NumOfLines);
 		public List<ListBox> ListBoxes;
+		private Registrant[] currentRegistrants = new Registrant[NumOfLines];
 		public DateTime TimeStarted { get; set; }
 
 		public DateTime ClosingTime { get; set; }
@@ -31,36 +32,23 @@ namespace Project4
 		public DateTime CurrentTime { get; set; }
 		public PriorityQueue<Event> Events { get; } = new PriorityQueue<Event>();
 		public int EventCount = 0, ArrivalCount = 0, DepartureCount = 0, LongestQueue = 0;
-        public ConventionRegistration(RegistrationSimulationForm form)
-        {
+		public ConventionRegistration(RegistrationSimulationForm form) {
 			ListBoxes = GetListBoxes(form);
-            TimeStarted = DateTime.Today;
-            TimeStarted = TimeStarted.AddHours(8.0);
+			TimeStarted = DateTime.Today;
+			TimeStarted = TimeStarted.AddHours(8.0);
 			ClosingTime = DateTime.Today.AddHours(18.0);
 		}
-		/*public async void HandleDepartures(RegistrationSimulationForm form) {
-			*//*Registrant atWindow = new Registrant();
-			if(Events.Peek().EventType == "departure") {
-				try {
-					atWindow = Events.Dequeue().Registrant;
-					ListBoxes[atWindow.LineID].Items.Remove(atWindow.RegistrantID);
-				} catch(Exception) {
 
-				}
-			}
-			if()*//*
-			await Task.Delay(atWindow.CompletionTime);
-		}*/
-		public async void HandleEntrances(RegistrationSimulationForm form) {
-			Registrant currReg;
-			CurrentTime = TimeStarted;
+		public async void HandleRegistrants(RegistrationSimulationForm form) {
+			Registrant currReg = new Registrant();
+			DateTime nextEntrance = CurrentTime = TimeStarted;
 			int idIndex;
 			String currID;
-			DateTime NextEntrance = CurrentTime;
-			while(CurrentTime < ClosingTime && PossibleIDs.Count > 0) {
+			Event tempEvent;
+			while((CurrentTime < ClosingTime && PossibleIDs.Count > 0) || Events.Count > 0) {
 				form.CurrentTimeLabel.Text = CurrentTime.ToLongTimeString();
 				form.textBoxEvents.Text = EventCount.ToString();
-				if(CurrentTime >= NextEntrance) {
+				if(CurrentTime >= nextEntrance && CurrentTime <= ClosingTime) {
 					ArrivalCount++;
 					EventCount++;
 					form.textBoxArrivals.Text = ArrivalCount.ToString();
@@ -68,16 +56,31 @@ namespace Project4
 					currID = PossibleIDs[idIndex];
 					PossibleIDs.Remove(currID);
 					currReg = new Registrant(currID);
-					currReg.LineID = currReg.Pickline(Lines);
+					currReg.LineID = currReg.PickLine(Lines);
 					ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
 					Events.Enqueue(new Event(idIndex, "arrival", currReg, CurrentTime));
-					NextEntrance = CurrentTime + new TimeSpan(0, 0, Rand.Next(75));
+					nextEntrance = CurrentTime + new TimeSpan(0, 0, Rand.Next(75));
 				}
-				await Task.Delay(1);
+				foreach(Line line in Lines) {
+					MessageBox.Show(line.Peek().RegistrantID);
+				}
+				await Task.Delay(10);
 				CurrentTime += new TimeSpan(0, 0, 1);
 			}
 		}
 
+/*		private void storage() {
+			if(Events.Peek().EventType == "arrival") {
+				tempEvent = Events.Dequeue();
+				Events.Enqueue(new Event(Int32.Parse(tempEvent.Registrant.RegistrantID), "departure", tempEvent.Registrant, CurrentTime));
+			} else if(Events.Peek().Time <= CurrentTime) {
+				tempEvent = Events.Dequeue();
+				MessageBox.Show(tempEvent.EventType + " " + tempEvent.Time.ToString() + " " + tempEvent.Registrant.RegistrantID);
+				currReg = tempEvent.Registrant;
+				Lines[currReg.LineID].Dequeue();
+				ListBoxes[currReg.LineID].Items.Remove(currReg.RegistrantID);
+			}
+		}*/
 		private static List<Line> OpenLines(int numOfLines) {
 			List<Line> retList = new List<Line>();
 			for(int i = 0; i < numOfLines; i++) {
@@ -88,7 +91,7 @@ namespace Project4
 
 		private static List<String> GenerateList() {
 			List<String> retList = new List<String>();
-			for(int i = 1; i <= Poisson(1000); i++) {
+			for(int i = 1; i <= Poisson(100); i++) {
 				retList.Add(i.ToString().PadLeft(4, '0'));
 			}
 			return retList;
@@ -97,10 +100,11 @@ namespace Project4
 		private List<ListBox> GetListBoxes(RegistrationSimulationForm form) {
 			List<ListBox> retList = new List<ListBox>();
 			foreach(Control box in form.Controls) {
-				if(box.GetType().Name == "ListBox")
+				if(box.GetType().Name == "ListBox") {
 					retList.Add(box as ListBox);
+				}
 			}
-			return retList;
+			return retList.OrderBy(id => id.AccessibleName).ToList();
 		}
 	}
 }

@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="listBoxWaitingLine0.AccessibleName" xml:space="preserve">
+    <value>0</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="listBoxWaitingLine0.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -146,6 +149,9 @@
   <data name="&gt;&gt;listBoxWaitingLine0.ZOrder" xml:space="preserve">
     <value>39</value>
   </data>
+  <data name="listBoxWaitingLine1.AccessibleName" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="listBoxWaitingLine1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
@@ -172,6 +178,9 @@
   </data>
   <data name="&gt;&gt;listBoxWaitingLine1.ZOrder" xml:space="preserve">
     <value>38</value>
+  </data>
+  <data name="listBoxWaitingLine3.AccessibleName" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="listBoxWaitingLine3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -200,6 +209,9 @@
   <data name="&gt;&gt;listBoxWaitingLine3.ZOrder" xml:space="preserve">
     <value>37</value>
   </data>
+  <data name="listBoxWaitingList2.AccessibleName" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="listBoxWaitingList2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
@@ -226,6 +238,9 @@
   </data>
   <data name="&gt;&gt;listBoxWaitingList2.ZOrder" xml:space="preserve">
     <value>36</value>
+  </data>
+  <data name="listBoxWaitingList4.AccessibleName" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="listBoxWaitingList4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -254,6 +269,9 @@
   <data name="&gt;&gt;listBoxWaitingList4.ZOrder" xml:space="preserve">
     <value>35</value>
   </data>
+  <data name="listBoxWaitingList5.AccessibleName" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="listBoxWaitingList5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
@@ -280,6 +298,9 @@
   </data>
   <data name="&gt;&gt;listBoxWaitingList5.ZOrder" xml:space="preserve">
     <value>34</value>
+  </data>
+  <data name="listBoxWaitingList6.AccessibleName" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="listBoxWaitingList6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -308,6 +329,9 @@
   <data name="&gt;&gt;listBoxWaitingList6.ZOrder" xml:space="preserve">
     <value>33</value>
   </data>
+  <data name="listBoxWaitingList7.AccessibleName" xml:space="preserve">
+    <value>7</value>
+  </data>
   <data name="listBoxWaitingList7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
@@ -334,6 +358,9 @@
   </data>
   <data name="&gt;&gt;listBoxWaitingList7.ZOrder" xml:space="preserve">
     <value>32</value>
+  </data>
+  <data name="listBoxWaitingList8.AccessibleName" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="listBoxWaitingList8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -362,6 +389,9 @@
   <data name="&gt;&gt;listBoxWaitingList8.ZOrder" xml:space="preserve">
     <value>31</value>
   </data>
+  <data name="listBox1WaitingList9.AccessibleName" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="listBox1WaitingList9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
@@ -369,7 +399,7 @@
     <value>16</value>
   </data>
   <data name="listBox1WaitingList9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1145, 41</value>
+    <value>1156, 41</value>
   </data>
   <data name="listBox1WaitingList9.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 388</value>
@@ -718,6 +748,9 @@
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>19</value>
+  </data>
+  <data name="listBox1WaitingList10.AccessibleName" xml:space="preserve">
+    <value>a</value>
   </data>
   <data name="listBox1WaitingList10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>

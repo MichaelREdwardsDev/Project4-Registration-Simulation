@@ -61,6 +61,10 @@ namespace Project4 {
 		/// </summary>
 		private Node<T> top;
 		/// <summary>
+		/// The previous top, stored to determine top of queue has changed
+		/// </summary>
+		private Node<T> previousTop;
+		/// <summary>
 		/// The total nodes in the queue
 		/// </summary>
 		public int Count { get; set; }
@@ -125,6 +129,16 @@ namespace Project4 {
 				return top.Item;
 			} else {
 				throw new InvalidOperationException("Cannot obtains top of empty priority queue");
+			}
+		}
+
+		public bool TopChanged() {
+			if(top != previousTop) {
+				previousTop = top;
+				return true;
+
+			} else {
+				return false;
 			}
 		}
 	}
