@@ -21,13 +21,16 @@ namespace Project4 {
 		private DateTime Time = new DateTime();
 		public String EventType { get; set; }
 		public int EventID { get; set; }
+		public int Priority { get; set; } = 0;
 
-		public Events(String eventType, Registrant registrant, DateTime currTime) {
+		public Events(int ID, String eventType, Registrant registrant, DateTime currTime) {
+			EventID = ID;
 			EventType = eventType;
 			Time = DetermineEventTime(eventType, registrant, currTime);
 		}
 
 		private DateTime DetermineEventTime(String eventType, Registrant registrant, DateTime currTime) {
+			
 			if(eventType == "arrival")
 				return currTime;
 			else
@@ -35,7 +38,10 @@ namespace Project4 {
 		}
 
 		public int CompareTo(object obj) {
-			throw new NotImplementedException();
+			if(Time < (obj as Events).Time)
+				return 1;
+			else
+				return -1;
 		}
 	}
 }
