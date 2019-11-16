@@ -26,6 +26,7 @@ namespace Project4 {
     /// </summary>
     /// <seealso cref="System.Windows.Forms.Form" />
     public partial class RegistrationSimulationForm:Form {
+		//public List<ListBox> ListBoxes = AddListBoxes();
         /// <summary>
         /// Initializes a new instance of the <see cref="RegistrationSimulationForm"/> class.
         /// </summary>
@@ -33,7 +34,7 @@ namespace Project4 {
 			InitializeComponent();
 		}
 
-
+		//public List<ListBox>
        
 		private void RegistrationSimulationForm_Load(object sender, EventArgs e) {
 
@@ -49,10 +50,17 @@ namespace Project4 {
 		}
 
 		private void ButtonStart_Click(object sender, EventArgs e) {
+			ConventionRegistration Conv = new ConventionRegistration(this);
 		}
+		private static List<ListBox> GetListBoxes() {
+			List<ListBox> retList = new List<ListBox>();
 
+
+
+			return retList;
+		}
 		private void ButtonClear_Click(object sender, EventArgs e) {
-			MessageBox.Show(new Registrant(0).CompletionTime.ToString());
+			
 		}
 	}
 }

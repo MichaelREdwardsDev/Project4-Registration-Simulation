@@ -2,7 +2,7 @@
 //
 //	Project:		Project 4 - Registration Simulation
 //	File Name:		Events.cs
-//	Description:	
+//	Description:	Possible Events, contains what time the events happen to be added to the current time in the simulations
 //	Course:			CSCI 2210-001 - Data Structures
 //	Author:			Michael Edwards, edwardsmr@etsu.edu, Elizabeth Jennings, jenningsel@etsu.edu, William Jennings, jenningsw@etsu.edu
 //	Created:		Sunday November 14, 2019

@@ -24,7 +24,7 @@ namespace Project4 {
 		/// <summary>
 		/// Registrant's ID number
 		/// </summary>
-		public int RegistrantID { get; set; }
+		public String RegistrantID { get; set; }
 		/// <summary>
 		/// How long the registrant takes to complete the registration.
 		/// </summary>
@@ -35,7 +35,7 @@ namespace Project4 {
 		/// </summary>
 		/// <param name="registrantID"></param>
 		/// <param name="priority"></param>
-		public Registrant(int registrantID) {
+		public Registrant(String registrantID) {
 			RegistrantID = registrantID;
 			CompletionTime = DetermineCompletionTime();
 		}
