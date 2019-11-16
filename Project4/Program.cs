@@ -1,14 +1,14 @@
-﻿//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //	Project:		Project 4 - Registration Simulation
 //	File Name:		Program.cs
 //	Description:	Runs the application.
 //	Course:			CSCI 2210-001 - Data Structures
-//	Author:			Michael Edwards, edwardsmr@etsu.edu
+//	Author:			Michael Edwards, edwardsmr@etsu.edu, Elizabeth Jennings, jenningsel@etsu.edu, William Jennings, jenningsw@etsu.edu
 //	Created:		Sunday November 14, 2019
 //	Copyright:		Michael Edwards, 2019
 //
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 using System;
 using System.Collections.Generic;
@@ -25,9 +25,9 @@ namespace Project4 {
 		/// </summary>
 		[STAThread]
 		static void Main() {
-            /*Application.EnableVisualStyles();
+			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new RegistrationSimulationForm());*/
+			Application.Run(new RegistrationSimulationForm());
 		}
 	}
 }

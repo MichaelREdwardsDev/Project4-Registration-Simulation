@@ -1,14 +1,14 @@
-﻿//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+﻿////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //	Project:		Project 4 - Registration Simulation
-//	File Name:		PriorityQueue.cs
-//	Description:	Customized queue that accounts for the priority of the objects contained 
+//	File Name:		Registrant.cs
+//	Description:	 
 //	Course:			CSCI 2210-001 - Data Structures
-//	Author:			Michael Edwards, edwardsmr@etsu.edu
+//	Author:			Michael Edwards, edwardsmr@etsu.edu, Elizabeth Jennings, jenningsel@etsu.edu, William Jennings, jenningsw@etsu.edu
 //	Created:		Sunday November 14, 2019
 //	Copyright:		Michael Edwards, 2019
 //
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +28,7 @@ namespace Project4 {
 		/// <summary>
 		/// How long the registrant takes to complete the registration.
 		/// </summary>
-		public double CompletionTime { get; set; }
+		public TimeSpan CompletionTime { get; set; }
 
 		/// <summary>
 		/// Registrant Overloaded Constructor - takes in Registrant's ID number and their priority
@@ -37,6 +37,7 @@ namespace Project4 {
 		/// <param name="priority"></param>
 		public Registrant(int registrantID) {
 			RegistrantID = registrantID;
+			CompletionTime = DetermineCompletionTime();
 		}
 		public int Pickline(List<Line> lines) {
 			Line shortestLine = null;
@@ -49,6 +50,14 @@ namespace Project4 {
 			}
 			shortestLine.Enqueue(this);
 			return shortestLine.LineID;
+		}
+		public TimeSpan DetermineCompletionTime() {
+			//270 seconds
+			int timeInSeconds = (int)NegEx(270);
+			if(timeInSeconds < 90)
+				return new TimeSpan(0, 0, 90);
+			else
+				return new TimeSpan(0, 0, timeInSeconds);
 		}
 	}
 }
