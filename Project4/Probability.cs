@@ -17,13 +17,28 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Utils {
-	public static class Probability {
-		public static Random Rand = new Random();
-		public static double NegEx(double ExpectedValue) {
+    /// <summary>
+    /// 
+    /// </summary>
+    public static class Probability {
+        
+        public static Random Rand = new Random();
+
+        /// <summary>
+        /// Negative exponential probability distribution
+        /// </summary>
+        /// <param name="ExpectedValue">The expected value.</param>
+        /// <returns>Expected Value</returns>
+        public static double NegEx(double ExpectedValue) {
 			return -ExpectedValue * Math.Log(Rand.NextDouble(), Math.E);
 		}
 
-		public static int Poisson(double expectedValue) {
+        /// <summary>
+        /// Poisson distributes the specified expected value.
+        /// </summary>
+        /// <param name="expectedValue">The expected value.</param>
+        /// <returns>Count</returns>
+        public static int Poisson(double expectedValue) {
 			double dLimit = -expectedValue;
 			double dSum = Math.Log(Rand.NextDouble());
 			int count;

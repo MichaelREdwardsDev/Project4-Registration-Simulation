@@ -17,25 +17,77 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Project4 {
-	class Events : IComparable {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="System.IComparable" />
+    class Events : IComparable {
 		private DateTime Time = new DateTime();
-		public String EventType { get; set; }
-		public int EventID { get; set; }
 
-		public Events(String eventType, Registrant registrant, DateTime currTime) {
+        /// <summary>
+        /// Gets or sets the type of the event.
+        /// </summary>
+        /// <value>
+        /// The type of the event.
+        /// </value>
+        public String EventType { get; set; }
+
+        /// <summary>
+        /// Gets or sets the event identifier.
+        /// </summary>
+        /// <value>
+        /// The event identifier.
+        /// </value>
+        public int EventID { get; set; }
+
+        /// <summary>
+        /// Gets or sets the priority.
+        /// </summary>
+        /// <value>
+        /// The priority.
+        /// </value>
+        public int Priority { get; set; } = 0;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Events"/> class.
+        /// </summary>
+        /// <param name="ID">The identifier.</param>
+        /// <param name="eventType">Type of the event.</param>
+        /// <param name="registrant">The registrant.</param>
+        /// <param name="currTime">The current time.</param>
+        public Events(int ID, String eventType, Registrant registrant, DateTime currTime) {
+			EventID = ID;
 			EventType = eventType;
 			Time = DetermineEventTime(eventType, registrant, currTime);
 		}
 
-		private DateTime DetermineEventTime(String eventType, Registrant registrant, DateTime currTime) {
+        /// <summary>
+        /// Determines the event time.
+        /// </summary>
+        /// <param name="eventType">Type of the event.</param>
+        /// <param name="registrant">The registrant.</param>
+        /// <param name="currTime">The current time.</param>
+        /// <returns></returns>
+        private DateTime DetermineEventTime(String eventType, Registrant registrant, DateTime currTime) {
+			
 			if(eventType == "arrival")
 				return currTime;
 			else
 				return currTime + registrant.CompletionTime;
 		}
 
-		public int CompareTo(object obj) {
-			throw new NotImplementedException();
+        /// <summary>
+        /// Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+        /// </summary>
+        /// <param name="obj">An object to compare with this instance.</param>
+        /// <returns>
+        /// A value that indicates the relative order of the objects being compared. The return value has these meanings: Value Meaning Less than zero This instance precedes <paramref name="obj" /> in the sort order. Zero This instance occurs in the same position in the sort order as <paramref name="obj" />. Greater than zero This instance follows <paramref name="obj" /> in the sort order.
+        /// </returns>
+        public int CompareTo(object obj) {
+			if(Time < (obj as Events).Time)
+				return 1;
+			else
+				return -1;
 		}
 	}
 }
