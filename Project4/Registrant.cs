@@ -29,7 +29,11 @@ namespace Project4 {
 		/// How long the registrant takes to complete the registration.
 		/// </summary>
 		public TimeSpan CompletionTime { get; set; }
+		public int LineID { get; set; }
 
+		public Registrant() {
+			CompletionTime = new TimeSpan(0);
+		}
 		/// <summary>
 		/// Registrant Overloaded Constructor - takes in Registrant's ID number and their priority
 		/// </summary>

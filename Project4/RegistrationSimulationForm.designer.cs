@@ -63,6 +63,7 @@
 			this.textBoxDepartures = new System.Windows.Forms.TextBox();
 			this.label18 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.CurrentTimeLabel = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// listBoxWaitingLine0
@@ -281,10 +282,16 @@
 			this.textBox1.Name = "textBox1";
 			this.textBox1.ReadOnly = true;
 			// 
+			// CurrentTimeLabel
+			// 
+			resources.ApplyResources(this.CurrentTimeLabel, "CurrentTimeLabel");
+			this.CurrentTimeLabel.Name = "CurrentTimeLabel";
+			// 
 			// RegistrationSimulationForm
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.CurrentTimeLabel);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.label18);
 			this.Controls.Add(this.textBoxDepartures);
@@ -367,11 +374,12 @@
         private System.Windows.Forms.TextBox textBoxCheckoutDuration;
         private System.Windows.Forms.TextBox textBoxHoursOpen;
         private System.Windows.Forms.TextBox textBoxNumRegistrants;
-        private System.Windows.Forms.TextBox textBoxEvents;
-        private System.Windows.Forms.TextBox textBoxArrivals;
-        private System.Windows.Forms.TextBox textBoxDepartures;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox1;
-    }
+		public System.Windows.Forms.Label CurrentTimeLabel;
+		public System.Windows.Forms.TextBox textBox1;
+		public System.Windows.Forms.TextBox textBoxEvents;
+		public System.Windows.Forms.TextBox textBoxArrivals;
+		public System.Windows.Forms.TextBox textBoxDepartures;
+	}
 }
 

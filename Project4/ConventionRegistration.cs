@@ -13,46 +13,69 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Utils.Probability;
 
 namespace Project4
 {
-    class ConventionRegistration
-    {
+	class ConventionRegistration {
 		private List<String> PossibleIDs = GenerateList();
 		public List<Line> Lines = OpenLines(11);
 		public List<ListBox> ListBoxes;
-        public DateTime TimeStarted { get; set; }
+		public DateTime TimeStarted { get; set; }
 
-        public DateTime ClosingTime { get; set; }
+		public DateTime ClosingTime { get; set; }
 
-        public DateTime CurrentTime { get; set; }
-
-		public Action<String> str { get; set; }
-		//public PriorityQueue<Events> RegistrationQueue { get; set; }
-
+		public DateTime CurrentTime { get; set; }
+		public PriorityQueue<Event> Events { get; } = new PriorityQueue<Event>();
+		public int EventCount = 0, ArrivalCount = 0, DepartureCount = 0, LongestQueue = 0;
         public ConventionRegistration(RegistrationSimulationForm form)
         {
 			ListBoxes = GetListBoxes(form);
             TimeStarted = DateTime.Today;
             TimeStarted = TimeStarted.AddHours(8.0);
+			ClosingTime = DateTime.Today.AddHours(18.0);
+		}
+		/*public async void HandleDepartures(RegistrationSimulationForm form) {
+			*//*Registrant atWindow = new Registrant();
+			if(Events.Peek().EventType == "departure") {
+				try {
+					atWindow = Events.Dequeue().Registrant;
+					ListBoxes[atWindow.LineID].Items.Remove(atWindow.RegistrantID);
+				} catch(Exception) {
 
-			ClosingTime = DateTime.Today;
-			ClosingTime = ClosingTime.AddHours(18.0);
-			Registrant currReg;
-			DateTime CurrentTime = TimeStarted;
-			int i = 0;
-			while(/*CurrentTime < ClosingTime*/i++ < PossibleIDs.Count) {
-				int idIndex = Rand.Next(PossibleIDs.Count);
-				String ID = PossibleIDs[idIndex];
-				PossibleIDs.Remove(ID);
-				currReg = new Registrant(ID);
-				int lineID = currReg.Pickline(Lines);
-				ListBoxes[lineID].Items.Add(currReg.RegistrantID);
+				}
 			}
-
+			if()*//*
+			await Task.Delay(atWindow.CompletionTime);
+		}*/
+		public async void HandleEntrances(RegistrationSimulationForm form) {
+			Registrant currReg;
+			CurrentTime = TimeStarted;
+			int idIndex;
+			String currID;
+			DateTime NextEntrance = CurrentTime;
+			while(CurrentTime < ClosingTime && PossibleIDs.Count > 0) {
+				form.CurrentTimeLabel.Text = CurrentTime.ToLongTimeString();
+				form.textBoxEvents.Text = EventCount.ToString();
+				if(CurrentTime >= NextEntrance) {
+					ArrivalCount++;
+					EventCount++;
+					form.textBoxArrivals.Text = ArrivalCount.ToString();
+					idIndex = Rand.Next(PossibleIDs.Count);
+					currID = PossibleIDs[idIndex];
+					PossibleIDs.Remove(currID);
+					currReg = new Registrant(currID);
+					currReg.LineID = currReg.Pickline(Lines);
+					ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
+					Events.Enqueue(new Event(idIndex, "arrival", currReg, CurrentTime));
+					NextEntrance = CurrentTime + new TimeSpan(0, 0, Rand.Next(75));
+				}
+				await Task.Delay(1);
+				CurrentTime += new TimeSpan(0, 0, 1);
+			}
 		}
 
 		private static List<Line> OpenLines(int numOfLines) {
@@ -71,7 +94,7 @@ namespace Project4
 			return retList;
 		}
 
-		private List<ListBox> GetListBoxes(Form form) {
+		private List<ListBox> GetListBoxes(RegistrationSimulationForm form) {
 			List<ListBox> retList = new List<ListBox>();
 			foreach(Control box in form.Controls) {
 				if(box.GetType().Name == "ListBox")

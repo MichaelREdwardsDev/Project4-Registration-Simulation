@@ -31,7 +31,7 @@ namespace Project4 {
 	/// <typeparam name="T">Generic Object, must implement IComparable</typeparam>
 	public interface IPriorityQueue<T>:IContainer<T> where T : IComparable {
 		void Enqueue(T item);
-		void Dequeue();
+		T Dequeue();
 		T Peek();
 	}
 	/// <summary>
@@ -104,14 +104,16 @@ namespace Project4 {
 		/// <summary>
 		/// Removes the top of the queue
 		/// </summary>
-		public void Dequeue() {
+		public T Dequeue() {
 			if(IsEmpty()) {
 				throw new InvalidOperationException("Cannot remove from empty Queue.");
 			} else {
 				Node<T> oldNode = top;
 				top = top.Next;
 				Count--;
+				T item = oldNode.Item;
 				oldNode = null; // Garbage collected
+				return item;
 			}
 		}
 		/// <summary>
