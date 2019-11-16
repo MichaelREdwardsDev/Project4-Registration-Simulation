@@ -39,7 +39,14 @@ namespace Project4 {
 			RegistrantID = registrantID;
 			CompletionTime = DetermineCompletionTime();
 		}
-		public int Pickline(List<Line> lines) {
+
+        /// <summary>
+        /// Picks a line that has the shortest line and if all lines have the same amount
+        /// of people in it, then it will go to the left-most queue.
+        /// </summary>
+        /// <param name="lines">The lines.</param>
+        /// <returns>Shortest Line ID</returns>
+        public int Pickline(List<Line> lines) {
 			Line shortestLine = null;
 			Nullable<int> lowestLineCount = null;
 			foreach(Line line in lines) {
@@ -51,7 +58,12 @@ namespace Project4 {
 			shortestLine.Enqueue(this);
 			return shortestLine.LineID;
 		}
-		public TimeSpan DetermineCompletionTime() {
+
+        /// <summary>
+        /// Determines the completion time.
+        /// </summary>
+        /// <returns>Time Span</returns>
+        public TimeSpan DetermineCompletionTime() {
 			//270 seconds
 			int timeInSeconds = (int)NegEx(270);
 			if(timeInSeconds < 90)
