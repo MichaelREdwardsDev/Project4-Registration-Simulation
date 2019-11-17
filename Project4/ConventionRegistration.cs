@@ -97,35 +97,32 @@ namespace Project4 {
 		public Task HandleEntrees(RegistrationSimulationForm form) {
 
 			Task entrance = Task.Factory.StartNew(() => {
+				
 				Registrant currReg = new Registrant();
 				DateTime nextEntrance = CurrentTime = TimeStarted;
 				int idIndex;
 				String currID;
-
 				while((CurrentTime < ClosingTime && PossibleIDs.Count > 0)) {
 					form.textBoxArrivals.Invoke((MethodInvoker)delegate {
 						form.textBoxArrivals.Text = ArrivalCount.ToString();
 					});
-
 					form.CurrentTimeLabel.Invoke((MethodInvoker)delegate {
 						form.CurrentTimeLabel.Text = CurrentTime.ToLongTimeString();
 					});
-
 					form.textBoxEvents.Invoke((MethodInvoker)delegate {
 						form.textBoxEvents.Text = EventCount.ToString();
 					});
-
-
-						if(CurrentTime >= nextEntrance && CurrentTime <= ClosingTime) {
+					if(CurrentTime >= nextEntrance && CurrentTime <= ClosingTime) {
 						ArrivalCount++;
 						//form.textBoxArrivals.Text = ArrivalCount.ToString();
 						EventCount++;
-						
+
 						idIndex = Rand.Next(PossibleIDs.Count);
 						currID = PossibleIDs[idIndex];
 						PossibleIDs.Remove(currID);
 						currReg = new Registrant(currID);
 						currReg.LineID = currReg.PickLine(Lines);
+						MessageBox.Show(Lines[currReg.LineID].Registrants.Peek().RegistrantID.ToString());
 						ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate {
 							ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
 						});
@@ -139,7 +136,9 @@ namespace Project4 {
 					CurrentTime += new TimeSpan(0, 0, 1);
 					Thread.Sleep(1);
 				}
+				
 			});
+			
 			return entrance;
 		}
 
@@ -150,9 +149,7 @@ namespace Project4 {
 		/// <returns></returns>
 		private Task HandleDepartures(RegistrationSimulationForm form) {
 			Task departure = Task.Factory.StartNew(() => {
-				Event tempEvent;
-				Registrant tempReg;
-				Thread.Sleep(1000);
+				MessageBox.Show("bla");
 			});
 			return departure;
 		}
@@ -164,26 +161,12 @@ namespace Project4 {
 		/// <returns>windo</returns>
 		public Task HandleWindows(RegistrationSimulationForm form) {
 			Task window = Task.Factory.StartNew(() => {
+				Thread.Sleep(10000);
 				
-				//MessageBox.Show(Lines[0].Peek().RegistrantID);
-				
+
 			});
 			return window;
 		}
-
-		/*		private void storage() {
-					if(Events.Peek().EventType == "arrival") {
-						tempEvent = Events.Dequeue();
-						Events.Enqueue(new Event(Int32.Parse(tempEvent.Registrant.RegistrantID), "departure", tempEvent.Registrant, CurrentTime));
-					} else if(Events.Peek().Time <= CurrentTime) {
-						tempEvent = Events.Dequeue();
-						MessageBox.Show(tempEvent.EventType + " " + tempEvent.Time.ToString() + " " + tempEvent.Registrant.RegistrantID);
-						currReg = tempEvent.Registrant;
-						Lines[currReg.LineID].Dequeue();
-						ListBoxes[currReg.LineID].Items.Remove(currReg.RegistrantID);
-					}
-				}*/
-
 		/// <summary>
 		/// Method for available lines in the simulation.
 		/// </summary>
@@ -196,7 +179,6 @@ namespace Project4 {
 			}
 			return retList;
 		}
-
 		/// <summary>
 		/// Generates the list of items that have been Poisson Distributed.
 		/// </summary>
