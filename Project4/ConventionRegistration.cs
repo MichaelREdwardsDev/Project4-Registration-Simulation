@@ -86,11 +86,9 @@ namespace Project4
 		public void HandleRegistrants(RegistrationSimulationForm form) 
         {
 			Task entrance = HandleEntrees(form);
-			foreach(Line line in Lines) {
-				MessageBox.Show(line.Peek().CompletionTime.ToString());
-			}
+			Task.Delay(1000);
 			//Task windows = HandleWindows(form);
-			//Task departures = HandleDepartures(form);
+			Task departures = HandleDepartures(form);
 		}
         
 		/// <summary>
@@ -119,15 +117,18 @@ namespace Project4
 						currID = PossibleIDs[idIndex];
 						PossibleIDs.Remove(currID);
 						currReg = new Registrant(currID);
-						MessageBox.Show(currReg.CompletionTime.ToString());
 						currReg.LineID = currReg.PickLine(Lines);
+						try {
+							MessageBox.Show(Lines[idIndex].ToString());
+						} catch(Exception ex) {
+							MessageBox.Show(ex.Message);
+						}
 						ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
-						if(Events.Count == 0) 
-                        {
+						if(Events.Count == 0) {
+							EventCount++;
 							Events.Enqueue(new Event(idIndex, "departure", currReg, CurrentTime));
 						}
 						Events.Enqueue(new Event(idIndex, "arrival", currReg, CurrentTime));
-
 						nextEntrance = CurrentTime + new TimeSpan(0, 0, Rand.Next(75));
 					}
 					CurrentTime += new TimeSpan(0, 0, 1);
@@ -148,14 +149,7 @@ namespace Project4
             {
 				Event tempEvent;
 				Registrant tempReg;
-				// This is to mitigate calling faster than the first person gets in line
-
-				while(Events.Count > 0) {
-					//MessageBox.Show(Events.Count.ToString());
-					/*tempEvent = Events.Dequeue();
-					MessageBox.Show("Are you doing anything?");
-					Thread.Sleep(1);*/
-				}
+				Thread.Sleep(1000);
 			});
 			return departure;
 		}

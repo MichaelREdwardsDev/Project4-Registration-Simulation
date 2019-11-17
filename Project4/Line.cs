@@ -39,7 +39,7 @@ namespace Project4 {
 		/// <summary>
 		/// Line Overloaded Constructor - Takes the ID for a line particular line
 		/// </summary>
-		/// <param name="lineID"></param>
+		/// <param name="lineID">the line id</param>
 		public Line(int lineID) {
 			LineID = lineID;
 			Enqueue(top);
@@ -56,10 +56,18 @@ namespace Project4 {
 		/// </summary>
 		public void Dequeue() {
 			Registrants.Dequeue();
-		}
+		}        
+		/// <summary>
+		/// Peeks this instance.
+		/// </summary>
+		/// <returns>Registrants.Peek()</returns>
 		public Registrant Peek() {
 			return Registrants.Peek();
-		}
+		}        
+		/// <summary>
+		/// Checks to see if the top of the queue has changed.
+		/// </summary>
+		/// <returns>true or false</returns>
 		public bool TopChanged() {
 			if(previousTop != top) {
 				previousTop = top;

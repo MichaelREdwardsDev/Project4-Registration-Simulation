@@ -21,9 +21,21 @@ namespace Project4 {
 	/// 
 	/// </summary>
 	/// <seealso cref="System.IComparable" />
-	class Event:IComparable {
-		public Registrant Registrant { get; set; }
-		public DateTime Time { get; set; } = new DateTime();
+	class Event:IComparable {        
+		/// <summary>
+		/// Gets or sets the registrant.
+		/// </summary>
+		/// <value>
+		/// The registrant.
+		/// </value>
+		public Registrant Registrant { get; set; }		
+        /// <summary>
+        /// Gets or sets the time.
+        /// </summary>
+        /// <value>
+        /// The time.
+        /// </value>
+        public DateTime Time { get; set; } = new DateTime();
 
         /// <summary>
         /// Gets or sets the type of the event.
@@ -69,7 +81,7 @@ namespace Project4 {
         /// <param name="eventType">Type of the event.</param>
         /// <param name="registrant">The registrant.</param>
         /// <param name="currTime">The current time.</param>
-        /// <returns></returns>
+        /// <returns>currTime</returns>
         private DateTime DetermineEventTime(String eventType, Registrant registrant, DateTime currTime) {
 			
 			if(eventType == "arrival")
@@ -84,7 +96,7 @@ namespace Project4 {
         /// <param name="obj">An object to compare with this instance.</param>
         /// <returns>
         /// A value that indicates the relative order of the objects being compared. The return value has these meanings: Value Meaning Less than zero This instance precedes <paramref name="obj" /> in the sort order. Zero This instance occurs in the same position in the sort order as <paramref name="obj" />. Greater than zero This instance follows <paramref name="obj" /> in the sort order.
-        /// </returns>
+        /// <returns>int</returns>
         public int CompareTo(object obj) {
 			if(Time < (obj as Event).Time)
 				return 1;
