@@ -131,7 +131,11 @@ namespace Project4 {
 				throw new InvalidOperationException("Cannot obtains top of empty priority queue");
 			}
 		}
-
+        
+		/// <summary>
+		/// Checks to see if the top of the queue has been changed.
+		/// </summary>
+		/// <returns>true or false</returns>
 		public bool TopChanged() {
 			if(top != previousTop) {
 				previousTop = top;

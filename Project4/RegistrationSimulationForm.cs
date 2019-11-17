@@ -48,12 +48,21 @@ namespace Project4 {
 		/// <param name="e">The event<see cref="EventArgs"/> instance containing the event data.</param>
 		private void ButtonExit_Click(object sender, EventArgs e) {
 			Application.Exit();
-		}
-
+		}        
+		/// <summary>
+		/// Handles the Click event of the ButtonStart control.
+		/// </summary>
+		/// <param name="sender">The source of the event.</param>
+		/// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
 		private void ButtonStart_Click(object sender, EventArgs e) {
 			ConventionRegistration Conv = new ConventionRegistration(this);
 			Conv.HandleRegistrants(this);
-		}
+		}        
+		/// <summary>
+		/// Handles the Click event of the ButtonClear control.
+		/// </summary>
+		/// <param name="sender">The source of the event.</param>
+		/// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
 		private void ButtonClear_Click(object sender, EventArgs e) {
 			
 		}
