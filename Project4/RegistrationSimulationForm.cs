@@ -21,11 +21,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project4 {
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <seealso cref="System.Windows.Forms.Form" />
-    public partial class RegistrationSimulationForm:Form {
+	
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <seealso cref="System.Windows.Forms.Form" />
+	public partial class RegistrationSimulationForm:Form {
 		
 		/// <summary>
 		/// Initializes a new instance of the <see cref="RegistrationSimulationForm"/> class.

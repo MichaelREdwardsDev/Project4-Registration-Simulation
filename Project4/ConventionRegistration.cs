@@ -29,6 +29,7 @@ namespace Project4 {
 		public List<ListBox> ListBoxes;
 		private Registrant[] currentRegistrants = new Registrant[NumOfLines];
 
+
 		/// <summary>
 		/// Gets or sets the time started.
 		/// </summary>
@@ -62,7 +63,6 @@ namespace Project4 {
 		public PriorityQueue<Event> Events { get; set; } = new PriorityQueue<Event>();
 
 		public int EventCount = 0, ArrivalCount = 0, DepartureCount = 0, LongestQueue = 0;
-
 		private bool SimRunning = true;
 
 
@@ -76,15 +76,16 @@ namespace Project4 {
 			TimeStarted = TimeStarted.AddHours(8.0);
 			ClosingTime = DateTime.Today.AddHours(18.0);
 		}
+		public void AddItemToListBox() {
 
+		}
 		/// <summary>
 		/// Handles the registrants in the simulation.
 		/// </summary>
 		/// <param name="form">The form.</param>
 		public void HandleRegistrants(RegistrationSimulationForm form) {
 			Task entrance = HandleEntrees(form);
-			Task.Delay(1000);
-			//Task windows = HandleWindows(form);
+			Task windows = HandleWindows(form);
 			//Task departures = HandleDepartures(form);
 		}
 
@@ -94,6 +95,7 @@ namespace Project4 {
 		/// <param name="form">The form.</param>
 		/// <returns></returns>
 		public Task HandleEntrees(RegistrationSimulationForm form) {
+
 			Task entrance = Task.Factory.StartNew(() => {
 				Registrant currReg = new Registrant();
 				DateTime nextEntrance = CurrentTime = TimeStarted;
@@ -101,11 +103,22 @@ namespace Project4 {
 				String currID;
 
 				while((CurrentTime < ClosingTime && PossibleIDs.Count > 0)) {
-					form.CurrentTimeLabel.Text = CurrentTime.ToLongTimeString();
-					form.textBoxEvents.Text = EventCount.ToString();
-					if(CurrentTime >= nextEntrance && CurrentTime <= ClosingTime) {
-						ArrivalCount++;
+					form.textBoxArrivals.Invoke((MethodInvoker)delegate {
 						form.textBoxArrivals.Text = ArrivalCount.ToString();
+					});
+
+					form.CurrentTimeLabel.Invoke((MethodInvoker)delegate {
+						form.CurrentTimeLabel.Text = CurrentTime.ToLongTimeString();
+					});
+
+					form.textBoxEvents.Invoke((MethodInvoker)delegate {
+						form.textBoxEvents.Text = EventCount.ToString();
+					});
+
+
+						if(CurrentTime >= nextEntrance && CurrentTime <= ClosingTime) {
+						ArrivalCount++;
+						//form.textBoxArrivals.Text = ArrivalCount.ToString();
 						EventCount++;
 						
 						idIndex = Rand.Next(PossibleIDs.Count);
@@ -113,7 +126,9 @@ namespace Project4 {
 						PossibleIDs.Remove(currID);
 						currReg = new Registrant(currID);
 						currReg.LineID = currReg.PickLine(Lines);
-						ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
+						ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate {
+							ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
+						});
 						if(Events.Count == 0) {
 							EventCount++;
 							Events.Enqueue(new Event(idIndex, "departure", currReg, CurrentTime));
@@ -149,12 +164,9 @@ namespace Project4 {
 		/// <returns>windo</returns>
 		public Task HandleWindows(RegistrationSimulationForm form) {
 			Task window = Task.Factory.StartNew(() => {
-				Thread.Sleep(3000);
-				while(SimRunning) {
-					foreach(Line line in Lines) {
-						//MessageBox.Show(line.Peek().CompletionTime.ToString());
-					}
-				}
+				
+				//MessageBox.Show(Lines[0].Peek().RegistrantID);
+				
 			});
 			return window;
 		}
