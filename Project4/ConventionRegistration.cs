@@ -64,7 +64,7 @@ namespace Project4 {
 		public int EventCount = 0, ArrivalCount = 0, DepartureCount = 0, LongestQueue = 0;
 
 		private bool SimRunning = true;
-		public delegate void SetListBoxDelegate();
+
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="ConventionRegistration"/> class.
@@ -85,7 +85,7 @@ namespace Project4 {
 			Task entrance = HandleEntrees(form);
 			Task.Delay(1000);
 			//Task windows = HandleWindows(form);
-			Task departures = HandleDepartures(form);
+			//Task departures = HandleDepartures(form);
 		}
 
 		/// <summary>
@@ -99,24 +99,20 @@ namespace Project4 {
 				DateTime nextEntrance = CurrentTime = TimeStarted;
 				int idIndex;
 				String currID;
+
 				while((CurrentTime < ClosingTime && PossibleIDs.Count > 0)) {
 					form.CurrentTimeLabel.Text = CurrentTime.ToLongTimeString();
 					form.textBoxEvents.Text = EventCount.ToString();
 					if(CurrentTime >= nextEntrance && CurrentTime <= ClosingTime) {
 						ArrivalCount++;
-						EventCount++;
 						form.textBoxArrivals.Text = ArrivalCount.ToString();
+						EventCount++;
+						
 						idIndex = Rand.Next(PossibleIDs.Count);
 						currID = PossibleIDs[idIndex];
 						PossibleIDs.Remove(currID);
 						currReg = new Registrant(currID);
 						currReg.LineID = currReg.PickLine(Lines);
-						currentRegistrants[idIndex] = currReg;
-						try {
-							MessageBox.Show(Lines[idIndex].ToString());
-						} catch(Exception ex) {
-							MessageBox.Show(ex.Message);
-						}
 						ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
 						if(Events.Count == 0) {
 							EventCount++;
