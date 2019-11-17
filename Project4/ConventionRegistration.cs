@@ -30,7 +30,7 @@ namespace Project4 {
 		public DateTime ClosingTime { get; set; }
 
 		public DateTime CurrentTime { get; set; }
-		public PriorityQueue<Event> Events { get; } = new PriorityQueue<Event>();
+		public PriorityQueue<Event> Events { get; set; } = new PriorityQueue<Event>();
 		public int EventCount = 0, ArrivalCount = 0, DepartureCount = 0, LongestQueue = 0;
 		private bool SimRunning = true;
 		public ConventionRegistration(RegistrationSimulationForm form) {
@@ -39,13 +39,17 @@ namespace Project4 {
 			TimeStarted = TimeStarted.AddHours(8.0);
 			ClosingTime = DateTime.Today.AddHours(18.0);
 		}
-		public async void HandleRegistrants(RegistrationSimulationForm form) {
+		public void HandleRegistrants(RegistrationSimulationForm form) {
 			Task entrance = HandleEntrees(form);
-			Task departure = HandleWindows(form);
-			/*			while((CurrentTime < ClosingTime && PossibleIDs.Count > 0)) {
-
-						}*/
+			foreach(Line line in Lines) {
+				MessageBox.Show(line.Peek().CompletionTime.ToString());
+			}
+			//Task windows = HandleWindows(form);
+			//Task departures = HandleDepartures(form);
 		}
+
+
+
 		public Task HandleEntrees(RegistrationSimulationForm form) {
 			Task entrance = Task.Factory.StartNew(() => {
 				Registrant currReg = new Registrant();
@@ -63,22 +67,44 @@ namespace Project4 {
 						currID = PossibleIDs[idIndex];
 						PossibleIDs.Remove(currID);
 						currReg = new Registrant(currID);
+						MessageBox.Show(currReg.CompletionTime.ToString());
 						currReg.LineID = currReg.PickLine(Lines);
 						ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
+						if(Events.Count == 0) {
+							Events.Enqueue(new Event(idIndex, "departure", currReg, CurrentTime));
+						}
 						Events.Enqueue(new Event(idIndex, "arrival", currReg, CurrentTime));
+
 						nextEntrance = CurrentTime + new TimeSpan(0, 0, Rand.Next(75));
 					}
 					CurrentTime += new TimeSpan(0, 0, 1);
-					Thread.Sleep(10);
+					Thread.Sleep(1);
 				}
 			});
 			return entrance;
 		}
+		private Task HandleDepartures(RegistrationSimulationForm form) {
+			Task departure = Task.Factory.StartNew(() => {
+				Event tempEvent;
+				Registrant tempReg;
+				// This is to mitigate calling faster than the first person gets in line
+
+				while(Events.Count > 0) {
+					//MessageBox.Show(Events.Count.ToString());
+					/*tempEvent = Events.Dequeue();
+					MessageBox.Show("Are you doing anything?");
+					Thread.Sleep(1);*/
+				}
+			});
+			return departure;
+		}
 		public Task HandleWindows(RegistrationSimulationForm form) {
 			Task window = Task.Factory.StartNew(() => {
+				Thread.Sleep(3000);
 				while(SimRunning) {
-					MessageBox.Show(Lines[0].Peek().RegistrantID);
-					Thread.Sleep(10000);
+					foreach(Line line in Lines) {
+						//MessageBox.Show(line.Peek().CompletionTime.ToString());
+					}
 				}
 			});
 			return window;
