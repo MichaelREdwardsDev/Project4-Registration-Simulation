@@ -28,7 +28,7 @@ namespace Utils {
         /// Negative exponential probability distribution
         /// </summary>
         /// <param name="ExpectedValue">The expected value.</param>
-        /// <returns>Expected Value</returns>
+        /// <returns>-ExpectedValue * Math.Log(Rand.NextDouble(), Math.E)</returns>
         public static double NegEx(double ExpectedValue) {
 			return -ExpectedValue * Math.Log(Rand.NextDouble(), Math.E);
 		}

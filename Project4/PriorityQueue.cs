@@ -21,26 +21,66 @@ namespace Project4 {
 	/// </summary>
 	/// <typeparam name="T">Generic object, must implement IComparable</typeparam>
 	public interface IContainer<T> {
-		void Clear();
-		bool IsEmpty();
-		int Count { get; set; }
+        /// <summary>
+        /// Clears this instance.
+        /// </summary>
+        void Clear();
+        /// <summary>
+        /// Determines whether this instance is empty.
+        /// </summary>
+        /// <returns>
+        ///   <c>true</c> if this instance is empty; otherwise, <c>false</c>.
+        /// </returns>
+        bool IsEmpty();
+        /// <summary>
+        /// Gets or sets the count.
+        /// </summary>
+        /// <value>
+        /// The count.
+        /// </value>
+
+        int Count { get; set; }
 	}
 	/// <summary>
 	/// Interface to be implemented that holds functions that mimic typical functionality of a Queue, though customized for considering priority.
 	/// </summary>
 	/// <typeparam name="T">Generic Object, must implement IComparable</typeparam>
 	public interface IPriorityQueue<T>:IContainer<T> where T : IComparable {
-		void Enqueue(T item);
-		T Dequeue();
-		T Peek();
+        /// <summary>
+        /// Enqueues the specified item.
+        /// </summary>
+        /// <param name="item">The item.</param>
+        void Enqueue(T item);
+        /// <summary>
+        /// Dequeues this instance.
+        /// </summary>
+        /// <returns></returns>
+        T Dequeue();
+        /// <summary>
+        /// Peeks this instance.
+        /// </summary>
+        /// <returns></returns>
+        T Peek();
 	}
 	/// <summary>
 	/// Node class for a priority queue, holds the data type of the queue
 	/// </summary>
 	/// <typeparam name="T">Generic object, must implement IComparable</typeparam>
 	public class Node<T> where T : IComparable {
-		public T Item { get; set; }
-		public Node<T> Next { get; set; }
+        /// <summary>
+        /// Gets or sets the item.
+        /// </summary>
+        /// <value>
+        /// The item.
+        /// </value>
+        public T Item { get; set; }
+        /// <summary>
+        /// Gets or sets the next.
+        /// </summary>
+        /// <value>
+        /// The next.
+        /// </value>
+        public Node<T> Next { get; set; }
 		/// <summary>
 		/// Node overloaded constructor - instantiates a node with the object passed in
 		/// </summary>

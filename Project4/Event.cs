@@ -17,11 +17,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Project4 {
-	/// <summary>
-	/// 
-	/// </summary>
-	/// <seealso cref="System.IComparable" />
-	class Event:IComparable {        
+    /// <summary>
+    /// Possible Events, contains what time the events happen to be added to the current time in the simulations
+    /// </summary>
+    /// <seealso cref="System.IComparable" />
+    class Event :IComparable {        
 		/// <summary>
 		/// Gets or sets the registrant.
 		/// </summary>

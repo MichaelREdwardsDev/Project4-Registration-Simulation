@@ -23,11 +23,26 @@ namespace Project4 {
 	/// Customized queue that accounts for the priority of the objects contained
 	/// </summary>
 	class ConventionRegistration {
-		private static int NumOfLines = 11;
-		private List<String> PossibleIDs = GenerateList();
-		public List<Line> Lines = OpenLines(NumOfLines);
-		public List<ListBox> ListBoxes;
-		private Registrant[] currentRegistrants = new Registrant[NumOfLines];
+        /// <summary>
+        /// The number of lines
+        /// </summary>
+        private static int NumOfLines = 11;
+        /// <summary>
+        /// The possible i ds
+        /// </summary>
+        private List<String> PossibleIDs = GenerateList();
+        /// <summary>
+        /// The lines
+        /// </summary>
+        public List<Line> Lines = OpenLines(NumOfLines);
+        /// <summary>
+        /// The list boxes
+        /// </summary>
+        public List<ListBox> ListBoxes;
+        /// <summary>
+        /// The current registrants
+        /// </summary>
+        private Registrant[] currentRegistrants = new Registrant[NumOfLines];
 
 
 		/// <summary>
@@ -61,9 +76,14 @@ namespace Project4 {
 		/// The events.
 		/// </value>
 		public PriorityQueue<Event> Events { get; set; } = new PriorityQueue<Event>();
-
-		public int EventCount = 0, ArrivalCount = 0, DepartureCount = 0, LongestQueue = 0;
-		private bool SimRunning = true;
+        /// <summary>
+        /// The event count
+        /// </summary>
+        public int EventCount = 0, ArrivalCount = 0, DepartureCount = 0, LongestQueue = 0;
+        /// <summary>
+        /// The sim running
+        /// </summary>
+        private bool SimRunning = true;
 
 
 		/// <summary>
@@ -76,7 +96,10 @@ namespace Project4 {
 			TimeStarted = TimeStarted.AddHours(8.0);
 			ClosingTime = DateTime.Today.AddHours(18.0);
 		}
-		public void AddItemToListBox() {
+        /// <summary>
+        /// Adds the item to ListBox.
+        /// </summary>
+        public void AddItemToListBox() {
 
 		}
 		/// <summary>
@@ -93,7 +116,7 @@ namespace Project4 {
 		/// Method for when person arrives in the simulation.
 		/// </summary>
 		/// <param name="form">The form.</param>
-		/// <returns></returns>
+		/// <returns>entrance</returns>
 		public Task HandleEntrees(RegistrationSimulationForm form) {
 
 			Task entrance = Task.Factory.StartNew(() => {
@@ -146,7 +169,7 @@ namespace Project4 {
 		/// Method for when someone departs the window in the simulation.
 		/// </summary>
 		/// <param name="form">The form.</param>
-		/// <returns></returns>
+		/// <returns>departure</returns>
 		private Task HandleDepartures(RegistrationSimulationForm form) {
 			Task departure = Task.Factory.StartNew(() => {
 				MessageBox.Show("bla");
@@ -158,7 +181,7 @@ namespace Project4 {
 		/// Method that deals with the windows that have dealt with person in simulation.
 		/// </summary>
 		/// <param name="form">The form.</param>
-		/// <returns>windo</returns>
+		/// <returns>window</returns>
 		public Task HandleWindows(RegistrationSimulationForm form) {
 			Task window = Task.Factory.StartNew(() => {
 				Thread.Sleep(10000);
