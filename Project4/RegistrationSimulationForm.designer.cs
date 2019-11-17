@@ -339,17 +339,6 @@
 		}
 
         #endregion
-
-        private System.Windows.Forms.ListBox listBoxWaitingLine0;
-        private System.Windows.Forms.ListBox listBoxWaitingLine1;
-        private System.Windows.Forms.ListBox listBoxWaitingLine3;
-        private System.Windows.Forms.ListBox listBoxWaitingList2;
-        private System.Windows.Forms.ListBox listBoxWaitingList4;
-        private System.Windows.Forms.ListBox listBoxWaitingList5;
-        private System.Windows.Forms.ListBox listBoxWaitingList6;
-        private System.Windows.Forms.ListBox listBoxWaitingList7;
-        private System.Windows.Forms.ListBox listBoxWaitingList8;
-        private System.Windows.Forms.ListBox listBox1WaitingList9;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -361,7 +350,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ListBox listBox1WaitingList10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
@@ -380,6 +368,17 @@
 		public System.Windows.Forms.TextBox textBoxEvents;
 		public System.Windows.Forms.TextBox textBoxArrivals;
 		public System.Windows.Forms.TextBox textBoxDepartures;
+		public System.Windows.Forms.ListBox listBoxWaitingLine0;
+		public System.Windows.Forms.ListBox listBoxWaitingLine1;
+		public System.Windows.Forms.ListBox listBoxWaitingLine3;
+		public System.Windows.Forms.ListBox listBoxWaitingList2;
+		public System.Windows.Forms.ListBox listBoxWaitingList4;
+		public System.Windows.Forms.ListBox listBoxWaitingList5;
+		public System.Windows.Forms.ListBox listBoxWaitingList6;
+		public System.Windows.Forms.ListBox listBoxWaitingList7;
+		public System.Windows.Forms.ListBox listBoxWaitingList8;
+		public System.Windows.Forms.ListBox listBox1WaitingList9;
+		public System.Windows.Forms.ListBox listBox1WaitingList10;
 	}
 }
 
