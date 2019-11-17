@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="listBoxWaitingLine0.AccessibleName" xml:space="preserve">
+    <value>0</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="listBoxWaitingLine0.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -144,7 +147,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingLine0.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>39</value>
+  </data>
+  <data name="listBoxWaitingLine1.AccessibleName" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="listBoxWaitingLine1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -171,7 +177,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingLine1.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>38</value>
+  </data>
+  <data name="listBoxWaitingLine3.AccessibleName" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="listBoxWaitingLine3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -198,7 +207,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingLine3.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>37</value>
+  </data>
+  <data name="listBoxWaitingList2.AccessibleName" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="listBoxWaitingList2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -225,7 +237,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList2.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>36</value>
+  </data>
+  <data name="listBoxWaitingList4.AccessibleName" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="listBoxWaitingList4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -252,7 +267,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList4.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>35</value>
+  </data>
+  <data name="listBoxWaitingList5.AccessibleName" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="listBoxWaitingList5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -279,7 +297,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList5.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>34</value>
+  </data>
+  <data name="listBoxWaitingList6.AccessibleName" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="listBoxWaitingList6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -306,7 +327,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList6.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>33</value>
+  </data>
+  <data name="listBoxWaitingList7.AccessibleName" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="listBoxWaitingList7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -333,7 +357,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList7.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
+  </data>
+  <data name="listBoxWaitingList8.AccessibleName" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="listBoxWaitingList8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -360,7 +387,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList8.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
+  </data>
+  <data name="listBox1WaitingList9.AccessibleName" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="listBox1WaitingList9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -369,7 +399,7 @@
     <value>16</value>
   </data>
   <data name="listBox1WaitingList9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1145, 41</value>
+    <value>1156, 41</value>
   </data>
   <data name="listBox1WaitingList9.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 388</value>
@@ -387,7 +417,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox1WaitingList9.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -417,7 +447,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -447,7 +477,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -477,7 +507,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -507,7 +537,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -537,7 +567,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -567,7 +597,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -597,7 +627,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -627,7 +657,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -657,7 +687,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -687,7 +717,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -717,7 +747,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
+  </data>
+  <data name="listBox1WaitingList10.AccessibleName" xml:space="preserve">
+    <value>a</value>
   </data>
   <data name="listBox1WaitingList10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -744,7 +777,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox1WaitingList10.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -774,7 +807,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -804,7 +837,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -834,7 +867,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="buttonStart.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -861,7 +894,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonStart.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="buttonClear.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -888,7 +921,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonClear.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="buttonExit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -915,7 +948,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonExit.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -945,7 +978,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -975,7 +1008,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1005,7 +1038,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="textBoxCheckoutDuration.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1029,7 +1062,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxCheckoutDuration.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="textBoxHoursOpen.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1053,7 +1086,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxHoursOpen.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="textBoxNumRegistrants.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1077,7 +1110,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxNumRegistrants.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="textBoxEvents.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1101,7 +1134,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxEvents.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="textBoxArrivals.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1125,7 +1158,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxArrivals.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="textBoxDepartures.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1149,7 +1182,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxDepartures.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1179,7 +1212,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1203,6 +1236,33 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CurrentTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CurrentTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>626, 595</value>
+  </data>
+  <data name="CurrentTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="CurrentTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="CurrentTimeLabel.Text" xml:space="preserve">
+    <value>00:00:00</value>
+  </data>
+  <data name="&gt;&gt;CurrentTimeLabel.Name" xml:space="preserve">
+    <value>CurrentTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;CurrentTimeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CurrentTimeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CurrentTimeLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

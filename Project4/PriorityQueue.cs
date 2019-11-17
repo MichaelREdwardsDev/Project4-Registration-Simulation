@@ -31,7 +31,7 @@ namespace Project4 {
 	/// <typeparam name="T">Generic Object, must implement IComparable</typeparam>
 	public interface IPriorityQueue<T>:IContainer<T> where T : IComparable {
 		void Enqueue(T item);
-		void Dequeue();
+		T Dequeue();
 		T Peek();
 	}
 	/// <summary>
@@ -60,6 +60,10 @@ namespace Project4 {
 		/// The top node in the queue
 		/// </summary>
 		private Node<T> top;
+		/// <summary>
+		/// The previous top, stored to determine top of queue has changed
+		/// </summary>
+		private Node<T> previousTop;
 		/// <summary>
 		/// The total nodes in the queue
 		/// </summary>
@@ -104,14 +108,16 @@ namespace Project4 {
 		/// <summary>
 		/// Removes the top of the queue
 		/// </summary>
-		public void Dequeue() {
+		public T Dequeue() {
 			if(IsEmpty()) {
 				throw new InvalidOperationException("Cannot remove from empty Queue.");
 			} else {
 				Node<T> oldNode = top;
 				top = top.Next;
 				Count--;
+				T item = oldNode.Item;
 				oldNode = null; // Garbage collected
+				return item;
 			}
 		}
 		/// <summary>
@@ -123,6 +129,16 @@ namespace Project4 {
 				return top.Item;
 			} else {
 				throw new InvalidOperationException("Cannot obtains top of empty priority queue");
+			}
+		}
+
+		public bool TopChanged() {
+			if(top != previousTop) {
+				previousTop = top;
+				return true;
+
+			} else {
+				return false;
 			}
 		}
 	}

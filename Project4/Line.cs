@@ -24,6 +24,7 @@ namespace Project4 {
 		/// The queue containing the registrants already in this particular line
 		/// </summary>
 		public Queue<Registrant> Registrants { get; set; } = new Queue<Registrant>();
+		private Registrant top = new Registrant(), previousTop;
 		/// <summary>
 		/// The number of registrants in the line
 		/// </summary>
@@ -41,6 +42,7 @@ namespace Project4 {
 		/// <param name="lineID"></param>
 		public Line(int lineID) {
 			LineID = lineID;
+			Enqueue(top);
 		}
 		/// <summary>
 		/// Adds a registrant to the line
@@ -54,6 +56,16 @@ namespace Project4 {
 		/// </summary>
 		public void Dequeue() {
 			Registrants.Dequeue();
+		}
+		public Registrant Peek() {
+			return Registrants.Peek();
+		}
+		public bool TopChanged() {
+			if(previousTop != top) {
+				previousTop = top;
+				return true;
+			}
+			return false;
 		}
 	}
 }

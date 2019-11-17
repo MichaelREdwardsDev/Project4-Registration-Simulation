@@ -29,7 +29,12 @@ namespace Project4 {
 		/// How long the registrant takes to complete the registration.
 		/// </summary>
 		public TimeSpan CompletionTime { get; set; }
+		public int LineID { get; set; }
 
+		public Registrant() {
+			RegistrantID = "";
+			CompletionTime = new TimeSpan(0);
+		}
 		/// <summary>
 		/// Registrant Overloaded Constructor - takes in Registrant's ID number and their priority
 		/// </summary>
@@ -41,12 +46,11 @@ namespace Project4 {
 		}
 
         /// <summary>
-        /// Picks a line that has the shortest line and if all lines have the same amount
-        /// of people in it, then it will go to the left-most queue.
+        /// Picks a the rightmost shortest line and adds the registrant to that queue
         /// </summary>
         /// <param name="lines">The lines.</param>
         /// <returns>Shortest Line ID</returns>
-        public int Pickline(List<Line> lines) {
+        public int PickLine(List<Line> lines) {
 			Line shortestLine = null;
 			Nullable<int> lowestLineCount = null;
 			foreach(Line line in lines) {

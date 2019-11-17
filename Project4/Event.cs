@@ -17,12 +17,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Project4 {
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <seealso cref="System.IComparable" />
-    class Events : IComparable {
-		private DateTime Time = new DateTime();
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <seealso cref="System.IComparable" />
+	class Event:IComparable {
+		public Registrant Registrant { get; set; }
+		public DateTime Time { get; set; } = new DateTime();
 
         /// <summary>
         /// Gets or sets the type of the event.
@@ -49,15 +50,16 @@ namespace Project4 {
         public int Priority { get; set; } = 0;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Events"/> class.
+        /// Initializes a new instance of the <see cref="Event"/> class.
         /// </summary>
         /// <param name="ID">The identifier.</param>
         /// <param name="eventType">Type of the event.</param>
         /// <param name="registrant">The registrant.</param>
         /// <param name="currTime">The current time.</param>
-        public Events(int ID, String eventType, Registrant registrant, DateTime currTime) {
+        public Event(int ID, String eventType, Registrant registrant, DateTime currTime) {
 			EventID = ID;
 			EventType = eventType;
+			Registrant = registrant;
 			Time = DetermineEventTime(eventType, registrant, currTime);
 		}
 
@@ -84,7 +86,7 @@ namespace Project4 {
         /// A value that indicates the relative order of the objects being compared. The return value has these meanings: Value Meaning Less than zero This instance precedes <paramref name="obj" /> in the sort order. Zero This instance occurs in the same position in the sort order as <paramref name="obj" />. Greater than zero This instance follows <paramref name="obj" /> in the sort order.
         /// </returns>
         public int CompareTo(object obj) {
-			if(Time < (obj as Events).Time)
+			if(Time < (obj as Event).Time)
 				return 1;
 			else
 				return -1;
