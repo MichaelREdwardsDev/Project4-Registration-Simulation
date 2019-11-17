@@ -28,9 +28,17 @@ namespace Project4 {
 		/// <summary>
 		/// How long the registrant takes to complete the registration.
 		/// </summary>
-		public TimeSpan CompletionTime { get; set; }
-		public int LineID { get; set; }
-
+		public TimeSpan CompletionTime { get; set; }		
+        /// <summary>
+        /// Gets or sets the line identifier.
+        /// </summary>
+        /// <value>
+        /// The line identifier.
+        /// </value>
+        public int LineID { get; set; }        
+		/// <summary>
+		/// Initializes a new instance of the <see cref="Registrant"/> class.
+		/// </summary>
 		public Registrant() {
 			RegistrantID = "";
 			CompletionTime = new TimeSpan(0);
