@@ -73,6 +73,7 @@
     <EmbeddedResource Include="RegistrationSimulationForm.resx">
       <DependentUpon>RegistrationSimulationForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Project4WriteUp.docx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

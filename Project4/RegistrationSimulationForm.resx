@@ -120,11 +120,14 @@
   <data name="listBoxWaitingLine0.AccessibleName" xml:space="preserve">
     <value>0</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="listBoxWaitingLine0.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="listBoxWaitingLine0.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="listBoxWaitingLine0.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
@@ -137,6 +140,9 @@
   <data name="listBoxWaitingLine0.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="listBoxWaitingLine0.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBoxWaitingLine0.Name" xml:space="preserve">
     <value>listBoxWaitingLine0</value>
   </data>
@@ -147,10 +153,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingLine0.ZOrder" xml:space="preserve">
-    <value>62</value>
+    <value>91</value>
   </data>
   <data name="listBoxWaitingLine1.AccessibleName" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="listBoxWaitingLine1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBoxWaitingLine1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -167,6 +176,9 @@
   <data name="listBoxWaitingLine1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="listBoxWaitingLine1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBoxWaitingLine1.Name" xml:space="preserve">
     <value>listBoxWaitingLine1</value>
   </data>
@@ -177,10 +189,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingLine1.ZOrder" xml:space="preserve">
-    <value>61</value>
+    <value>90</value>
   </data>
   <data name="listBoxWaitingLine3.AccessibleName" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="listBoxWaitingLine3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBoxWaitingLine3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -197,6 +212,9 @@
   <data name="listBoxWaitingLine3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="listBoxWaitingLine3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBoxWaitingLine3.Name" xml:space="preserve">
     <value>listBoxWaitingLine3</value>
   </data>
@@ -207,10 +225,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingLine3.ZOrder" xml:space="preserve">
-    <value>60</value>
+    <value>89</value>
   </data>
   <data name="listBoxWaitingList2.AccessibleName" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="listBoxWaitingList2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBoxWaitingList2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -227,6 +248,9 @@
   <data name="listBoxWaitingList2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="listBoxWaitingList2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBoxWaitingList2.Name" xml:space="preserve">
     <value>listBoxWaitingList2</value>
   </data>
@@ -237,10 +261,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList2.ZOrder" xml:space="preserve">
-    <value>59</value>
+    <value>88</value>
   </data>
   <data name="listBoxWaitingList4.AccessibleName" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="listBoxWaitingList4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBoxWaitingList4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -257,6 +284,9 @@
   <data name="listBoxWaitingList4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="listBoxWaitingList4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBoxWaitingList4.Name" xml:space="preserve">
     <value>listBoxWaitingList4</value>
   </data>
@@ -267,10 +297,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList4.ZOrder" xml:space="preserve">
-    <value>58</value>
+    <value>87</value>
   </data>
   <data name="listBoxWaitingList5.AccessibleName" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="listBoxWaitingList5.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBoxWaitingList5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -287,6 +320,9 @@
   <data name="listBoxWaitingList5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="listBoxWaitingList5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBoxWaitingList5.Name" xml:space="preserve">
     <value>listBoxWaitingList5</value>
   </data>
@@ -297,10 +333,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList5.ZOrder" xml:space="preserve">
-    <value>57</value>
+    <value>86</value>
   </data>
   <data name="listBoxWaitingList6.AccessibleName" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="listBoxWaitingList6.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBoxWaitingList6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -317,6 +356,9 @@
   <data name="listBoxWaitingList6.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <data name="listBoxWaitingList6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBoxWaitingList6.Name" xml:space="preserve">
     <value>listBoxWaitingList6</value>
   </data>
@@ -327,10 +369,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList6.ZOrder" xml:space="preserve">
-    <value>56</value>
+    <value>85</value>
   </data>
   <data name="listBoxWaitingList7.AccessibleName" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="listBoxWaitingList7.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBoxWaitingList7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -347,6 +392,9 @@
   <data name="listBoxWaitingList7.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
+  <data name="listBoxWaitingList7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBoxWaitingList7.Name" xml:space="preserve">
     <value>listBoxWaitingList7</value>
   </data>
@@ -357,10 +405,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList7.ZOrder" xml:space="preserve">
-    <value>55</value>
+    <value>84</value>
   </data>
   <data name="listBoxWaitingList8.AccessibleName" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="listBoxWaitingList8.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBoxWaitingList8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -377,6 +428,9 @@
   <data name="listBoxWaitingList8.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
+  <data name="listBoxWaitingList8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBoxWaitingList8.Name" xml:space="preserve">
     <value>listBoxWaitingList8</value>
   </data>
@@ -387,10 +441,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxWaitingList8.ZOrder" xml:space="preserve">
-    <value>54</value>
+    <value>83</value>
   </data>
   <data name="listBox1WaitingList9.AccessibleName" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="listBox1WaitingList9.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox1WaitingList9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -407,6 +464,9 @@
   <data name="listBox1WaitingList9.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
+  <data name="listBox1WaitingList9.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox1WaitingList9.Name" xml:space="preserve">
     <value>listBox1WaitingList9</value>
   </data>
@@ -417,7 +477,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox1WaitingList9.ZOrder" xml:space="preserve">
-    <value>53</value>
+    <value>82</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -447,7 +507,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>52</value>
+    <value>81</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -477,7 +537,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>51</value>
+    <value>80</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -507,7 +567,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>50</value>
+    <value>79</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -537,7 +597,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>78</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -567,13 +627,17 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>48</value>
+    <value>77</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>783, 21</value>
@@ -597,13 +661,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>76</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>918, 21</value>
@@ -627,13 +694,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>75</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>1046, 21</value>
@@ -657,13 +727,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>74</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>1181, 21</value>
@@ -687,13 +760,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>73</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>1288, 21</value>
@@ -717,7 +793,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>72</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -747,10 +823,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>71</value>
   </data>
   <data name="listBox1WaitingList10.AccessibleName" xml:space="preserve">
     <value>a</value>
+  </data>
+  <data name="listBox1WaitingList10.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox1WaitingList10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -767,6 +846,9 @@
   <data name="listBox1WaitingList10.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
+  <data name="listBox1WaitingList10.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox1WaitingList10.Name" xml:space="preserve">
     <value>listBox1WaitingList10</value>
   </data>
@@ -777,7 +859,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox1WaitingList10.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>70</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -786,16 +868,16 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 548</value>
+    <value>148, 526</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 17</value>
+    <value>77, 17</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
-    <value>Set Hours of Operation:</value>
+    <value>Start Time:</value>
   </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
@@ -807,7 +889,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>69</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -816,16 +898,16 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 488</value>
+    <value>16, 488</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 17</value>
+    <value>209, 17</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
-    <value>Set Number of Registrants:</value>
+    <value>Expeted Number of Registrants:</value>
   </data>
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
@@ -837,37 +919,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
-  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 609</value>
-  </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 17</value>
-  </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>Set Expected Checkout Duration:</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>68</value>
   </data>
   <data name="buttonStart.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -894,7 +946,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonStart.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>66</value>
   </data>
   <data name="buttonClear.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -921,7 +973,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonClear.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>65</value>
   </data>
   <data name="buttonExit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -948,7 +1000,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonExit.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>64</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -978,7 +1030,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>63</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1008,7 +1060,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>62</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1038,79 +1090,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>32</value>
-  </data>
-  <data name="textBoxCheckoutDuration.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="textBoxCheckoutDuration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 606</value>
-  </data>
-  <data name="textBoxCheckoutDuration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="textBoxCheckoutDuration.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;textBoxCheckoutDuration.Name" xml:space="preserve">
-    <value>textBoxCheckoutDuration</value>
-  </data>
-  <data name="&gt;&gt;textBoxCheckoutDuration.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxCheckoutDuration.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxCheckoutDuration.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="textBoxHoursOpen.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="textBoxHoursOpen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 545</value>
-  </data>
-  <data name="textBoxHoursOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="textBoxHoursOpen.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;textBoxHoursOpen.Name" xml:space="preserve">
-    <value>textBoxHoursOpen</value>
-  </data>
-  <data name="&gt;&gt;textBoxHoursOpen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxHoursOpen.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxHoursOpen.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="textBoxNumRegistrants.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
-  <data name="textBoxNumRegistrants.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 485</value>
-  </data>
-  <data name="textBoxNumRegistrants.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="textBoxNumRegistrants.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;textBoxNumRegistrants.Name" xml:space="preserve">
-    <value>textBoxNumRegistrants</value>
-  </data>
-  <data name="&gt;&gt;textBoxNumRegistrants.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxNumRegistrants.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxNumRegistrants.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>61</value>
   </data>
   <data name="textBoxEvents.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1134,7 +1114,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxEvents.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>60</value>
   </data>
   <data name="textBoxArrivals.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1158,7 +1138,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxArrivals.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>59</value>
   </data>
   <data name="textBoxDepartures.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1182,7 +1162,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxDepartures.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>58</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1191,7 +1171,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 491</value>
+    <value>529, 488</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 17</value>
@@ -1212,13 +1192,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>57</value>
   </data>
   <data name="LongestQueueBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="LongestQueueBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>608, 523</value>
+    <value>599, 520</value>
   </data>
   <data name="LongestQueueBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -1236,13 +1216,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LongestQueueBox.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>56</value>
   </data>
   <data name="CurrentTimeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="CurrentTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>626, 595</value>
+    <value>625, 569</value>
   </data>
   <data name="CurrentTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 13</value>
@@ -1263,31 +1243,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CurrentTimeLabel.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="EventCountBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>608, 632</value>
-  </data>
-  <data name="EventCountBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="EventCountBox.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;EventCountBox.Name" xml:space="preserve">
-    <value>EventCountBox</value>
-  </data>
-  <data name="&gt;&gt;EventCountBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;EventCountBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;EventCountBox.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>55</value>
   </data>
   <data name="listBox1.AccessibleName" xml:space="preserve">
-    <value>a</value>
+    <value>b</value>
+  </data>
+  <data name="listBox1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1304,6 +1266,9 @@
   <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
+  <data name="listBox1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
     <value>listBox1</value>
   </data>
@@ -1314,7 +1279,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>53</value>
   </data>
   <data name="label19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1322,7 +1287,6 @@
   <data name="label19.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1348,10 +1312,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>54</value>
   </data>
   <data name="listBox2.AccessibleName" xml:space="preserve">
-    <value>a</value>
+    <value>c</value>
+  </data>
+  <data name="listBox2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1368,6 +1335,9 @@
   <data name="listBox2.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
   </data>
+  <data name="listBox2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox2.Name" xml:space="preserve">
     <value>listBox2</value>
   </data>
@@ -1378,7 +1348,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox2.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>51</value>
   </data>
   <data name="label20.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1411,10 +1381,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>52</value>
   </data>
   <data name="listBox3.AccessibleName" xml:space="preserve">
-    <value>a</value>
+    <value>d</value>
+  </data>
+  <data name="listBox3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1431,6 +1404,9 @@
   <data name="listBox3.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
   </data>
+  <data name="listBox3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox3.Name" xml:space="preserve">
     <value>listBox3</value>
   </data>
@@ -1441,7 +1417,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox3.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>49</value>
   </data>
   <data name="label21.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1474,10 +1450,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>50</value>
   </data>
   <data name="listBox4.AccessibleName" xml:space="preserve">
-    <value>a</value>
+    <value>e</value>
+  </data>
+  <data name="listBox4.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1494,6 +1473,9 @@
   <data name="listBox4.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
+  <data name="listBox4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox4.Name" xml:space="preserve">
     <value>listBox4</value>
   </data>
@@ -1504,7 +1486,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox4.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>47</value>
   </data>
   <data name="label22.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1537,10 +1519,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>48</value>
   </data>
   <data name="listBox5.AccessibleName" xml:space="preserve">
-    <value>a</value>
+    <value>f</value>
+  </data>
+  <data name="listBox5.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1557,6 +1542,9 @@
   <data name="listBox5.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
   </data>
+  <data name="listBox5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox5.Name" xml:space="preserve">
     <value>listBox5</value>
   </data>
@@ -1567,7 +1555,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox5.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>45</value>
   </data>
   <data name="label23.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1600,10 +1588,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>46</value>
   </data>
   <data name="listBox6.AccessibleName" xml:space="preserve">
-    <value>a</value>
+    <value>g</value>
+  </data>
+  <data name="listBox6.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1620,6 +1611,9 @@
   <data name="listBox6.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
   </data>
+  <data name="listBox6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox6.Name" xml:space="preserve">
     <value>listBox6</value>
   </data>
@@ -1630,7 +1624,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox6.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>43</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1663,10 +1657,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>44</value>
   </data>
   <data name="listBox7.AccessibleName" xml:space="preserve">
-    <value>a</value>
+    <value>h</value>
+  </data>
+  <data name="listBox7.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1683,6 +1680,9 @@
   <data name="listBox7.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
   </data>
+  <data name="listBox7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox7.Name" xml:space="preserve">
     <value>listBox7</value>
   </data>
@@ -1693,7 +1693,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox7.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>41</value>
   </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1726,10 +1726,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>42</value>
   </data>
   <data name="listBox8.AccessibleName" xml:space="preserve">
-    <value>a</value>
+    <value>i</value>
+  </data>
+  <data name="listBox8.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1746,6 +1749,9 @@
   <data name="listBox8.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
   </data>
+  <data name="listBox8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox8.Name" xml:space="preserve">
     <value>listBox8</value>
   </data>
@@ -1756,7 +1762,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox8.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>39</value>
   </data>
   <data name="label26.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1789,10 +1795,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>40</value>
   </data>
   <data name="listBox9.AccessibleName" xml:space="preserve">
-    <value>a</value>
+    <value>j</value>
+  </data>
+  <data name="listBox9.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1809,6 +1818,9 @@
   <data name="listBox9.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
   </data>
+  <data name="listBox9.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox9.Name" xml:space="preserve">
     <value>listBox9</value>
   </data>
@@ -1819,7 +1831,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox9.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>37</value>
   </data>
   <data name="label27.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1852,10 +1864,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>38</value>
   </data>
   <data name="listBox10.AccessibleName" xml:space="preserve">
-    <value>a</value>
+    <value>k</value>
+  </data>
+  <data name="listBox10.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1872,6 +1887,9 @@
   <data name="listBox10.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
   </data>
+  <data name="listBox10.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox10.Name" xml:space="preserve">
     <value>listBox10</value>
   </data>
@@ -1882,7 +1900,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox10.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>35</value>
   </data>
   <data name="label28.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1915,10 +1933,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>36</value>
   </data>
   <data name="listBox11.AccessibleName" xml:space="preserve">
-    <value>a</value>
+    <value>l</value>
+  </data>
+  <data name="listBox11.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="listBox11.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -1935,6 +1956,9 @@
   <data name="listBox11.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
   </data>
+  <data name="listBox11.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;listBox11.Name" xml:space="preserve">
     <value>listBox11</value>
   </data>
@@ -1945,7 +1969,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBox11.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>33</value>
   </data>
   <data name="label29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1978,7 +2002,1072 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label30.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 644</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 17</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Number of Windows:</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="EndTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EndTimeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="EndTimeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EndTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 566</value>
+  </data>
+  <data name="EndTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 17</value>
+  </data>
+  <data name="EndTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="EndTimeLabel.Text" xml:space="preserve">
+    <value>End Time:</value>
+  </data>
+  <data name="&gt;&gt;EndTimeLabel.Name" xml:space="preserve">
+    <value>EndTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;EndTimeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EndTimeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;EndTimeLabel.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 609</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 17</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Expected Checkout Duration:</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>67</value>
+  </data>
+  <data name="listBox12.AccessibleName" xml:space="preserve">
+    <value>w</value>
+  </data>
+  <data name="listBox12.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="listBox12.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1267, 326</value>
+  </data>
+  <data name="listBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 116</value>
+  </data>
+  <data name="listBox12.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="listBox12.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listBox12.Name" xml:space="preserve">
+    <value>listBox12</value>
+  </data>
+  <data name="&gt;&gt;listBox12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox12.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox12.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label31.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1289, 306</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label31.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>W 10</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="listBox13.AccessibleName" xml:space="preserve">
+    <value>v</value>
+  </data>
+  <data name="listBox13.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="listBox13.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1157, 326</value>
+  </data>
+  <data name="listBox13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 116</value>
+  </data>
+  <data name="listBox13.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="listBox13.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listBox13.Name" xml:space="preserve">
+    <value>listBox13</value>
+  </data>
+  <data name="&gt;&gt;listBox13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox13.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox13.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label32.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1179, 306</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label32.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>W 10</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="listBox14.AccessibleName" xml:space="preserve">
+    <value>u</value>
+  </data>
+  <data name="listBox14.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="listBox14.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1020, 326</value>
+  </data>
+  <data name="listBox14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 116</value>
+  </data>
+  <data name="listBox14.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="listBox14.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listBox14.Name" xml:space="preserve">
+    <value>listBox14</value>
+  </data>
+  <data name="&gt;&gt;listBox14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox14.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox14.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label33.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1042, 306</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label33.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>W 10</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="listBox15.AccessibleName" xml:space="preserve">
+    <value>t</value>
+  </data>
+  <data name="listBox15.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="listBox15.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>892, 326</value>
+  </data>
+  <data name="listBox15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 116</value>
+  </data>
+  <data name="listBox15.TabIndex" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="listBox15.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listBox15.Name" xml:space="preserve">
+    <value>listBox15</value>
+  </data>
+  <data name="&gt;&gt;listBox15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox15.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label34.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>914, 306</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label34.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>W 10</value>
+  </data>
+  <data name="&gt;&gt;label34.Name" xml:space="preserve">
+    <value>label34</value>
+  </data>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="listBox16.AccessibleName" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="listBox16.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="listBox16.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>758, 326</value>
+  </data>
+  <data name="listBox16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 116</value>
+  </data>
+  <data name="listBox16.TabIndex" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <data name="listBox16.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listBox16.Name" xml:space="preserve">
+    <value>listBox16</value>
+  </data>
+  <data name="&gt;&gt;listBox16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox16.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox16.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label35.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>780, 306</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label35.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>W 10</value>
+  </data>
+  <data name="&gt;&gt;label35.Name" xml:space="preserve">
+    <value>label35</value>
+  </data>
+  <data name="&gt;&gt;label35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label35.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="listBox17.AccessibleName" xml:space="preserve">
+    <value>r</value>
+  </data>
+  <data name="listBox17.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="listBox17.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>630, 326</value>
+  </data>
+  <data name="listBox17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 116</value>
+  </data>
+  <data name="listBox17.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="listBox17.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listBox17.Name" xml:space="preserve">
+    <value>listBox17</value>
+  </data>
+  <data name="&gt;&gt;listBox17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox17.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox17.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label36.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 306</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label36.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>W 10</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="listBox18.AccessibleName" xml:space="preserve">
+    <value>q</value>
+  </data>
+  <data name="listBox18.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="listBox18.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>503, 326</value>
+  </data>
+  <data name="listBox18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 116</value>
+  </data>
+  <data name="listBox18.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="listBox18.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listBox18.Name" xml:space="preserve">
+    <value>listBox18</value>
+  </data>
+  <data name="&gt;&gt;listBox18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox18.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox18.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="label37.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label37.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 306</value>
+  </data>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label37.TabIndex" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>W 10</value>
+  </data>
+  <data name="&gt;&gt;label37.Name" xml:space="preserve">
+    <value>label37</value>
+  </data>
+  <data name="&gt;&gt;label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="listBox19.AccessibleName" xml:space="preserve">
+    <value>p</value>
+  </data>
+  <data name="listBox19.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="listBox19.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>373, 326</value>
+  </data>
+  <data name="listBox19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 116</value>
+  </data>
+  <data name="listBox19.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="listBox19.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listBox19.Name" xml:space="preserve">
+    <value>listBox19</value>
+  </data>
+  <data name="&gt;&gt;listBox19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox19.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox19.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label38.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label38.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>395, 306</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label38.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>W 10</value>
+  </data>
+  <data name="&gt;&gt;label38.Name" xml:space="preserve">
+    <value>label38</value>
+  </data>
+  <data name="&gt;&gt;label38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label38.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="listBox20.AccessibleName" xml:space="preserve">
+    <value>o</value>
+  </data>
+  <data name="listBox20.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="listBox20.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 326</value>
+  </data>
+  <data name="listBox20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 116</value>
+  </data>
+  <data name="listBox20.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="listBox20.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listBox20.Name" xml:space="preserve">
+    <value>listBox20</value>
+  </data>
+  <data name="&gt;&gt;listBox20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox20.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox20.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="label39.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label39.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 306</value>
+  </data>
+  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label39.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>W 10</value>
+  </data>
+  <data name="&gt;&gt;label39.Name" xml:space="preserve">
+    <value>label39</value>
+  </data>
+  <data name="&gt;&gt;label39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label39.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="listBox21.AccessibleName" xml:space="preserve">
+    <value>n</value>
+  </data>
+  <data name="listBox21.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox21.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="listBox21.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 326</value>
+  </data>
+  <data name="listBox21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 116</value>
+  </data>
+  <data name="listBox21.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="listBox21.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listBox21.Name" xml:space="preserve">
+    <value>listBox21</value>
+  </data>
+  <data name="&gt;&gt;listBox21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox21.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox21.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="label40.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label40.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label40.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 306</value>
+  </data>
+  <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label40.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>W 10</value>
+  </data>
+  <data name="&gt;&gt;label40.Name" xml:space="preserve">
+    <value>label40</value>
+  </data>
+  <data name="&gt;&gt;label40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label40.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="listBox22.AccessibleName" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="listBox22.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="listBox22.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="listBox22.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="listBox22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 326</value>
+  </data>
+  <data name="listBox22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 116</value>
+  </data>
+  <data name="listBox22.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="listBox22.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listBox22.Name" xml:space="preserve">
+    <value>listBox22</value>
+  </data>
+  <data name="&gt;&gt;listBox22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox22.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listBox22.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="label41.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label41.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="label41.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 306</value>
+  </data>
+  <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="label41.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>W 10</value>
+  </data>
+  <data name="&gt;&gt;label41.Name" xml:space="preserve">
+    <value>label41</value>
+  </data>
+  <data name="&gt;&gt;label41.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label41.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="StartTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 526</value>
+  </data>
+  <data name="StartTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="StartTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="&gt;&gt;StartTimePicker.Name" xml:space="preserve">
+    <value>StartTimePicker</value>
+  </data>
+  <data name="&gt;&gt;StartTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StartTimePicker.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StartTimePicker.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="EndTimePicker.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EndTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 566</value>
+  </data>
+  <data name="EndTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="EndTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="&gt;&gt;EndTimePicker.Name" xml:space="preserve">
+    <value>EndTimePicker</value>
+  </data>
+  <data name="&gt;&gt;EndTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EndTimePicker.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;EndTimePicker.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="HourBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 607</value>
+  </data>
+  <data name="HourBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 20</value>
+  </data>
+  <data name="HourBox.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="&gt;&gt;HourBox.Name" xml:space="preserve">
+    <value>HourBox</value>
+  </data>
+  <data name="&gt;&gt;HourBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HourBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;HourBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="MinuteBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 606</value>
+  </data>
+  <data name="MinuteBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 20</value>
+  </data>
+  <data name="MinuteBox.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="&gt;&gt;MinuteBox.Name" xml:space="preserve">
+    <value>MinuteBox</value>
+  </data>
+  <data name="&gt;&gt;MinuteBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MinuteBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MinuteBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SecondBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 606</value>
+  </data>
+  <data name="SecondBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 20</value>
+  </data>
+  <data name="SecondBox.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="&gt;&gt;SecondBox.Name" xml:space="preserve">
+    <value>SecondBox</value>
+  </data>
+  <data name="&gt;&gt;SecondBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SecondBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SecondBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label42.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 610</value>
+  </data>
+  <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 13</value>
+  </data>
+  <data name="label42.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="label42.Text" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="&gt;&gt;label42.Name" xml:space="preserve">
+    <value>label42</value>
+  </data>
+  <data name="&gt;&gt;label42.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label42.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label42.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label43.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label43.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>325, 609</value>
+  </data>
+  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 13</value>
+  </data>
+  <data name="label43.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="label43.Text" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="&gt;&gt;label43.Name" xml:space="preserve">
+    <value>label43</value>
+  </data>
+  <data name="&gt;&gt;label43.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label43.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="NumRegistrantsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 485</value>
+  </data>
+  <data name="NumRegistrantsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="NumRegistrantsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="&gt;&gt;NumRegistrantsBox.Name" xml:space="preserve">
+    <value>NumRegistrantsBox</value>
+  </data>
+  <data name="&gt;&gt;NumRegistrantsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumRegistrantsBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NumRegistrantsBox.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="NumWindowsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 644</value>
+  </data>
+  <data name="NumWindowsBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="NumWindowsBox.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="&gt;&gt;NumWindowsBox.Name" xml:space="preserve">
+    <value>NumWindowsBox</value>
+  </data>
+  <data name="&gt;&gt;NumWindowsBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumWindowsBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NumWindowsBox.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1990,10 +3079,10 @@
     <value>1359, 749</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Form1</value>
+    <value>RegistrationSimulationForm</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>RegistrationSimulationForm</value>
+    <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

@@ -214,7 +214,7 @@ namespace Utils {
 
 		public static void ClearFormControls(Form form) {
 			foreach(Control control in form.Controls) {
-				if(control is TextBox) {
+				/*if(control is TextBox) {
 					(control as TextBox).Text = string.Empty;
 				} else if(control is CheckBox) {
 					(control as CheckBox).Checked = false;
@@ -222,7 +222,7 @@ namespace Utils {
 					(control as RadioButton).Checked = false;
 				} else if(control is DateTimePicker) {
 					(control as DateTimePicker).Value = DateTime.MinValue;
-				} else if(control is ListBox) {
+				} else */if(control is ListBox) {
 					(control as ListBox).Items.Clear();
 				}
 			}

@@ -1,5 +1,5 @@
 ﻿namespace Project4 {
-	partial class RegistrationSimulationForm {
+	partial class MainForm {
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -23,7 +23,7 @@
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationSimulationForm));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.listBoxWaitingLine0 = new System.Windows.Forms.ListBox();
 			this.listBoxWaitingLine1 = new System.Windows.Forms.ListBox();
 			this.listBoxWaitingLine3 = new System.Windows.Forms.ListBox();
@@ -48,23 +48,18 @@
 			this.listBox1WaitingList10 = new System.Windows.Forms.ListBox();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
-			this.label14 = new System.Windows.Forms.Label();
 			this.buttonStart = new System.Windows.Forms.Button();
 			this.buttonClear = new System.Windows.Forms.Button();
 			this.buttonExit = new System.Windows.Forms.Button();
 			this.label15 = new System.Windows.Forms.Label();
 			this.label16 = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
-			this.textBoxCheckoutDuration = new System.Windows.Forms.TextBox();
-			this.textBoxHoursOpen = new System.Windows.Forms.TextBox();
-			this.textBoxNumRegistrants = new System.Windows.Forms.TextBox();
 			this.textBoxEvents = new System.Windows.Forms.TextBox();
 			this.textBoxArrivals = new System.Windows.Forms.TextBox();
 			this.textBoxDepartures = new System.Windows.Forms.TextBox();
 			this.label18 = new System.Windows.Forms.Label();
 			this.LongestQueueBox = new System.Windows.Forms.TextBox();
 			this.CurrentTimeLabel = new System.Windows.Forms.Label();
-			this.EventCountBox = new System.Windows.Forms.TextBox();
 			this.listBox1 = new System.Windows.Forms.ListBox();
 			this.label19 = new System.Windows.Forms.Label();
 			this.listBox2 = new System.Windows.Forms.ListBox();
@@ -87,6 +82,45 @@
 			this.label28 = new System.Windows.Forms.Label();
 			this.listBox11 = new System.Windows.Forms.ListBox();
 			this.label29 = new System.Windows.Forms.Label();
+			this.label30 = new System.Windows.Forms.Label();
+			this.EndTimeLabel = new System.Windows.Forms.Label();
+			this.label14 = new System.Windows.Forms.Label();
+			this.listBox12 = new System.Windows.Forms.ListBox();
+			this.label31 = new System.Windows.Forms.Label();
+			this.listBox13 = new System.Windows.Forms.ListBox();
+			this.label32 = new System.Windows.Forms.Label();
+			this.listBox14 = new System.Windows.Forms.ListBox();
+			this.label33 = new System.Windows.Forms.Label();
+			this.listBox15 = new System.Windows.Forms.ListBox();
+			this.label34 = new System.Windows.Forms.Label();
+			this.listBox16 = new System.Windows.Forms.ListBox();
+			this.label35 = new System.Windows.Forms.Label();
+			this.listBox17 = new System.Windows.Forms.ListBox();
+			this.label36 = new System.Windows.Forms.Label();
+			this.listBox18 = new System.Windows.Forms.ListBox();
+			this.label37 = new System.Windows.Forms.Label();
+			this.listBox19 = new System.Windows.Forms.ListBox();
+			this.label38 = new System.Windows.Forms.Label();
+			this.listBox20 = new System.Windows.Forms.ListBox();
+			this.label39 = new System.Windows.Forms.Label();
+			this.listBox21 = new System.Windows.Forms.ListBox();
+			this.label40 = new System.Windows.Forms.Label();
+			this.listBox22 = new System.Windows.Forms.ListBox();
+			this.label41 = new System.Windows.Forms.Label();
+			this.StartTimePicker = new System.Windows.Forms.DateTimePicker();
+			this.EndTimePicker = new System.Windows.Forms.DateTimePicker();
+			this.HourBox = new System.Windows.Forms.NumericUpDown();
+			this.MinuteBox = new System.Windows.Forms.NumericUpDown();
+			this.SecondBox = new System.Windows.Forms.NumericUpDown();
+			this.label42 = new System.Windows.Forms.Label();
+			this.label43 = new System.Windows.Forms.Label();
+			this.NumRegistrantsBox = new System.Windows.Forms.NumericUpDown();
+			this.NumWindowsBox = new System.Windows.Forms.NumericUpDown();
+			((System.ComponentModel.ISupportInitialize)(this.HourBox)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.MinuteBox)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.SecondBox)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.NumRegistrantsBox)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.NumWindowsBox)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// listBoxWaitingLine0
@@ -220,11 +254,6 @@
 			resources.ApplyResources(this.label13, "label13");
 			this.label13.Name = "label13";
 			// 
-			// label14
-			// 
-			resources.ApplyResources(this.label14, "label14");
-			this.label14.Name = "label14";
-			// 
 			// buttonStart
 			// 
 			resources.ApplyResources(this.buttonStart, "buttonStart");
@@ -261,21 +290,6 @@
 			resources.ApplyResources(this.label17, "label17");
 			this.label17.Name = "label17";
 			// 
-			// textBoxCheckoutDuration
-			// 
-			resources.ApplyResources(this.textBoxCheckoutDuration, "textBoxCheckoutDuration");
-			this.textBoxCheckoutDuration.Name = "textBoxCheckoutDuration";
-			// 
-			// textBoxHoursOpen
-			// 
-			resources.ApplyResources(this.textBoxHoursOpen, "textBoxHoursOpen");
-			this.textBoxHoursOpen.Name = "textBoxHoursOpen";
-			// 
-			// textBoxNumRegistrants
-			// 
-			resources.ApplyResources(this.textBoxNumRegistrants, "textBoxNumRegistrants");
-			this.textBoxNumRegistrants.Name = "textBoxNumRegistrants";
-			// 
 			// textBoxEvents
 			// 
 			resources.ApplyResources(this.textBoxEvents, "textBoxEvents");
@@ -309,12 +323,6 @@
 			// 
 			resources.ApplyResources(this.CurrentTimeLabel, "CurrentTimeLabel");
 			this.CurrentTimeLabel.Name = "CurrentTimeLabel";
-			// 
-			// EventCountBox
-			// 
-			resources.ApplyResources(this.EventCountBox, "EventCountBox");
-			this.EventCountBox.Name = "EventCountBox";
-			this.EventCountBox.ReadOnly = true;
 			// 
 			// listBox1
 			// 
@@ -437,10 +445,285 @@
 			resources.ApplyResources(this.label29, "label29");
 			this.label29.Name = "label29";
 			// 
-			// RegistrationSimulationForm
+			// label30
+			// 
+			resources.ApplyResources(this.label30, "label30");
+			this.label30.Name = "label30";
+			// 
+			// EndTimeLabel
+			// 
+			resources.ApplyResources(this.EndTimeLabel, "EndTimeLabel");
+			this.EndTimeLabel.Name = "EndTimeLabel";
+			// 
+			// label14
+			// 
+			resources.ApplyResources(this.label14, "label14");
+			this.label14.Name = "label14";
+			// 
+			// listBox12
+			// 
+			resources.ApplyResources(this.listBox12, "listBox12");
+			this.listBox12.FormattingEnabled = true;
+			this.listBox12.Name = "listBox12";
+			// 
+			// label31
+			// 
+			resources.ApplyResources(this.label31, "label31");
+			this.label31.Name = "label31";
+			// 
+			// listBox13
+			// 
+			resources.ApplyResources(this.listBox13, "listBox13");
+			this.listBox13.FormattingEnabled = true;
+			this.listBox13.Name = "listBox13";
+			// 
+			// label32
+			// 
+			resources.ApplyResources(this.label32, "label32");
+			this.label32.Name = "label32";
+			// 
+			// listBox14
+			// 
+			resources.ApplyResources(this.listBox14, "listBox14");
+			this.listBox14.FormattingEnabled = true;
+			this.listBox14.Name = "listBox14";
+			// 
+			// label33
+			// 
+			resources.ApplyResources(this.label33, "label33");
+			this.label33.Name = "label33";
+			// 
+			// listBox15
+			// 
+			resources.ApplyResources(this.listBox15, "listBox15");
+			this.listBox15.FormattingEnabled = true;
+			this.listBox15.Name = "listBox15";
+			// 
+			// label34
+			// 
+			resources.ApplyResources(this.label34, "label34");
+			this.label34.Name = "label34";
+			// 
+			// listBox16
+			// 
+			resources.ApplyResources(this.listBox16, "listBox16");
+			this.listBox16.FormattingEnabled = true;
+			this.listBox16.Name = "listBox16";
+			// 
+			// label35
+			// 
+			resources.ApplyResources(this.label35, "label35");
+			this.label35.Name = "label35";
+			// 
+			// listBox17
+			// 
+			resources.ApplyResources(this.listBox17, "listBox17");
+			this.listBox17.FormattingEnabled = true;
+			this.listBox17.Name = "listBox17";
+			// 
+			// label36
+			// 
+			resources.ApplyResources(this.label36, "label36");
+			this.label36.Name = "label36";
+			// 
+			// listBox18
+			// 
+			resources.ApplyResources(this.listBox18, "listBox18");
+			this.listBox18.FormattingEnabled = true;
+			this.listBox18.Name = "listBox18";
+			// 
+			// label37
+			// 
+			resources.ApplyResources(this.label37, "label37");
+			this.label37.Name = "label37";
+			// 
+			// listBox19
+			// 
+			resources.ApplyResources(this.listBox19, "listBox19");
+			this.listBox19.FormattingEnabled = true;
+			this.listBox19.Name = "listBox19";
+			// 
+			// label38
+			// 
+			resources.ApplyResources(this.label38, "label38");
+			this.label38.Name = "label38";
+			// 
+			// listBox20
+			// 
+			resources.ApplyResources(this.listBox20, "listBox20");
+			this.listBox20.FormattingEnabled = true;
+			this.listBox20.Name = "listBox20";
+			// 
+			// label39
+			// 
+			resources.ApplyResources(this.label39, "label39");
+			this.label39.Name = "label39";
+			// 
+			// listBox21
+			// 
+			resources.ApplyResources(this.listBox21, "listBox21");
+			this.listBox21.FormattingEnabled = true;
+			this.listBox21.Name = "listBox21";
+			// 
+			// label40
+			// 
+			resources.ApplyResources(this.label40, "label40");
+			this.label40.Name = "label40";
+			// 
+			// listBox22
+			// 
+			resources.ApplyResources(this.listBox22, "listBox22");
+			this.listBox22.FormattingEnabled = true;
+			this.listBox22.Name = "listBox22";
+			// 
+			// label41
+			// 
+			resources.ApplyResources(this.label41, "label41");
+			this.label41.Name = "label41";
+			// 
+			// StartTimePicker
+			// 
+			this.StartTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+			resources.ApplyResources(this.StartTimePicker, "StartTimePicker");
+			this.StartTimePicker.Name = "StartTimePicker";
+			this.StartTimePicker.ShowUpDown = true;
+			this.StartTimePicker.Value = new System.DateTime(2019, 11, 18, 8, 0, 0, 0);
+			// 
+			// EndTimePicker
+			// 
+			this.EndTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+			resources.ApplyResources(this.EndTimePicker, "EndTimePicker");
+			this.EndTimePicker.Name = "EndTimePicker";
+			this.EndTimePicker.ShowUpDown = true;
+			this.EndTimePicker.Value = new System.DateTime(2019, 11, 18, 18, 0, 0, 0);
+			// 
+			// HourBox
+			// 
+			resources.ApplyResources(this.HourBox, "HourBox");
+			this.HourBox.Maximum = new decimal(new int[] {
+            24,
+            0,
+            0,
+            0});
+			this.HourBox.Name = "HourBox";
+			// 
+			// MinuteBox
+			// 
+			resources.ApplyResources(this.MinuteBox, "MinuteBox");
+			this.MinuteBox.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+			this.MinuteBox.Name = "MinuteBox";
+			this.MinuteBox.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+			// 
+			// SecondBox
+			// 
+			resources.ApplyResources(this.SecondBox, "SecondBox");
+			this.SecondBox.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+			this.SecondBox.Name = "SecondBox";
+			this.SecondBox.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+			// 
+			// label42
+			// 
+			resources.ApplyResources(this.label42, "label42");
+			this.label42.Name = "label42";
+			// 
+			// label43
+			// 
+			resources.ApplyResources(this.label43, "label43");
+			this.label43.Name = "label43";
+			// 
+			// NumRegistrantsBox
+			// 
+			resources.ApplyResources(this.NumRegistrantsBox, "NumRegistrantsBox");
+			this.NumRegistrantsBox.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+			this.NumRegistrantsBox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+			this.NumRegistrantsBox.Name = "NumRegistrantsBox";
+			this.NumRegistrantsBox.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+			// 
+			// NumWindowsBox
+			// 
+			resources.ApplyResources(this.NumWindowsBox, "NumWindowsBox");
+			this.NumWindowsBox.Maximum = new decimal(new int[] {
+            33,
+            0,
+            0,
+            0});
+			this.NumWindowsBox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+			this.NumWindowsBox.Name = "NumWindowsBox";
+			this.NumWindowsBox.Value = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+			// 
+			// MainForm
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.NumWindowsBox);
+			this.Controls.Add(this.NumRegistrantsBox);
+			this.Controls.Add(this.label43);
+			this.Controls.Add(this.label42);
+			this.Controls.Add(this.SecondBox);
+			this.Controls.Add(this.MinuteBox);
+			this.Controls.Add(this.HourBox);
+			this.Controls.Add(this.EndTimePicker);
+			this.Controls.Add(this.StartTimePicker);
+			this.Controls.Add(this.listBox12);
+			this.Controls.Add(this.label31);
+			this.Controls.Add(this.listBox13);
+			this.Controls.Add(this.label32);
+			this.Controls.Add(this.listBox14);
+			this.Controls.Add(this.label33);
+			this.Controls.Add(this.listBox15);
+			this.Controls.Add(this.label34);
+			this.Controls.Add(this.listBox16);
+			this.Controls.Add(this.label35);
+			this.Controls.Add(this.listBox17);
+			this.Controls.Add(this.label36);
+			this.Controls.Add(this.listBox18);
+			this.Controls.Add(this.label37);
+			this.Controls.Add(this.listBox19);
+			this.Controls.Add(this.label38);
+			this.Controls.Add(this.listBox20);
+			this.Controls.Add(this.label39);
+			this.Controls.Add(this.listBox21);
+			this.Controls.Add(this.label40);
+			this.Controls.Add(this.listBox22);
+			this.Controls.Add(this.label41);
+			this.Controls.Add(this.EndTimeLabel);
+			this.Controls.Add(this.label30);
 			this.Controls.Add(this.listBox11);
 			this.Controls.Add(this.label29);
 			this.Controls.Add(this.listBox10);
@@ -463,16 +746,12 @@
 			this.Controls.Add(this.label20);
 			this.Controls.Add(this.listBox1);
 			this.Controls.Add(this.label19);
-			this.Controls.Add(this.EventCountBox);
 			this.Controls.Add(this.CurrentTimeLabel);
 			this.Controls.Add(this.LongestQueueBox);
 			this.Controls.Add(this.label18);
 			this.Controls.Add(this.textBoxDepartures);
 			this.Controls.Add(this.textBoxArrivals);
 			this.Controls.Add(this.textBoxEvents);
-			this.Controls.Add(this.textBoxNumRegistrants);
-			this.Controls.Add(this.textBoxHoursOpen);
-			this.Controls.Add(this.textBoxCheckoutDuration);
 			this.Controls.Add(this.label17);
 			this.Controls.Add(this.label16);
 			this.Controls.Add(this.label15);
@@ -504,8 +783,13 @@
 			this.Controls.Add(this.listBoxWaitingLine3);
 			this.Controls.Add(this.listBoxWaitingLine1);
 			this.Controls.Add(this.listBoxWaitingLine0);
-			this.Name = "RegistrationSimulationForm";
+			this.Name = "MainForm";
 			this.Load += new System.EventHandler(this.RegistrationSimulationForm_Load);
+			((System.ComponentModel.ISupportInitialize)(this.HourBox)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.MinuteBox)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.SecondBox)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.NumRegistrantsBox)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.NumWindowsBox)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -525,16 +809,12 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBoxCheckoutDuration;
-        private System.Windows.Forms.TextBox textBoxHoursOpen;
-        private System.Windows.Forms.TextBox textBoxNumRegistrants;
         private System.Windows.Forms.Label label18;
 		public System.Windows.Forms.Label CurrentTimeLabel;
 		public System.Windows.Forms.TextBox LongestQueueBox;
@@ -552,7 +832,6 @@
 		public System.Windows.Forms.ListBox listBoxWaitingList8;
 		public System.Windows.Forms.ListBox listBox1WaitingList9;
 		public System.Windows.Forms.ListBox listBox1WaitingList10;
-		public System.Windows.Forms.TextBox EventCountBox;
 		public System.Windows.Forms.ListBox listBox1;
 		private System.Windows.Forms.Label label19;
 		public System.Windows.Forms.ListBox listBox2;
@@ -575,6 +854,40 @@
 		private System.Windows.Forms.Label label28;
 		public System.Windows.Forms.ListBox listBox11;
 		private System.Windows.Forms.Label label29;
+		private System.Windows.Forms.Label label30;
+		private System.Windows.Forms.Label EndTimeLabel;
+		private System.Windows.Forms.Label label14;
+		public System.Windows.Forms.ListBox listBox12;
+		private System.Windows.Forms.Label label31;
+		public System.Windows.Forms.ListBox listBox13;
+		private System.Windows.Forms.Label label32;
+		public System.Windows.Forms.ListBox listBox14;
+		private System.Windows.Forms.Label label33;
+		public System.Windows.Forms.ListBox listBox15;
+		private System.Windows.Forms.Label label34;
+		public System.Windows.Forms.ListBox listBox16;
+		private System.Windows.Forms.Label label35;
+		public System.Windows.Forms.ListBox listBox17;
+		private System.Windows.Forms.Label label36;
+		public System.Windows.Forms.ListBox listBox18;
+		private System.Windows.Forms.Label label37;
+		public System.Windows.Forms.ListBox listBox19;
+		private System.Windows.Forms.Label label38;
+		public System.Windows.Forms.ListBox listBox20;
+		private System.Windows.Forms.Label label39;
+		public System.Windows.Forms.ListBox listBox21;
+		private System.Windows.Forms.Label label40;
+		public System.Windows.Forms.ListBox listBox22;
+		private System.Windows.Forms.Label label41;
+		public System.Windows.Forms.DateTimePicker EndTimePicker;
+		public System.Windows.Forms.DateTimePicker StartTimePicker;
+		private System.Windows.Forms.Label label42;
+		private System.Windows.Forms.Label label43;
+		public System.Windows.Forms.NumericUpDown HourBox;
+		public System.Windows.Forms.NumericUpDown MinuteBox;
+		public System.Windows.Forms.NumericUpDown SecondBox;
+		public System.Windows.Forms.NumericUpDown NumRegistrantsBox;
+		public System.Windows.Forms.NumericUpDown NumWindowsBox;
 	}
 }
 
