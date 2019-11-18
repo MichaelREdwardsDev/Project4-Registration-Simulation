@@ -80,7 +80,6 @@ namespace Project4 {
 		public int EventCount = 0, ArrivalCount = 0, DepartureCount = 0, LongestQueue = 0;
 		public bool SimulationRunning { get; set; } = true;
 		public TimeSpan ExpectedCheckoutDuration { get; set; }
-		private Random ran { get; set; } = new Random();
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="ConventionRegistration"/> class.
@@ -201,11 +200,11 @@ namespace Project4 {
 			DateTime previousTime = OpeningTime;
 
 			foreach(string regID in PossibleIDs) {
-				interval = new TimeSpan(0, 0, ran.Next(90));
+				interval = new TimeSpan(0, 0, Rand.Next(90));
 
-				Registrant currReg = new Registrant(PossibleIDs[ran.Next(PossibleIDs.Count)], ExpectedCheckoutDuration);
+				Registrant currReg = new Registrant(PossibleIDs[Rand.Next(PossibleIDs.Count)], ExpectedCheckoutDuration);
 
-				Events.Enqueue(new Event(ran.Next(PossibleIDs.Count), "arrival", currReg, previousTime += interval));
+				Events.Enqueue(new Event(Rand.Next(PossibleIDs.Count), "arrival", currReg, previousTime += interval));
 
 			}
 		}
