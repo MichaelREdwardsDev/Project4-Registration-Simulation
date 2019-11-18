@@ -18,6 +18,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Utils.Utility;
 using System.Windows.Forms;
 
 namespace Project4 {
@@ -27,7 +28,7 @@ namespace Project4 {
 	/// </summary>
 	/// <seealso cref="System.Windows.Forms.Form" />
 	public partial class RegistrationSimulationForm:Form {
-		
+		public ConventionRegistration Conv;
 		/// <summary>
 		/// Initializes a new instance of the <see cref="RegistrationSimulationForm"/> class.
 		/// </summary>
@@ -56,8 +57,8 @@ namespace Project4 {
 		/// <param name="sender">The source of the event.</param>
 		/// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
 		private void ButtonStart_Click(object sender, EventArgs e) {
-			ConventionRegistration Conv = new ConventionRegistration(this);
-			Conv.HandleRegistrants(this);
+			Conv = new ConventionRegistration(this);
+			Task run = Conv.RunSimulation();
 		}        
 		/// <summary>
 		/// Handles the Click event of the ButtonClear control.
@@ -65,6 +66,7 @@ namespace Project4 {
 		/// <param name="sender">The source of the event.</param>
 		/// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
 		private void ButtonClear_Click(object sender, EventArgs e) {
+			ClearFormControls(this);
 			
 		}
 	}

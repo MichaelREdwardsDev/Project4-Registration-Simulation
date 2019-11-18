@@ -14,12 +14,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Project4 {
 	/// <summary>
 	/// Encapsulates the PriorityQueue, as well as it's Count and ID for ease of differentiation between lines
 	/// </summary>
-	class Line {
+	public class Line {
 		/// <summary>
 		/// The queue containing the registrants already in this particular line
 		/// </summary>
@@ -28,10 +29,7 @@ namespace Project4 {
 		/// <summary>
 		/// The number of registrants in the line
 		/// </summary>
-		public int Count { get {
-				return Registrants.Count;
-			}
-		}
+		public int Count;
 		/// <summary>
 		/// The ID for a particular line, allows ease of differentiation between lines
 		/// </summary>
@@ -42,7 +40,7 @@ namespace Project4 {
 		/// <param name="lineID">the line id</param>
 		public Line(int lineID) {
 			LineID = lineID;
-			Enqueue(top);
+			Count = 0;
 		}
 		/// <summary>
 		/// Adds a registrant to the line
@@ -50,12 +48,14 @@ namespace Project4 {
 		/// <param name="reg">The registrant to be added</param>
 		public void Enqueue(Registrant reg) {
 			Registrants.Enqueue(reg);
+			Count++;
 		}
 		/// <summary>
 		/// Removes the Registrant from the front of the line
 		/// </summary>
 		public void Dequeue() {
 			Registrants.Dequeue();
+			Count--;
 		}        
 		/// <summary>
 		/// Peeks this instance.
@@ -69,8 +69,9 @@ namespace Project4 {
 		/// </summary>
 		/// <returns>true or false</returns>
 		public bool TopChanged() {
-			if(previousTop != top) {
+			if(top != previousTop) {
 				previousTop = top;
+				top = Registrants.Peek();
 				return true;
 			}
 			return false;

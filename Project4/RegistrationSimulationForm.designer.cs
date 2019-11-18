@@ -62,8 +62,31 @@
 			this.textBoxArrivals = new System.Windows.Forms.TextBox();
 			this.textBoxDepartures = new System.Windows.Forms.TextBox();
 			this.label18 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.LongestQueueBox = new System.Windows.Forms.TextBox();
 			this.CurrentTimeLabel = new System.Windows.Forms.Label();
+			this.EventCountBox = new System.Windows.Forms.TextBox();
+			this.listBox1 = new System.Windows.Forms.ListBox();
+			this.label19 = new System.Windows.Forms.Label();
+			this.listBox2 = new System.Windows.Forms.ListBox();
+			this.label20 = new System.Windows.Forms.Label();
+			this.listBox3 = new System.Windows.Forms.ListBox();
+			this.label21 = new System.Windows.Forms.Label();
+			this.listBox4 = new System.Windows.Forms.ListBox();
+			this.label22 = new System.Windows.Forms.Label();
+			this.listBox5 = new System.Windows.Forms.ListBox();
+			this.label23 = new System.Windows.Forms.Label();
+			this.listBox6 = new System.Windows.Forms.ListBox();
+			this.label24 = new System.Windows.Forms.Label();
+			this.listBox7 = new System.Windows.Forms.ListBox();
+			this.label25 = new System.Windows.Forms.Label();
+			this.listBox8 = new System.Windows.Forms.ListBox();
+			this.label26 = new System.Windows.Forms.Label();
+			this.listBox9 = new System.Windows.Forms.ListBox();
+			this.label27 = new System.Windows.Forms.Label();
+			this.listBox10 = new System.Windows.Forms.ListBox();
+			this.label28 = new System.Windows.Forms.Label();
+			this.listBox11 = new System.Windows.Forms.ListBox();
+			this.label29 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// listBoxWaitingLine0
@@ -276,23 +299,173 @@
 			resources.ApplyResources(this.label18, "label18");
 			this.label18.Name = "label18";
 			// 
-			// textBox1
+			// LongestQueueBox
 			// 
-			resources.ApplyResources(this.textBox1, "textBox1");
-			this.textBox1.Name = "textBox1";
-			this.textBox1.ReadOnly = true;
+			resources.ApplyResources(this.LongestQueueBox, "LongestQueueBox");
+			this.LongestQueueBox.Name = "LongestQueueBox";
+			this.LongestQueueBox.ReadOnly = true;
 			// 
 			// CurrentTimeLabel
 			// 
 			resources.ApplyResources(this.CurrentTimeLabel, "CurrentTimeLabel");
 			this.CurrentTimeLabel.Name = "CurrentTimeLabel";
 			// 
+			// EventCountBox
+			// 
+			resources.ApplyResources(this.EventCountBox, "EventCountBox");
+			this.EventCountBox.Name = "EventCountBox";
+			this.EventCountBox.ReadOnly = true;
+			// 
+			// listBox1
+			// 
+			resources.ApplyResources(this.listBox1, "listBox1");
+			this.listBox1.FormattingEnabled = true;
+			this.listBox1.Name = "listBox1";
+			// 
+			// label19
+			// 
+			resources.ApplyResources(this.label19, "label19");
+			this.label19.Name = "label19";
+			// 
+			// listBox2
+			// 
+			resources.ApplyResources(this.listBox2, "listBox2");
+			this.listBox2.FormattingEnabled = true;
+			this.listBox2.Name = "listBox2";
+			// 
+			// label20
+			// 
+			resources.ApplyResources(this.label20, "label20");
+			this.label20.Name = "label20";
+			// 
+			// listBox3
+			// 
+			resources.ApplyResources(this.listBox3, "listBox3");
+			this.listBox3.FormattingEnabled = true;
+			this.listBox3.Name = "listBox3";
+			// 
+			// label21
+			// 
+			resources.ApplyResources(this.label21, "label21");
+			this.label21.Name = "label21";
+			// 
+			// listBox4
+			// 
+			resources.ApplyResources(this.listBox4, "listBox4");
+			this.listBox4.FormattingEnabled = true;
+			this.listBox4.Name = "listBox4";
+			// 
+			// label22
+			// 
+			resources.ApplyResources(this.label22, "label22");
+			this.label22.Name = "label22";
+			// 
+			// listBox5
+			// 
+			resources.ApplyResources(this.listBox5, "listBox5");
+			this.listBox5.FormattingEnabled = true;
+			this.listBox5.Name = "listBox5";
+			// 
+			// label23
+			// 
+			resources.ApplyResources(this.label23, "label23");
+			this.label23.Name = "label23";
+			// 
+			// listBox6
+			// 
+			resources.ApplyResources(this.listBox6, "listBox6");
+			this.listBox6.FormattingEnabled = true;
+			this.listBox6.Name = "listBox6";
+			// 
+			// label24
+			// 
+			resources.ApplyResources(this.label24, "label24");
+			this.label24.Name = "label24";
+			// 
+			// listBox7
+			// 
+			resources.ApplyResources(this.listBox7, "listBox7");
+			this.listBox7.FormattingEnabled = true;
+			this.listBox7.Name = "listBox7";
+			// 
+			// label25
+			// 
+			resources.ApplyResources(this.label25, "label25");
+			this.label25.Name = "label25";
+			// 
+			// listBox8
+			// 
+			resources.ApplyResources(this.listBox8, "listBox8");
+			this.listBox8.FormattingEnabled = true;
+			this.listBox8.Name = "listBox8";
+			// 
+			// label26
+			// 
+			resources.ApplyResources(this.label26, "label26");
+			this.label26.Name = "label26";
+			// 
+			// listBox9
+			// 
+			resources.ApplyResources(this.listBox9, "listBox9");
+			this.listBox9.FormattingEnabled = true;
+			this.listBox9.Name = "listBox9";
+			// 
+			// label27
+			// 
+			resources.ApplyResources(this.label27, "label27");
+			this.label27.Name = "label27";
+			// 
+			// listBox10
+			// 
+			resources.ApplyResources(this.listBox10, "listBox10");
+			this.listBox10.FormattingEnabled = true;
+			this.listBox10.Name = "listBox10";
+			// 
+			// label28
+			// 
+			resources.ApplyResources(this.label28, "label28");
+			this.label28.Name = "label28";
+			// 
+			// listBox11
+			// 
+			resources.ApplyResources(this.listBox11, "listBox11");
+			this.listBox11.FormattingEnabled = true;
+			this.listBox11.Name = "listBox11";
+			// 
+			// label29
+			// 
+			resources.ApplyResources(this.label29, "label29");
+			this.label29.Name = "label29";
+			// 
 			// RegistrationSimulationForm
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.listBox11);
+			this.Controls.Add(this.label29);
+			this.Controls.Add(this.listBox10);
+			this.Controls.Add(this.label28);
+			this.Controls.Add(this.listBox9);
+			this.Controls.Add(this.label27);
+			this.Controls.Add(this.listBox8);
+			this.Controls.Add(this.label26);
+			this.Controls.Add(this.listBox7);
+			this.Controls.Add(this.label25);
+			this.Controls.Add(this.listBox6);
+			this.Controls.Add(this.label24);
+			this.Controls.Add(this.listBox5);
+			this.Controls.Add(this.label23);
+			this.Controls.Add(this.listBox4);
+			this.Controls.Add(this.label22);
+			this.Controls.Add(this.listBox3);
+			this.Controls.Add(this.label21);
+			this.Controls.Add(this.listBox2);
+			this.Controls.Add(this.label20);
+			this.Controls.Add(this.listBox1);
+			this.Controls.Add(this.label19);
+			this.Controls.Add(this.EventCountBox);
 			this.Controls.Add(this.CurrentTimeLabel);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.LongestQueueBox);
 			this.Controls.Add(this.label18);
 			this.Controls.Add(this.textBoxDepartures);
 			this.Controls.Add(this.textBoxArrivals);
@@ -364,7 +537,7 @@
         private System.Windows.Forms.TextBox textBoxNumRegistrants;
         private System.Windows.Forms.Label label18;
 		public System.Windows.Forms.Label CurrentTimeLabel;
-		public System.Windows.Forms.TextBox textBox1;
+		public System.Windows.Forms.TextBox LongestQueueBox;
 		public System.Windows.Forms.TextBox textBoxEvents;
 		public System.Windows.Forms.TextBox textBoxArrivals;
 		public System.Windows.Forms.TextBox textBoxDepartures;
@@ -379,6 +552,29 @@
 		public System.Windows.Forms.ListBox listBoxWaitingList8;
 		public System.Windows.Forms.ListBox listBox1WaitingList9;
 		public System.Windows.Forms.ListBox listBox1WaitingList10;
+		public System.Windows.Forms.TextBox EventCountBox;
+		public System.Windows.Forms.ListBox listBox1;
+		private System.Windows.Forms.Label label19;
+		public System.Windows.Forms.ListBox listBox2;
+		private System.Windows.Forms.Label label20;
+		public System.Windows.Forms.ListBox listBox3;
+		private System.Windows.Forms.Label label21;
+		public System.Windows.Forms.ListBox listBox4;
+		private System.Windows.Forms.Label label22;
+		public System.Windows.Forms.ListBox listBox5;
+		private System.Windows.Forms.Label label23;
+		public System.Windows.Forms.ListBox listBox6;
+		private System.Windows.Forms.Label label24;
+		public System.Windows.Forms.ListBox listBox7;
+		private System.Windows.Forms.Label label25;
+		public System.Windows.Forms.ListBox listBox8;
+		private System.Windows.Forms.Label label26;
+		public System.Windows.Forms.ListBox listBox9;
+		private System.Windows.Forms.Label label27;
+		public System.Windows.Forms.ListBox listBox10;
+		private System.Windows.Forms.Label label28;
+		public System.Windows.Forms.ListBox listBox11;
+		private System.Windows.Forms.Label label29;
 	}
 }
 
