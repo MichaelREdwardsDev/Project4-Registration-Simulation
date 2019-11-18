@@ -18,10 +18,10 @@ using System.Windows.Forms;
 using Utils;
 using static Utils.Probability;
 
-namespace Project4 {    
-/// <summary>
-/// Class that runs the application
-/// </summary>
+namespace Project4 {
+	/// <summary>
+	/// Class that runs the application
+	/// </summary>
 	static class Program {
 		/// <summary>
 		/// The main entry point for the application.

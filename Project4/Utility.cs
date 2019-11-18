@@ -1,6 +1,6 @@
 ﻿//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//	Project:		Project 3 - Infix Postfix Conversion
+//	Project:		Project 4 - Registration Simulation
 //	File Name:		Utility.cs
 //	Description:	Several common static functions, such as opening and reading a file, cleaning a list of tokens, etc
 //	Course:			CSCI 2210-001 - Data Structures
@@ -9,6 +9,7 @@
 //	Copyright:		Michael Edwards, 2019
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+
 /// <summary>
 /// Utils
 /// </summary>
@@ -211,8 +213,12 @@ namespace Utils {
 		public static void EnterInfo(String prompt) {
 			Console.WriteLine(prompt);
 		}
-
+		/// <summary>
+		/// Clears several types of controls in a form
+		/// </summary>
+		/// <param name="form">The form to be cleared</param>
 		public static void ClearFormControls(Form form) {
+			form.Invalidate();
 			foreach(Control control in form.Controls) {
 				if(control is TextBox) {
 					(control as TextBox).Text = string.Empty;
