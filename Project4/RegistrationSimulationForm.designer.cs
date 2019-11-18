@@ -601,41 +601,41 @@
 			// 
 			resources.ApplyResources(this.HourBox, "HourBox");
 			this.HourBox.Maximum = new decimal(new int[] {
-			24,
-			0,
-			0,
-			0});
+            24,
+            0,
+            0,
+            0});
 			this.HourBox.Name = "HourBox";
 			// 
 			// MinuteBox
 			// 
 			resources.ApplyResources(this.MinuteBox, "MinuteBox");
 			this.MinuteBox.Maximum = new decimal(new int[] {
-			59,
-			0,
-			0,
-			0});
+            59,
+            0,
+            0,
+            0});
 			this.MinuteBox.Name = "MinuteBox";
 			this.MinuteBox.Value = new decimal(new int[] {
-			4,
-			0,
-			0,
-			0});
+            4,
+            0,
+            0,
+            0});
 			// 
 			// SecondBox
 			// 
 			resources.ApplyResources(this.SecondBox, "SecondBox");
 			this.SecondBox.Maximum = new decimal(new int[] {
-			59,
-			0,
-			0,
-			0});
+            59,
+            0,
+            0,
+            0});
 			this.SecondBox.Name = "SecondBox";
 			this.SecondBox.Value = new decimal(new int[] {
-			30,
-			0,
-			0,
-			0});
+            30,
+            0,
+            0,
+            0});
 			// 
 			// label42
 			// 
@@ -651,41 +651,41 @@
 			// 
 			resources.ApplyResources(this.NumRegistrantsBox, "NumRegistrantsBox");
 			this.NumRegistrantsBox.Maximum = new decimal(new int[] {
-			9999999,
-			0,
-			0,
-			0});
+            9999999,
+            0,
+            0,
+            0});
 			this.NumRegistrantsBox.Minimum = new decimal(new int[] {
-			1,
-			0,
-			0,
-			0});
+            1,
+            0,
+            0,
+            0});
 			this.NumRegistrantsBox.Name = "NumRegistrantsBox";
 			this.NumRegistrantsBox.Value = new decimal(new int[] {
-			1000,
-			0,
-			0,
-			0});
+            1000,
+            0,
+            0,
+            0});
 			// 
 			// NumWindowsBox
 			// 
 			resources.ApplyResources(this.NumWindowsBox, "NumWindowsBox");
 			this.NumWindowsBox.Maximum = new decimal(new int[] {
-			33,
-			0,
-			0,
-			0});
+            33,
+            0,
+            0,
+            0});
 			this.NumWindowsBox.Minimum = new decimal(new int[] {
-			1,
-			0,
-			0,
-			0});
+            1,
+            0,
+            0,
+            0});
 			this.NumWindowsBox.Name = "NumWindowsBox";
 			this.NumWindowsBox.Value = new decimal(new int[] {
-			6,
-			0,
-			0,
-			0});
+            7,
+            0,
+            0,
+            0});
 			// 
 			// MainForm
 			// 
@@ -784,7 +784,6 @@
 			this.Controls.Add(this.listBoxWaitingLine1);
 			this.Controls.Add(this.listBoxWaitingLine0);
 			this.Name = "MainForm";
-			this.Load += new System.EventHandler(this.RegistrationSimulationForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.HourBox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.MinuteBox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.SecondBox)).EndInit();

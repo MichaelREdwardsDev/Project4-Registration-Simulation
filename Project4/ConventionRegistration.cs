@@ -1,7 +1,7 @@
 ﻿////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //	Project:		Project 4 - Registration Simulation
-//	File Name:		PriorityQueue.cs
+//	File Name:		ConventionRegistration.cs
 //	Description:	Customized queue that accounts for the priority of the objects contained 
 //	Course:			CSCI 2210-001 - Data Structures
 //	Author:			Michael Edwards, edwardsmr@etsu.edu, Elizabeth Jennings, jenningsel@etsu.edu, William Jennings, jenningsw@etsu.edu
@@ -9,6 +9,7 @@
 //	Copyright:		Michael Edwards, 2019
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -98,114 +99,121 @@ namespace Project4 {
 			ExpectedCheckoutDuration = GetExpectedCheckoutDuration(form);
 			RunSimulation();
 		}
-
+		/// <summary>
+		/// Retrieves the expected time from the form
+		/// </summary>
+		/// <param name="form">The main form for the program</param>
+		/// <returns>The TimeSpan entered in the GUI</returns>
 		private TimeSpan GetExpectedCheckoutDuration(MainForm form) {
 			return new TimeSpan((int)form.HourBox.Value, (int)form.MinuteBox.Value, (int)form.SecondBox.Value);
 		}
-
+		/// <summary>
+		/// Retrieves the Number Of Lines entered in the form
+		/// </summary>
+		/// <param name="form">The main form for the program</param>
+		/// <returns>The entered number of lines</returns>
 		private int GetNumOfLines(MainForm form) {
 			return (int)form.NumWindowsBox.Value;
 		}
-
+		/// <summary>
+		/// Retreives the opening Time from the form
+		/// </summary>
+		/// <param name="form">The main form for the program</param>
+		/// <returns>The time entered int the GUI</returns>
 		private DateTime GetOpeningTime(MainForm form) {
 			return form.StartTimePicker.Value;
 		}
+		/// <summary>
+		/// Retrieves the Closing time from the form
+		/// </summary>
+		/// <param name="form">The main form for the program</param>
+		/// <returns>The Clsoing time from the GUI</returns>
 		private DateTime GetClosingTime(MainForm form) {
 			return form.EndTimePicker.Value;
 		}
+		/// <summary>
+		/// Gets the expected registrant count from the GUI
+		/// </summary>
+		/// <param name="form">The main form for the program</param>
+		/// <returns>The expected amount entered in the GUI</returns>
 		private int GetExpectedRegistrants(MainForm form) {
 			return (int)form.NumRegistrantsBox.Value;
 		}
-
-
+		/// <summary>
+		/// Runs the simulation
+		/// </summary>
+		/// <returns>A task, simulation ran on a separate thread so the use of Thread.Sleep() does not freeze the main thread running the GUI</returns>
 		public Task RunSimulation() {
-			Task run = Task.Factory.StartNew(() => {
-				CurrentTime = OpeningTime;
-
-				Events = new PriorityQueue<Event>();
-
-				GenerateRegistrantEvents();
-
-				Registrant currReg;
-
-				while(Events.Count > 0) {
-
-					if(Events.Peek().EventType == "departure" && Events.Peek().Time <= CurrentTime) {
-						DepartureCount++;
-						Event DepEvent = Events.Dequeue();
-
-						currReg = DepEvent.Registrant;
-						Lines[currReg.LineID].Dequeue();
-						ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate {
+			Task run = Task.Factory.StartNew(() => { // Create the task
+				CurrentTime = OpeningTime; // Set the Current Time to the Opening time
+				Events = new PriorityQueue<Event>(); // Init the Evengs Queue
+				GenerateRegistrantEvents(); //  add arrivals in the queue
+				Registrant currReg; // Declare a temporary Registrant object
+				while(Events.Count > 0) { // Continue the simulation until all events have been handled
+					if(Events.Peek().EventType == "departure" && Events.Peek().Time <= CurrentTime) { // If the event at the top of the queue is a departure
+						DepartureCount++; // Increment departure
+						Event DepEvent = Events.Dequeue(); // Dequeue the event
+						currReg = DepEvent.Registrant; // set the currReg to the registrant for that event
+						Lines[currReg.LineID].Dequeue(); // Dequeue the registrant from their line
+						ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate { // Remove the registrant from the box in the GUI
 							ListBoxes[currReg.LineID].Items.RemoveAt(0);
 						});
-
-
-						try {
+						try { // Try to retrieve a new registrant to determine the next departure event for this line
 							currReg = Lines[currReg.LineID].Peek();
 							EventCount++;
 							Events.Enqueue(new Event(Int32.Parse(currReg.RegistrantID), "departure", currReg, CurrentTime + currReg.CompletionTime));
-						} catch(Exception) {
-							continue;
+						} catch(Exception) { // If there isn't a registrant
+							UpdateGUI();
+							continue; // ignore the Empty Queue exception
 						}
-					} else if(Events.Peek().Time <= CurrentTime) {
-
-						Event ArrEvent = Events.Dequeue();
-						if(CurrentTime <= ClosingTime) {
-
-							EventCount++;
+					} else if(Events.Peek().Time <= CurrentTime) { // if the event is not a departure, it's an arrival
+						Event ArrEvent = Events.Dequeue(); // Dequeue the event
+						if(CurrentTime <= ClosingTime) { // If the convention is still open
+							EventCount++; // increment the Event and arrival counts
 							ArrivalCount++;
-							currReg = ArrEvent.Registrant;
-							currReg.LineID = currReg.PickLine(Lines);
-							ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate {
+							currReg = ArrEvent.Registrant; // Then set the current registrant to that relatedd to the arrival
+							currReg.LineID = currReg.PickLine(Lines); // Registrant picks the shortest line
+							ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate { // Update the listbox in the GUI
 								ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
 							});
-
-
-							if(Lines[currReg.LineID].Count == 1) {
-								currReg = Lines[currReg.LineID].Peek();
-								EventCount++;
+							if(Lines[currReg.LineID].Count == 1) { // if the line has only one registrant(The newly added one)
+								currReg = Lines[currReg.LineID].Peek(); // Ensure the registrant is the one at top
+								EventCount++; // Add a departure event for that registrant
 								Events.Enqueue(new Event(Int32.Parse(currReg.RegistrantID), "departure", currReg, CurrentTime + currReg.CompletionTime));
-
 							}
-						} else if(ArrivalCount == DepartureCount && CurrentTime > ClosingTime) {
-							break;
+						} else if(ArrivalCount == DepartureCount && CurrentTime > ClosingTime) { // if all registrants have arrived(that got to the convention in time), and have been handled
+							UpdateGUI();
+							break; // The simulation is done
 						}
 					}
-
-					UpdateGUI();
-
-					foreach(Line line in Lines) {
-						if(line.Count > LongestQueue) {
+					foreach(Line line in Lines) { // foreach line
+						if(line.Count > LongestQueue) { // Keep track of the longest line so far
 							LongestQueue = line.Count;
-
 						}
 					}
-					CurrentTime += new TimeSpan(0, 0, 1);
-					//Thread.Sleep(1/100);
+					CurrentTime += new TimeSpan(0, 0, 1); // Increment the clock by one second every iteration
+					UpdateGUI(); // Keep the GUI updated per iteration
 				}
-				MessageBox.Show("Simulation Complete!");
-				SimulationRunning = false;
+				MessageBox.Show("Simulation Complete!"); // Notify for completion
+				SimulationRunning = false; // Set the simulation bool to false
 			});
-
-			return run;
+			return run; // Return the task
 		}
-
+		/// <summary>
+		/// Generates all registration events to be handled prior to the simulation handling any events
+		/// </summary>
 		private void GenerateRegistrantEvents() {
 			TimeSpan interval;
-
 			DateTime previousTime = OpeningTime;
-
 			foreach(string regID in PossibleIDs) {
 				interval = new TimeSpan(0, 0, Rand.Next(90));
-
 				Registrant currReg = new Registrant(PossibleIDs[Rand.Next(PossibleIDs.Count)], ExpectedCheckoutDuration);
-
 				Events.Enqueue(new Event(Rand.Next(PossibleIDs.Count), "arrival", currReg, previousTime += interval));
-
 			}
 		}
-
+		/// <summary>
+		/// Updates many of the GUI controls(delegates used to be able to safely call on a different thread)
+		/// </summary>
 		public void UpdateGUI() {
 			Simulation.textBoxArrivals.Invoke((MethodInvoker)delegate {
 				Simulation.textBoxArrivals.Text = ArrivalCount.ToString();
@@ -226,9 +234,8 @@ namespace Project4 {
 				Simulation.LongestQueueBox.Text = LongestQueue.ToString();
 			});
 		}
-
 		/// <summary>
-		/// Method for available lines in the simulation.
+		/// Method for available lines in the simulation. Opens lines by adding them to the list of lines, as well as makes the GUI boxes visible
 		/// </summary>
 		/// <param name="numOfLines">The number of lines.</param>
 		/// <returns>retList</returns>
@@ -255,7 +262,6 @@ namespace Project4 {
 			}
 			return retList;
 		}
-
 		/// <summary>
 		/// Gets the list boxes from the form.
 		/// </summary>

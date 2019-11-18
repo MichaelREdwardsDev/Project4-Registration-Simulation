@@ -9,6 +9,7 @@
 //	Copyright:		Michael Edwards, 2019
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,14 +57,14 @@ namespace Project4 {
 		public void Dequeue() {
 			Registrants.Dequeue();
 			Count--;
-		}        
+		}
 		/// <summary>
 		/// Peeks this instance.
 		/// </summary>
 		/// <returns>Registrants.Peek()</returns>
 		public Registrant Peek() {
 			return Registrants.Peek();
-		}        
+		}
 		/// <summary>
 		/// Checks to see if the top of the queue has changed.
 		/// </summary>
