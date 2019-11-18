@@ -93,6 +93,7 @@ namespace Project4 {
 			ExpectedRegistrants = GetExpectedRegistrants(form);
 			PossibleIDs = GenerateList(ExpectedRegistrants);
 			OpeningTime = GetOpeningTime(form);
+			CurrentTime = OpeningTime;
 			ClosingTime = GetClosingTime(form);
 			ExpectedCheckoutDuration = GetExpectedCheckoutDuration(form);
 			RunSimulation();
@@ -151,25 +152,21 @@ namespace Project4 {
 
 						Event ArrEvent = Events.Dequeue();
 						if(CurrentTime <= ClosingTime) {
-							try {
+
+							EventCount++;
+							ArrivalCount++;
+							currReg = ArrEvent.Registrant;
+							currReg.LineID = currReg.PickLine(Lines);
+							ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate {
+								ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
+							});
+
+
+							if(Lines[currReg.LineID].Count == 1) {
+								currReg = Lines[currReg.LineID].Peek();
 								EventCount++;
-								ArrivalCount++;
-								currReg = ArrEvent.Registrant;
-								currReg.LineID = currReg.PickLine(Lines);
-								ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate {
-									ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
-								});
+								Events.Enqueue(new Event(Int32.Parse(currReg.RegistrantID), "departure", currReg, CurrentTime + currReg.CompletionTime));
 
-
-								if(Lines[currReg.LineID].Count == 1) {
-									currReg = Lines[currReg.LineID].Peek();
-									EventCount++;
-									Events.Enqueue(new Event(Int32.Parse(currReg.RegistrantID), "departure", currReg, CurrentTime + currReg.CompletionTime));
-
-								}
-							} catch(Exception) {
-								// Avoid breaking when the user does not put in input
-								continue;
 							}
 						} else if(ArrivalCount == DepartureCount && CurrentTime > ClosingTime) {
 							break;

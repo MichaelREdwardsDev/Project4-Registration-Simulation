@@ -213,6 +213,7 @@ namespace Utils {
 		}
 
 		public static void ClearFormControls(Form form) {
+			form.Invalidate();
 			foreach(Control control in form.Controls) {
 				if(control is TextBox) {
 					(control as TextBox).Text = string.Empty;
