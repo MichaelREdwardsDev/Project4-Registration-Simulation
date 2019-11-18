@@ -203,7 +203,7 @@ namespace Project4 {
 			foreach(string regID in PossibleIDs) {
 				interval = new TimeSpan(0, 0, ran.Next(90));
 
-				Registrant currReg = new Registrant(PossibleIDs[ran.Next(PossibleIDs.Count)]);
+				Registrant currReg = new Registrant(PossibleIDs[ran.Next(PossibleIDs.Count)], ExpectedCheckoutDuration);
 
 				Events.Enqueue(new Event(ran.Next(PossibleIDs.Count), "arrival", currReg, previousTime += interval));
 
@@ -252,7 +252,7 @@ namespace Project4 {
 		/// Generates the list of items that have been Poisson Distributed.
 		/// </summary>
 		/// <returns>retList</returns>
-		private static List<String> GenerateList(int expectedRegistrants) {
+		private List<String> GenerateList(int expectedRegistrants) {
 			List<String> retList = new List<String>();
 			for(int i = 1; i <= Poisson(expectedRegistrants); i++) {
 				retList.Add(i.ToString().PadLeft(4, '0'));
@@ -265,7 +265,7 @@ namespace Project4 {
 		/// </summary>
 		/// <param name="form">The form.</param>
 		/// <returns>retList</returns>
-		private static List<ListBox> GetListBoxes(MainForm form) {
+		private List<ListBox> GetListBoxes(MainForm form) {
 			List<ListBox> retList = new List<ListBox>();
 			foreach(Control box in form.Controls) {
 				if(box.GetType().Name == "ListBox") {

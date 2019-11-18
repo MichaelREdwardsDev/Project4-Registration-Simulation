@@ -72,9 +72,18 @@ namespace Project4 {
 					MessageBox.Show("Please wait for the simulation to end...");
 				} else {
 					ClearFormControls(this);
+					ResetListBoxes(this);
 				}
 			} catch(NullReferenceException) {
 				MessageBox.Show("The simulation must be ran before clearing...");
+			}
+		}
+
+		private void ResetListBoxes(MainForm form) {
+			foreach(Control box in form.Controls) {
+				if(box.GetType().Name == "ListBox") {
+					box.Visible = false;
+				}
 			}
 		}
 	}

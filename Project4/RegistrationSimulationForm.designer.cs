@@ -601,41 +601,41 @@
 			// 
 			resources.ApplyResources(this.HourBox, "HourBox");
 			this.HourBox.Maximum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
+			24,
+			0,
+			0,
+			0});
 			this.HourBox.Name = "HourBox";
 			// 
 			// MinuteBox
 			// 
 			resources.ApplyResources(this.MinuteBox, "MinuteBox");
 			this.MinuteBox.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
+			59,
+			0,
+			0,
+			0});
 			this.MinuteBox.Name = "MinuteBox";
 			this.MinuteBox.Value = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
+			4,
+			0,
+			0,
+			0});
 			// 
 			// SecondBox
 			// 
 			resources.ApplyResources(this.SecondBox, "SecondBox");
 			this.SecondBox.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
+			59,
+			0,
+			0,
+			0});
 			this.SecondBox.Name = "SecondBox";
 			this.SecondBox.Value = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
+			30,
+			0,
+			0,
+			0});
 			// 
 			// label42
 			// 
@@ -651,41 +651,41 @@
 			// 
 			resources.ApplyResources(this.NumRegistrantsBox, "NumRegistrantsBox");
 			this.NumRegistrantsBox.Maximum = new decimal(new int[] {
-            9999999,
-            0,
-            0,
-            0});
+			9999999,
+			0,
+			0,
+			0});
 			this.NumRegistrantsBox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+			1,
+			0,
+			0,
+			0});
 			this.NumRegistrantsBox.Name = "NumRegistrantsBox";
 			this.NumRegistrantsBox.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
+			1000,
+			0,
+			0,
+			0});
 			// 
 			// NumWindowsBox
 			// 
 			resources.ApplyResources(this.NumWindowsBox, "NumWindowsBox");
 			this.NumWindowsBox.Maximum = new decimal(new int[] {
-            33,
-            0,
-            0,
-            0});
+			33,
+			0,
+			0,
+			0});
 			this.NumWindowsBox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+			1,
+			0,
+			0,
+			0});
 			this.NumWindowsBox.Name = "NumWindowsBox";
 			this.NumWindowsBox.Value = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
+			6,
+			0,
+			0,
+			0});
 			// 
 			// MainForm
 			// 
@@ -795,27 +795,27 @@
 
 		}
 
-        #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button buttonStart;
-        private System.Windows.Forms.Button buttonClear;
-        private System.Windows.Forms.Button buttonExit;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+		#endregion
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.Label label10;
+		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.Label label12;
+		private System.Windows.Forms.Label label13;
+		private System.Windows.Forms.Button buttonStart;
+		private System.Windows.Forms.Button buttonClear;
+		private System.Windows.Forms.Button buttonExit;
+		private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.Label label16;
+		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.Label label18;
 		public System.Windows.Forms.Label CurrentTimeLabel;
 		public System.Windows.Forms.TextBox LongestQueueBox;
 		public System.Windows.Forms.TextBox textBoxEvents;

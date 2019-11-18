@@ -49,9 +49,9 @@ namespace Project4 {
 		/// </summary>
 		/// <param name="registrantID"></param>
 		/// <param name="priority"></param>
-		public Registrant(String registrantID) {
+		public Registrant(String registrantID, TimeSpan expectedDuration) {
 			RegistrantID = registrantID;
-			CompletionTime = DetermineCompletionTime();
+			CompletionTime = DetermineCompletionTime(expectedDuration);
 		}
         /// <summary>
         /// Picks a the rightmost shortest line and adds the registrant to that queue
@@ -75,9 +75,8 @@ namespace Project4 {
         /// Determines the completion time.
         /// </summary>
         /// <returns>Time Span</returns>
-        public TimeSpan DetermineCompletionTime() {
-			//270 seconds
-			int timeInSeconds = (int)NegEx(270);
+        public TimeSpan DetermineCompletionTime(TimeSpan expectedDuration) {
+			int timeInSeconds = (int)NegEx(expectedDuration.TotalSeconds);
 			if(timeInSeconds < 90)
 				return new TimeSpan(0, 0, 90);
 			else if(timeInSeconds > 600) {
