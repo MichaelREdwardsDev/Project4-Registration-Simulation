@@ -6,7 +6,7 @@
 //	Course:			CSCI 2210-001 - Data Structures
 //	Author:			Michael Edwards, edwardsmr@etsu.edu, Elizabeth Jennings, jenningsel@etsu.edu, William Jennings, jenningsw@etsu.edu
 //	Created:		Sunday November 14, 2019
-//	Copyright:		Michael Edwards, 2019
+//	Copyright:		Michael Edwards, Elizabeth Jennings, William Jennings, 2019
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -34,7 +34,7 @@ namespace Project4 {
 		/// </summary>
 		public int ExpectedRegistrants { get; set; }
 		/// <summary>
-		/// The possible i ds
+		/// The possible IDs
 		/// </summary>
 		public List<String> PossibleIDs { get; set; }
 		/// <summary>
@@ -119,7 +119,7 @@ namespace Project4 {
 			return (int)form.NumWindowsBox.Value;
 		}
 		/// <summary>
-		/// Retreives the opening Time from the form
+		/// Retrieves the opening Time from the form
 		/// </summary>
 		/// <param name="form">The main form for the program</param>
 		/// <returns>The time entered int the GUI</returns>
@@ -130,7 +130,7 @@ namespace Project4 {
 		/// Retrieves the Closing time from the form
 		/// </summary>
 		/// <param name="form">The main form for the program</param>
-		/// <returns>The Clsoing time from the GUI</returns>
+		/// <returns>The Closing time from the GUI</returns>
 		private DateTime GetClosingTime(MainForm form) {
 			return form.EndTimePicker.Value;
 		}
@@ -149,7 +149,7 @@ namespace Project4 {
 		public Task RunSimulation() {
 			Task run = Task.Factory.StartNew(() => { // Create the task
 				CurrentTime = OpeningTime; // Set the Current Time to the Opening time
-				Events = new PriorityQueue<Event>(); // Init the Evengs Queue
+				Events = new PriorityQueue<Event>(); // Initialize the Events Queue
 				GenerateRegistrantEvents(); //  add arrivals in the queue
 				Registrant currReg; // Declare a temporary Registrant object
 				while(Events.Count > 0) { // Continue the simulation until all events have been handled
@@ -174,9 +174,9 @@ namespace Project4 {
 						if(CurrentTime <= ClosingTime) { // If the convention is still open
 							EventCount++; // increment the Event and arrival counts
 							ArrivalCount++;
-							currReg = ArrEvent.Registrant; // Then set the current registrant to that relatedd to the arrival
+							currReg = ArrEvent.Registrant; // Then set the current registrant to that related to the arrival
 							currReg.LineID = currReg.PickLine(Lines); // Registrant picks the shortest line
-							ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate { // Update the listbox in the GUI
+							ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate { // Update the list box in the GUI
 								ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
 							});
 							if(Lines[currReg.LineID].Count == 1) { // if the line has only one registrant(The newly added one)
