@@ -29,7 +29,9 @@ namespace Project4 {
 		/// The number of lines
 		/// </summary>
 		private int NumOfLines;
-
+		/// <summary>
+		/// The count of the expected Registrants
+		/// </summary>
 		public int ExpectedRegistrants { get; set; }
 		/// <summary>
 		/// The possible i ds
@@ -43,7 +45,6 @@ namespace Project4 {
 		/// The lines
 		/// </summary>
 		public List<Line> Lines;
-
 		/// <summary>
 		/// Gets or sets the time started.
 		/// </summary>
@@ -51,7 +52,6 @@ namespace Project4 {
 		/// The time started.
 		/// </value>
 		public DateTime OpeningTime { get; set; }
-
 		/// <summary>
 		/// Gets or sets the closing time.
 		/// </summary>
@@ -59,7 +59,6 @@ namespace Project4 {
 		/// The closing time.
 		/// </value>
 		public DateTime ClosingTime { get; set; }
-
 		/// <summary>
 		/// Gets or sets the current time.
 		/// </summary>
@@ -67,7 +66,6 @@ namespace Project4 {
 		/// The current time.
 		/// </value>
 		public DateTime CurrentTime { get; set; }
-
 		/// <summary>
 		/// Gets or sets the events.
 		/// </summary>
@@ -79,9 +77,14 @@ namespace Project4 {
 		/// The event count
 		/// </summary>
 		public int EventCount = 0, ArrivalCount = 0, DepartureCount = 0, LongestQueue = 0;
+		/// <summary>
+		/// Boolean to determine if the simulation has completed
+		/// </summary>
 		public bool SimulationRunning { get; set; } = true;
+		/// <summary>
+		/// The expected duration to complete a registration
+		/// </summary>
 		public TimeSpan ExpectedCheckoutDuration { get; set; }
-
 		/// <summary>
 		/// Initializes a new instance of the <see cref="ConventionRegistration"/> class.
 		/// </summary>
