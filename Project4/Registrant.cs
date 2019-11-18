@@ -15,12 +15,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static Utils.Probability;
+using System.Windows.Forms;
 
 namespace Project4 {
 	/// <summary>
 	/// A Registrant to be put through the registration system, determines the time taken to complete the registration process. as well as picks the shortest line
 	/// </summary>
-	class Registrant{
+	public class Registrant{
 		/// <summary>
 		/// Registrant's ID number
 		/// </summary>
@@ -48,11 +49,10 @@ namespace Project4 {
 		/// </summary>
 		/// <param name="registrantID"></param>
 		/// <param name="priority"></param>
-		public Registrant(String registrantID) {
+		public Registrant(String registrantID, TimeSpan expectedDuration) {
 			RegistrantID = registrantID;
-			CompletionTime = DetermineCompletionTime();
+			CompletionTime = DetermineCompletionTime(expectedDuration);
 		}
-
         /// <summary>
         /// Picks a the rightmost shortest line and adds the registrant to that queue
         /// </summary>
@@ -75,12 +75,13 @@ namespace Project4 {
         /// Determines the completion time.
         /// </summary>
         /// <returns>Time Span</returns>
-        public TimeSpan DetermineCompletionTime() {
-			//270 seconds
-			int timeInSeconds = (int)NegEx(270);
+        public TimeSpan DetermineCompletionTime(TimeSpan expectedDuration) {
+			int timeInSeconds = (int)NegEx(expectedDuration.TotalSeconds);
 			if(timeInSeconds < 90)
 				return new TimeSpan(0, 0, 90);
-			else
+			else if(timeInSeconds > 600) {
+				return new TimeSpan(0, 0, 600);
+			} else
 				return new TimeSpan(0, 0, timeInSeconds);
 		}
 	}

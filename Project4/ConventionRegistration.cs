@@ -22,28 +22,26 @@ namespace Project4 {
 	/// <summary>
 	/// Customized queue that accounts for the priority of the objects contained
 	/// </summary>
-	class ConventionRegistration {
-        /// <summary>
-        /// The number of lines
-        /// </summary>
-        private static int NumOfLines = 11;
-        /// <summary>
-        /// The possible i ds
-        /// </summary>
-        private List<String> PossibleIDs = GenerateList();
-        /// <summary>
-        /// The lines
-        /// </summary>
-        public List<Line> Lines = OpenLines(NumOfLines);
-        /// <summary>
-        /// The list boxes
-        /// </summary>
-        public List<ListBox> ListBoxes;
-        /// <summary>
-        /// The current registrants
-        /// </summary>
-        private Registrant[] currentRegistrants = new Registrant[NumOfLines];
+	public class ConventionRegistration {
+		public MainForm Simulation { get; set; }
+		/// <summary>
+		/// The number of lines
+		/// </summary>
+		private int NumOfLines;
 
+		public int ExpectedRegistrants { get; set; }
+		/// <summary>
+		/// The possible i ds
+		/// </summary>
+		public List<String> PossibleIDs { get; set; }
+		/// <summary>
+		/// The list boxes
+		/// </summary>
+		public List<ListBox> ListBoxes;
+		/// <summary>
+		/// The lines
+		/// </summary>
+		public List<Line> Lines;
 
 		/// <summary>
 		/// Gets or sets the time started.
@@ -51,7 +49,7 @@ namespace Project4 {
 		/// <value>
 		/// The time started.
 		/// </value>
-		public DateTime TimeStarted { get; set; }
+		public DateTime OpeningTime { get; set; }
 
 		/// <summary>
 		/// Gets or sets the closing time.
@@ -75,130 +73,178 @@ namespace Project4 {
 		/// <value>
 		/// The events.
 		/// </value>
-		public PriorityQueue<Event> Events { get; set; } = new PriorityQueue<Event>();
-        /// <summary>
-        /// The event count
-        /// </summary>
-        public int EventCount = 0, ArrivalCount = 0, DepartureCount = 0, LongestQueue = 0;
-        /// <summary>
-        /// The sim running
-        /// </summary>
-        private bool SimRunning = true;
-
+		public PriorityQueue<Event> Events { get; set; }
+		/// <summary>
+		/// The event count
+		/// </summary>
+		public int EventCount = 0, ArrivalCount = 0, DepartureCount = 0, LongestQueue = 0;
+		public bool SimulationRunning { get; set; } = true;
+		public TimeSpan ExpectedCheckoutDuration { get; set; }
+		private Random ran { get; set; } = new Random();
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="ConventionRegistration"/> class.
 		/// </summary>
 		/// <param name="form">The form.</param>
-		public ConventionRegistration(RegistrationSimulationForm form) {
+		public ConventionRegistration(MainForm form) {
+			Simulation = form;
+			NumOfLines = GetNumOfLines(form);
 			ListBoxes = GetListBoxes(form);
-			TimeStarted = DateTime.Today;
-			TimeStarted = TimeStarted.AddHours(8.0);
-			ClosingTime = DateTime.Today.AddHours(18.0);
-		}
-        /// <summary>
-        /// Adds the item to ListBox.
-        /// </summary>
-        public void AddItemToListBox() {
-
-		}
-		/// <summary>
-		/// Handles the registrants in the simulation.
-		/// </summary>
-		/// <param name="form">The form.</param>
-		public void HandleRegistrants(RegistrationSimulationForm form) {
-			Task entrance = HandleEntrees(form);
-			Task windows = HandleWindows(form);
-			//Task departures = HandleDepartures(form);
+			Lines = OpenLines(NumOfLines, form);
+			ExpectedRegistrants = GetExpectedRegistrants(form);
+			PossibleIDs = GenerateList(ExpectedRegistrants);
+			OpeningTime = GetOpeningTime(form);
+			ClosingTime = GetClosingTime(form);
+			ExpectedCheckoutDuration = GetExpectedCheckoutDuration(form);
+			RunSimulation();
 		}
 
-		/// <summary>
-		/// Method for when person arrives in the simulation.
-		/// </summary>
-		/// <param name="form">The form.</param>
-		/// <returns>entrance</returns>
-		public Task HandleEntrees(RegistrationSimulationForm form) {
+		private TimeSpan GetExpectedCheckoutDuration(MainForm form) {
+			return new TimeSpan((int)form.HourBox.Value, (int)form.MinuteBox.Value, (int)form.SecondBox.Value);
+		}
 
-			Task entrance = Task.Factory.StartNew(() => {
-				
-				Registrant currReg = new Registrant();
-				DateTime nextEntrance = CurrentTime = TimeStarted;
-				int idIndex;
-				String currID;
-				while((CurrentTime < ClosingTime && PossibleIDs.Count > 0)) {
-					form.textBoxArrivals.Invoke((MethodInvoker)delegate {
-						form.textBoxArrivals.Text = ArrivalCount.ToString();
-					});
-					form.CurrentTimeLabel.Invoke((MethodInvoker)delegate {
-						form.CurrentTimeLabel.Text = CurrentTime.ToLongTimeString();
-					});
-					form.textBoxEvents.Invoke((MethodInvoker)delegate {
-						form.textBoxEvents.Text = EventCount.ToString();
-					});
-					if(CurrentTime >= nextEntrance && CurrentTime <= ClosingTime) {
-						ArrivalCount++;
-						//form.textBoxArrivals.Text = ArrivalCount.ToString();
-						EventCount++;
+		private int GetNumOfLines(MainForm form) {
+			return (int)form.NumWindowsBox.Value;
+		}
 
-						idIndex = Rand.Next(PossibleIDs.Count);
-						currID = PossibleIDs[idIndex];
-						PossibleIDs.Remove(currID);
-						currReg = new Registrant(currID);
-						currReg.LineID = currReg.PickLine(Lines);
-						MessageBox.Show(Lines[currReg.LineID].Registrants.Peek().RegistrantID.ToString());
+		private DateTime GetOpeningTime(MainForm form) {
+			return form.StartTimePicker.Value;
+		}
+		private DateTime GetClosingTime(MainForm form) {
+			return form.EndTimePicker.Value;
+		}
+		private int GetExpectedRegistrants(MainForm form) {
+			return (int)form.NumRegistrantsBox.Value;
+		}
+
+
+		public Task RunSimulation() {
+			Task run = Task.Factory.StartNew(() => {
+				CurrentTime = OpeningTime;
+
+				Events = new PriorityQueue<Event>();
+
+				GenerateRegistrantEvents();
+
+				Registrant currReg;
+
+				while(Events.Count > 0) {
+
+					if(Events.Peek().EventType == "departure" && Events.Peek().Time <= CurrentTime) {
+						DepartureCount++;
+						Event DepEvent = Events.Dequeue();
+
+						currReg = DepEvent.Registrant;
+						Lines[currReg.LineID].Dequeue();
 						ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate {
-							ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
+							ListBoxes[currReg.LineID].Items.RemoveAt(0);
 						});
-						if(Events.Count == 0) {
+
+
+						try {
+							currReg = Lines[currReg.LineID].Peek();
 							EventCount++;
-							Events.Enqueue(new Event(idIndex, "departure", currReg, CurrentTime));
+							Events.Enqueue(new Event(Int32.Parse(currReg.RegistrantID), "departure", currReg, CurrentTime + currReg.CompletionTime));
+						} catch(Exception) {
+							continue;
 						}
-						Events.Enqueue(new Event(idIndex, "arrival", currReg, CurrentTime));
-						nextEntrance = CurrentTime + new TimeSpan(0, 0, Rand.Next(75));
+					} else if(Events.Peek().Time <= CurrentTime) {
+
+						Event ArrEvent = Events.Dequeue();
+						if(CurrentTime <= ClosingTime) {
+							try {
+								EventCount++;
+								ArrivalCount++;
+								currReg = ArrEvent.Registrant;
+								currReg.LineID = currReg.PickLine(Lines);
+								ListBoxes[currReg.LineID].Invoke((MethodInvoker)delegate {
+									ListBoxes[currReg.LineID].Items.Add(currReg.RegistrantID);
+								});
+
+
+								if(Lines[currReg.LineID].Count == 1) {
+									currReg = Lines[currReg.LineID].Peek();
+									EventCount++;
+									Events.Enqueue(new Event(Int32.Parse(currReg.RegistrantID), "departure", currReg, CurrentTime + currReg.CompletionTime));
+
+								}
+							} catch(Exception) {
+								// Avoid breaking when the user does not put in input
+								continue;
+							}
+						} else if(ArrivalCount == DepartureCount && CurrentTime > ClosingTime) {
+							break;
+						}
+					}
+
+					UpdateGUI();
+
+					foreach(Line line in Lines) {
+						if(line.Count > LongestQueue) {
+							LongestQueue = line.Count;
+
+						}
 					}
 					CurrentTime += new TimeSpan(0, 0, 1);
-					Thread.Sleep(1);
+					//Thread.Sleep(1/100);
 				}
-				
+				MessageBox.Show("Simulation Complete!");
+				SimulationRunning = false;
 			});
-			
-			return entrance;
+
+			return run;
 		}
 
-		/// <summary>
-		/// Method for when someone departs the window in the simulation.
-		/// </summary>
-		/// <param name="form">The form.</param>
-		/// <returns>departure</returns>
-		private Task HandleDepartures(RegistrationSimulationForm form) {
-			Task departure = Task.Factory.StartNew(() => {
-				MessageBox.Show("bla");
-			});
-			return departure;
+		private void GenerateRegistrantEvents() {
+			TimeSpan interval;
+
+			DateTime previousTime = OpeningTime;
+
+			foreach(string regID in PossibleIDs) {
+				interval = new TimeSpan(0, 0, ran.Next(90));
+
+				Registrant currReg = new Registrant(PossibleIDs[ran.Next(PossibleIDs.Count)], ExpectedCheckoutDuration);
+
+				Events.Enqueue(new Event(ran.Next(PossibleIDs.Count), "arrival", currReg, previousTime += interval));
+
+			}
 		}
 
-		/// <summary>
-		/// Method that deals with the windows that have dealt with person in simulation.
-		/// </summary>
-		/// <param name="form">The form.</param>
-		/// <returns>window</returns>
-		public Task HandleWindows(RegistrationSimulationForm form) {
-			Task window = Task.Factory.StartNew(() => {
-				Thread.Sleep(10000);
-				
-
+		public void UpdateGUI() {
+			Simulation.textBoxArrivals.Invoke((MethodInvoker)delegate {
+				Simulation.textBoxArrivals.Text = ArrivalCount.ToString();
 			});
-			return window;
+			Simulation.CurrentTimeLabel.Invoke((MethodInvoker)delegate {
+				Simulation.CurrentTimeLabel.Text = CurrentTime.ToLongTimeString();
+			});
+			Simulation.textBoxEvents.Invoke((MethodInvoker)delegate {
+				Simulation.textBoxEvents.Text = EventCount.ToString();
+			});
+			Simulation.textBoxDepartures.Invoke((MethodInvoker)delegate {
+				Simulation.textBoxDepartures.Text = DepartureCount.ToString();
+			});
+			Simulation.textBoxEvents.Invoke((MethodInvoker)delegate {
+				Simulation.textBoxEvents.Text = EventCount.ToString();
+			});
+			Simulation.LongestQueueBox.Invoke((MethodInvoker)delegate {
+				Simulation.LongestQueueBox.Text = LongestQueue.ToString();
+			});
 		}
+
 		/// <summary>
 		/// Method for available lines in the simulation.
 		/// </summary>
 		/// <param name="numOfLines">The number of lines.</param>
 		/// <returns>retList</returns>
-		private static List<Line> OpenLines(int numOfLines) {
+		private List<Line> OpenLines(int numOfLines, MainForm form) {
 			List<Line> retList = new List<Line>();
-			for(int i = 0; i < numOfLines; i++) {
-				retList.Add(new Line(i));
+			try {
+				for(int i = 0; i < numOfLines; i++) {
+					retList.Add(new Line(i));
+					ListBoxes[i].Visible = true;
+				}
+			} catch(IndexOutOfRangeException) {
+				MessageBox.Show("Please enter no more than 33 lines");
 			}
 			return retList;
 		}
@@ -206,9 +252,9 @@ namespace Project4 {
 		/// Generates the list of items that have been Poisson Distributed.
 		/// </summary>
 		/// <returns>retList</returns>
-		private static List<String> GenerateList() {
+		private List<String> GenerateList(int expectedRegistrants) {
 			List<String> retList = new List<String>();
-			for(int i = 1; i <= Poisson(1000); i++) {
+			for(int i = 1; i <= Poisson(expectedRegistrants); i++) {
 				retList.Add(i.ToString().PadLeft(4, '0'));
 			}
 			return retList;
@@ -219,7 +265,7 @@ namespace Project4 {
 		/// </summary>
 		/// <param name="form">The form.</param>
 		/// <returns>retList</returns>
-		private List<ListBox> GetListBoxes(RegistrationSimulationForm form) {
+		private List<ListBox> GetListBoxes(MainForm form) {
 			List<ListBox> retList = new List<ListBox>();
 			foreach(Control box in form.Controls) {
 				if(box.GetType().Name == "ListBox") {

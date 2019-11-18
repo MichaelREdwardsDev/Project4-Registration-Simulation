@@ -30,7 +30,7 @@ namespace Project4 {
 		static void Main() {
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new RegistrationSimulationForm());
+			Application.Run(new MainForm());
 		}
 	}
 }

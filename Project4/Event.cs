@@ -21,7 +21,7 @@ namespace Project4 {
     /// Possible Events, contains what time the events happen to be added to the current time in the simulations
     /// </summary>
     /// <seealso cref="System.IComparable" />
-    class Event :IComparable {        
+   public class Event :IComparable {        
 		/// <summary>
 		/// Gets or sets the registrant.
 		/// </summary>
@@ -68,26 +68,11 @@ namespace Project4 {
         /// <param name="eventType">Type of the event.</param>
         /// <param name="registrant">The registrant.</param>
         /// <param name="currTime">The current time.</param>
-        public Event(int ID, String eventType, Registrant registrant, DateTime currTime) {
+        public Event(int ID, String eventType, Registrant registrant, DateTime eventTime) {
 			EventID = ID;
 			EventType = eventType;
 			Registrant = registrant;
-			Time = DetermineEventTime(eventType, registrant, currTime);
-		}
-
-        /// <summary>
-        /// Determines the event time.
-        /// </summary>
-        /// <param name="eventType">Type of the event.</param>
-        /// <param name="registrant">The registrant.</param>
-        /// <param name="currTime">The current time.</param>
-        /// <returns>currTime</returns>
-        private DateTime DetermineEventTime(String eventType, Registrant registrant, DateTime currTime) {
-			
-			if(eventType == "arrival")
-				return currTime;
-			else
-				return currTime + registrant.CompletionTime;
+			Time = eventTime;
 		}
 
         /// <summary>
