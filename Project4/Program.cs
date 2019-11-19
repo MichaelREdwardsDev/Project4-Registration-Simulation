@@ -6,7 +6,7 @@
 //	Course:			CSCI 2210-001 - Data Structures
 //	Author:			Michael Edwards, edwardsmr@etsu.edu, Elizabeth Jennings, jenningsel@etsu.edu, William Jennings, jenningsw@etsu.edu
 //	Created:		Sunday November 14, 2019
-//	Copyright:		Michael Edwards, 2019
+//	Copyright:		Michael Edwards, Elizabeth Jennings, William Jennings 2019
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

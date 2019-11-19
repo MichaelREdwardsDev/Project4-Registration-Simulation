@@ -1,14 +1,14 @@
-﻿//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+﻿/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //	Project:		Project 4 - Registration Simulation
 //	File Name:		Utility.cs
 //	Description:	Several common static functions, such as opening and reading a file, cleaning a list of tokens, etc
 //	Course:			CSCI 2210-001 - Data Structures
-//	Author:			Michael Edwards, edwardsmr@etsu.edu
+//	Author:			Michael Edwards, edwardsmr@etsu.edu, Elizabeth Jennings, jenningsel@etsu.edu, William Jennings, jenningsw@etsu.edu
 //	Created:		Sunday November 10, 2019
-//	Copyright:		Michael Edwards, 2019
+//	Copyright:		Michael Edwards, Elizabeth Jennings, William Jennings, 2019
 //
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 using System;
 using System.Collections.Generic;
@@ -19,7 +19,7 @@ using System.Windows.Forms;
 using System.IO;
 
 /// <summary>
-/// Utils
+/// Utils name space
 /// </summary>
 namespace Utils {
 	/// <summary>
@@ -49,7 +49,7 @@ namespace Utils {
 		/// Reads the text of a file and returns it as a String
 		/// </summary>
 		/// <param name="filePath">The path to the file that the user selected</param>
-		/// <returns>String obtained from the filereader reading the file</returns>
+		/// <returns>String obtained from the file reader reading the file</returns>
 		public static String ReadFile(String filePath) {
 			StreamReader reader = null;
 			try {
@@ -71,10 +71,10 @@ namespace Utils {
 		/// </summary>
 		#region TokenizeMethods
 		/// <summary>
-		/// Seperates all tokens from the text, tokens being words, punctuation, new lines, etc
+		/// Separates all tokens from the text, tokens being words, punctuation, new lines, etc
 		/// </summary>
-		/// <param name="original"> The originial string read from the file </param>
-		/// <param name="delimiters"> A list of all of the delmiters that can determine the end of tokens other than spaces and new lines</param>
+		/// <param name="original"> The original string read from the file </param>
+		/// <param name="delimiters"> A list of all of the delimiters that can determine the end of tokens other than spaces and new lines</param>
 		/// <returns> A cleaned list of the tokens in the text </returns>
 		public static List<String> Tokenize(String original, char[] delimiters) {
 			List<String> tokens = new List<String>(); // The list to be returned
@@ -100,7 +100,7 @@ namespace Utils {
 		/// </summary>
 		/// <param name="tokens">Tokens after being split by spaces</param>
 		/// <param name="delimIndex">The index of the delimiter in the token</param>
-		/// <param name="i">Reference to the index the tokens will be insterted to in the list</param>
+		/// <param name="i">Reference to the index the tokens will be inserted to in the list</param>
 		private static void InsertTokens(List<String> tokens, int delimIndex, ref int i) {
 			String delimChar = tokens[i][delimIndex].ToString();
 			String unpuncToken = tokens[i].Remove(delimIndex, 1);
@@ -119,7 +119,7 @@ namespace Utils {
 		/// Removes all blank lines from text, and splits new lines from the attached token
 		/// </summary>
 		/// <param name="tokens">All tokens from the text</param>
-		/// <returns> A List of tokens with no blank lines, and seperate new lines</returns>
+		/// <returns> A List of tokens with no blank lines, and separate new lines</returns>
 		public static List<String> CleanList(List<String> tokens) {
 			List<String> returnList = new List<String>(); // List to be returned
 
@@ -160,7 +160,7 @@ namespace Utils {
 		}
 
 		/// <summary>
-		/// Converts all tokens into an appropriate string, converts new line sequences into a displayible "new line" string
+		/// Converts all tokens into an appropriate string, converts new line sequences into a displayable "new line" string
 		/// </summary>
 		/// <param name="tokens"></param>
 		/// <returns> A string containing all of the converted versions of the tokens from the text </returns>
@@ -186,7 +186,7 @@ namespace Utils {
 		/// Displays a welcome message for the program
 		/// </summary>
 		/// <param name="msg">The message to be displayed</param>
-		/// <param name="caption">The caption to lable the program</param>
+		/// <param name="caption">The caption to label the program</param>
 		/// <param name="author">The name of the author of the program</param>
 		public static void WelcomeMessage(String msg, String caption = "Computer Science 2210", String author = "Michael Edwards") {
 			Console.WriteLine($"{msg,30}\n{caption,31}\n{author,28}");
@@ -203,7 +203,7 @@ namespace Utils {
 		/// </summary>
 		/// <param name="strVerb">The prompt to continue</param>
 		public static void PressAnyKey(String strVerb = "continue...") {
-			Console.WriteLine("Press any to to exit the program...");
+			Console.WriteLine("Press any to exit the program...");
 			Console.ReadKey();
 		}
 		/// <summary>

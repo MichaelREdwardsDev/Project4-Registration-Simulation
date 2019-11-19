@@ -6,7 +6,7 @@
 //	Course:			CSCI 2210-001 - Data Structures
 //	Author:			Michael Edwards, edwardsmr@etsu.edu, Elizabeth Jennings, jenningsel@etsu.edu, William Jennings, jenningsw@etsu.edu
 //	Created:		Sunday November 14, 2019
-//	Copyright:		Michael Edwards, 2019
+//	Copyright:		Michael Edwards, Elizabeth Jennings, William Jennings 2019
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -21,9 +21,7 @@ namespace Utils {
 	/// Contains several static functions that return a value based on types of distributions
 	/// </summary>
 	public static class Probability {
-
 		public static Random Rand = new Random();
-
 		/// <summary>
 		/// Negative exponential probability distribution
 		/// </summary>
@@ -32,7 +30,6 @@ namespace Utils {
 		public static double NegEx(double ExpectedValue) {
 			return -ExpectedValue * Math.Log(Rand.NextDouble(), Math.E);
 		}
-
 		/// <summary>
 		/// Poisson distributes the specified expected value.
 		/// </summary>

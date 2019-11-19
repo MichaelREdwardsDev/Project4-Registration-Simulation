@@ -132,7 +132,7 @@
     <value>16</value>
   </data>
   <data name="listBoxWaitingLine0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 41</value>
+    <value>12, 31</value>
   </data>
   <data name="listBoxWaitingLine0.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -168,7 +168,7 @@
     <value>16</value>
   </data>
   <data name="listBoxWaitingLine1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 41</value>
+    <value>123, 31</value>
   </data>
   <data name="listBoxWaitingLine1.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -204,7 +204,7 @@
     <value>16</value>
   </data>
   <data name="listBoxWaitingLine3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 41</value>
+    <value>354, 31</value>
   </data>
   <data name="listBoxWaitingLine3.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -240,7 +240,7 @@
     <value>16</value>
   </data>
   <data name="listBoxWaitingList2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 41</value>
+    <value>238, 31</value>
   </data>
   <data name="listBoxWaitingList2.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -276,7 +276,7 @@
     <value>16</value>
   </data>
   <data name="listBoxWaitingList4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>502, 41</value>
+    <value>472, 31</value>
   </data>
   <data name="listBoxWaitingList4.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -312,7 +312,7 @@
     <value>16</value>
   </data>
   <data name="listBoxWaitingList5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 41</value>
+    <value>593, 31</value>
   </data>
   <data name="listBoxWaitingList5.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -348,7 +348,7 @@
     <value>16</value>
   </data>
   <data name="listBoxWaitingList6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 41</value>
+    <value>714, 31</value>
   </data>
   <data name="listBoxWaitingList6.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -384,7 +384,7 @@
     <value>16</value>
   </data>
   <data name="listBoxWaitingList7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>891, 41</value>
+    <value>834, 31</value>
   </data>
   <data name="listBoxWaitingList7.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -420,7 +420,7 @@
     <value>16</value>
   </data>
   <data name="listBoxWaitingList8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1019, 41</value>
+    <value>957, 31</value>
   </data>
   <data name="listBoxWaitingList8.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -456,7 +456,7 @@
     <value>16</value>
   </data>
   <data name="listBox1WaitingList9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1156, 41</value>
+    <value>1079, 31</value>
   </data>
   <data name="listBox1WaitingList9.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -486,7 +486,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 21</value>
+    <value>38, 11</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 17</value>
@@ -516,7 +516,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 21</value>
+    <value>148, 11</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 17</value>
@@ -546,7 +546,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 21</value>
+    <value>380, 11</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 17</value>
@@ -576,7 +576,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>529, 21</value>
+    <value>499, 11</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 17</value>
@@ -606,7 +606,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 21</value>
+    <value>620, 11</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 17</value>
@@ -640,7 +640,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>783, 21</value>
+    <value>740, 11</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 17</value>
@@ -673,7 +673,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>918, 21</value>
+    <value>861, 11</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 17</value>
@@ -706,7 +706,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1046, 21</value>
+    <value>984, 11</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 17</value>
@@ -739,7 +739,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1181, 21</value>
+    <value>1104, 11</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 17</value>
@@ -772,7 +772,7 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1288, 21</value>
+    <value>1221, 11</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -802,7 +802,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 21</value>
+    <value>263, 11</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 17</value>
@@ -838,7 +838,7 @@
     <value>16</value>
   </data>
   <data name="listBox1WaitingList10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1266, 41</value>
+    <value>1199, 31</value>
   </data>
   <data name="listBox1WaitingList10.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -868,7 +868,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 526</value>
+    <value>148, 494</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 17</value>
@@ -898,7 +898,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 488</value>
+    <value>16, 456</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>209, 17</value>
@@ -925,7 +925,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="buttonStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 683</value>
+    <value>19, 661</value>
   </data>
   <data name="buttonStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 39</value>
@@ -952,7 +952,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="buttonClear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>614, 683</value>
+    <value>623, 661</value>
   </data>
   <data name="buttonClear.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 39</value>
@@ -979,7 +979,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="buttonExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1229, 683</value>
+    <value>1135, 661</value>
   </data>
   <data name="buttonExit.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 39</value>
@@ -1009,7 +1009,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>942, 488</value>
+    <value>985, 470</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 17</value>
@@ -1039,7 +1039,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1055, 548</value>
+    <value>1097, 534</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 17</value>
@@ -1069,7 +1069,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1031, 609</value>
+    <value>1073, 600</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 17</value>
@@ -1096,7 +1096,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="textBoxEvents.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1135, 485</value>
+    <value>1162, 468</value>
   </data>
   <data name="textBoxEvents.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -1120,7 +1120,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="textBoxArrivals.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1135, 545</value>
+    <value>1162, 531</value>
   </data>
   <data name="textBoxArrivals.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -1144,7 +1144,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="textBoxDepartures.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1135, 606</value>
+    <value>1162, 596</value>
   </data>
   <data name="textBoxDepartures.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -1171,7 +1171,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>529, 488</value>
+    <value>552, 501</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 17</value>
@@ -1198,7 +1198,7 @@
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="LongestQueueBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>599, 520</value>
+    <value>623, 528</value>
   </data>
   <data name="LongestQueueBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -1221,11 +1221,14 @@
   <data name="CurrentTimeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="CurrentTimeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="CurrentTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>625, 569</value>
+    <value>638, 588</value>
   </data>
   <data name="CurrentTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 13</value>
+    <value>64, 17</value>
   </data>
   <data name="CurrentTimeLabel.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -1258,7 +1261,7 @@
     <value>16</value>
   </data>
   <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 187</value>
+    <value>12, 173</value>
   </data>
   <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -1291,7 +1294,7 @@
     <value>NoControl</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 167</value>
+    <value>34, 153</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -1327,7 +1330,7 @@
     <value>16</value>
   </data>
   <data name="listBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 187</value>
+    <value>123, 173</value>
   </data>
   <data name="listBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -1360,7 +1363,7 @@
     <value>NoControl</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 167</value>
+    <value>145, 153</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -1396,7 +1399,7 @@
     <value>16</value>
   </data>
   <data name="listBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 187</value>
+    <value>238, 173</value>
   </data>
   <data name="listBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -1429,7 +1432,7 @@
     <value>NoControl</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 167</value>
+    <value>260, 153</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -1465,7 +1468,7 @@
     <value>16</value>
   </data>
   <data name="listBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 187</value>
+    <value>354, 173</value>
   </data>
   <data name="listBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -1498,7 +1501,7 @@
     <value>NoControl</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 167</value>
+    <value>376, 153</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -1534,7 +1537,7 @@
     <value>16</value>
   </data>
   <data name="listBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>502, 187</value>
+    <value>472, 173</value>
   </data>
   <data name="listBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -1567,7 +1570,7 @@
     <value>NoControl</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>524, 167</value>
+    <value>494, 153</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -1603,7 +1606,7 @@
     <value>16</value>
   </data>
   <data name="listBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 187</value>
+    <value>593, 173</value>
   </data>
   <data name="listBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -1636,7 +1639,7 @@
     <value>NoControl</value>
   </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>651, 167</value>
+    <value>615, 153</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -1672,7 +1675,7 @@
     <value>16</value>
   </data>
   <data name="listBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 187</value>
+    <value>714, 173</value>
   </data>
   <data name="listBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -1705,7 +1708,7 @@
     <value>NoControl</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>779, 167</value>
+    <value>736, 153</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -1741,7 +1744,7 @@
     <value>16</value>
   </data>
   <data name="listBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>891, 187</value>
+    <value>834, 173</value>
   </data>
   <data name="listBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -1774,7 +1777,7 @@
     <value>NoControl</value>
   </data>
   <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>913, 167</value>
+    <value>856, 153</value>
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -1810,7 +1813,7 @@
     <value>16</value>
   </data>
   <data name="listBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1019, 187</value>
+    <value>957, 173</value>
   </data>
   <data name="listBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -1843,7 +1846,7 @@
     <value>NoControl</value>
   </data>
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1041, 167</value>
+    <value>979, 153</value>
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -1879,7 +1882,7 @@
     <value>16</value>
   </data>
   <data name="listBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1156, 187</value>
+    <value>1079, 173</value>
   </data>
   <data name="listBox10.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -1912,7 +1915,7 @@
     <value>NoControl</value>
   </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1178, 167</value>
+    <value>1101, 153</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -1948,7 +1951,7 @@
     <value>16</value>
   </data>
   <data name="listBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1266, 187</value>
+    <value>1199, 173</value>
   </data>
   <data name="listBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -1981,7 +1984,7 @@
     <value>NoControl</value>
   </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1288, 167</value>
+    <value>1221, 153</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2014,7 +2017,7 @@
     <value>NoControl</value>
   </data>
   <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 644</value>
+    <value>82, 609</value>
   </data>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 17</value>
@@ -2047,7 +2050,7 @@
     <value>NoControl</value>
   </data>
   <data name="EndTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 566</value>
+    <value>148, 534</value>
   </data>
   <data name="EndTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 17</value>
@@ -2080,7 +2083,7 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 609</value>
+    <value>34, 574</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>191, 17</value>
@@ -2116,7 +2119,7 @@
     <value>16</value>
   </data>
   <data name="listBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1267, 326</value>
+    <value>1200, 316</value>
   </data>
   <data name="listBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -2149,7 +2152,7 @@
     <value>NoControl</value>
   </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1289, 306</value>
+    <value>1222, 296</value>
   </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2185,7 +2188,7 @@
     <value>16</value>
   </data>
   <data name="listBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1157, 326</value>
+    <value>1080, 316</value>
   </data>
   <data name="listBox13.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -2218,7 +2221,7 @@
     <value>NoControl</value>
   </data>
   <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1179, 306</value>
+    <value>1102, 296</value>
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2254,7 +2257,7 @@
     <value>16</value>
   </data>
   <data name="listBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1020, 326</value>
+    <value>958, 316</value>
   </data>
   <data name="listBox14.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -2287,7 +2290,7 @@
     <value>NoControl</value>
   </data>
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1042, 306</value>
+    <value>980, 296</value>
   </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2323,7 +2326,7 @@
     <value>16</value>
   </data>
   <data name="listBox15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>892, 326</value>
+    <value>835, 316</value>
   </data>
   <data name="listBox15.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -2356,7 +2359,7 @@
     <value>NoControl</value>
   </data>
   <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>914, 306</value>
+    <value>857, 296</value>
   </data>
   <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2392,7 +2395,7 @@
     <value>16</value>
   </data>
   <data name="listBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>758, 326</value>
+    <value>715, 316</value>
   </data>
   <data name="listBox16.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -2425,7 +2428,7 @@
     <value>NoControl</value>
   </data>
   <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>780, 306</value>
+    <value>737, 296</value>
   </data>
   <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2461,7 +2464,7 @@
     <value>16</value>
   </data>
   <data name="listBox17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>630, 326</value>
+    <value>594, 316</value>
   </data>
   <data name="listBox17.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -2494,7 +2497,7 @@
     <value>NoControl</value>
   </data>
   <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>652, 306</value>
+    <value>616, 296</value>
   </data>
   <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2530,7 +2533,7 @@
     <value>16</value>
   </data>
   <data name="listBox18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>503, 326</value>
+    <value>473, 316</value>
   </data>
   <data name="listBox18.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -2563,7 +2566,7 @@
     <value>NoControl</value>
   </data>
   <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 306</value>
+    <value>495, 296</value>
   </data>
   <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2599,7 +2602,7 @@
     <value>16</value>
   </data>
   <data name="listBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>373, 326</value>
+    <value>355, 316</value>
   </data>
   <data name="listBox19.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -2632,7 +2635,7 @@
     <value>NoControl</value>
   </data>
   <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 306</value>
+    <value>377, 296</value>
   </data>
   <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2668,7 +2671,7 @@
     <value>16</value>
   </data>
   <data name="listBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 326</value>
+    <value>239, 316</value>
   </data>
   <data name="listBox20.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -2701,7 +2704,7 @@
     <value>NoControl</value>
   </data>
   <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 306</value>
+    <value>261, 296</value>
   </data>
   <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2737,7 +2740,7 @@
     <value>16</value>
   </data>
   <data name="listBox21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 326</value>
+    <value>124, 316</value>
   </data>
   <data name="listBox21.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -2770,7 +2773,7 @@
     <value>NoControl</value>
   </data>
   <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 306</value>
+    <value>146, 296</value>
   </data>
   <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2806,7 +2809,7 @@
     <value>16</value>
   </data>
   <data name="listBox22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 326</value>
+    <value>13, 316</value>
   </data>
   <data name="listBox22.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 116</value>
@@ -2839,7 +2842,7 @@
     <value>NoControl</value>
   </data>
   <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 306</value>
+    <value>35, 296</value>
   </data>
   <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -2862,11 +2865,14 @@
   <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
     <value>30</value>
   </data>
+  <data name="StartTimePicker.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="StartTimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 526</value>
+    <value>231, 494</value>
   </data>
   <data name="StartTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 20</value>
+    <value>99, 23</value>
   </data>
   <data name="StartTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -2883,14 +2889,17 @@
   <data name="&gt;&gt;StartTimePicker.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="EndTimePicker.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="EndTimePicker.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="EndTimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 566</value>
+    <value>232, 534</value>
   </data>
   <data name="EndTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 20</value>
+    <value>99, 23</value>
   </data>
   <data name="EndTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
@@ -2907,11 +2916,14 @@
   <data name="&gt;&gt;EndTimePicker.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="HourBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="HourBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 607</value>
+    <value>231, 572</value>
   </data>
   <data name="HourBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 20</value>
+    <value>39, 23</value>
   </data>
   <data name="HourBox.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -2928,11 +2940,14 @@
   <data name="&gt;&gt;HourBox.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="MinuteBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="MinuteBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 606</value>
+    <value>284, 571</value>
   </data>
   <data name="MinuteBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 20</value>
+    <value>39, 23</value>
   </data>
   <data name="MinuteBox.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
@@ -2949,11 +2964,14 @@
   <data name="&gt;&gt;MinuteBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="SecondBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="SecondBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 606</value>
+    <value>337, 571</value>
   </data>
   <data name="SecondBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 20</value>
+    <value>39, 23</value>
   </data>
   <data name="SecondBox.TabIndex" type="System.Int32, mscorlib">
     <value>99</value>
@@ -2973,11 +2991,14 @@
   <data name="label42.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label42.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 610</value>
+    <value>272, 575</value>
   </data>
   <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 13</value>
+    <value>12, 17</value>
   </data>
   <data name="label42.TabIndex" type="System.Int32, mscorlib">
     <value>100</value>
@@ -3004,7 +3025,7 @@
     <value>NoControl</value>
   </data>
   <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 609</value>
+    <value>325, 574</value>
   </data>
   <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 13</value>
@@ -3027,11 +3048,14 @@
   <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="NumRegistrantsBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="NumRegistrantsBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 485</value>
+    <value>231, 453</value>
   </data>
   <data name="NumRegistrantsBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 20</value>
+    <value>99, 23</value>
   </data>
   <data name="NumRegistrantsBox.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
@@ -3048,11 +3072,14 @@
   <data name="&gt;&gt;NumRegistrantsBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="NumWindowsBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="NumWindowsBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 644</value>
+    <value>226, 609</value>
   </data>
   <data name="NumWindowsBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 20</value>
+    <value>99, 23</value>
   </data>
   <data name="NumWindowsBox.TabIndex" type="System.Int32, mscorlib">
     <value>103</value>
@@ -3076,7 +3103,90 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1359, 749</value>
+    <value>1291, 722</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        GhIAAKAhAQAAGhIAAKAhAQAAGhIAAKChR9UFJPlUXQAAdKMDAAANCQAA0JAAAAANCQAA0JAAAAANCQAA
+        0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAAN
+        CQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAA
+        AAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA
+        0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAAN
+        CQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAA
+        AAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA
+        0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANPaouAIp9qi4AoIIOAAA0JAAA
+        QEMCAAA0JAAAQEMCAAA0JAAAQEMCAAA0JAAAQEMCAAA0JAAAQEMCAAA0JAAAQEMCAAA0JAAAQEMCAAA0
+        9Ki6AKCNZZKrJO+SrL76Z7MkvyZZJDnZa1XQ1IMkn6qLoLUHxcd3/u/WKsllkv8mub7ln5kneZHkPEMw
+        AHZAAKCaAHC8Xid5nm+/7d/WLMlFkrPRKgL+YQ8AMLZVhon/t9x/8t+8z2/ZLkQA36EDQDUdgOOySnKa
+        Yb1/TCdJ3saSAIxGBwAYy64m/6zf8zQ6ATAaAQAYy/PsZvLfWCb5Y4fvD61YAqCaJYDj8DrDev0+vIqN
+        gbA1AYBqAsDhWyV5nP2152dJPsR+ANiKJQBgW5fZ79r85t4CwBZ0AKimA3D4Huf2N/kZyzxDFwC4Jx0A
+        YBvL7H/yz/qYu9xwCEdPAAC2cdX02HDwBABgG++aHhsOngAAbKPyxjxuCgRbEAAAoCEBAAAaEgAAoCEB
+        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
+        bwsAAAAASUVORK5CYII=
+</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>RegistrationSimulationForm</value>
