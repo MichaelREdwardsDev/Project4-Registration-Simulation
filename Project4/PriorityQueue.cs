@@ -39,7 +39,6 @@ namespace Project4 {
 		/// <value>
 		/// The count.
 		/// </value>
-
 		int Count { get; set; }
 	}
 	/// <summary>

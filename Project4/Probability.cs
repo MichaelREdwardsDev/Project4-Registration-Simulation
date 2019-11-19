@@ -21,9 +21,7 @@ namespace Utils {
 	/// Contains several static functions that return a value based on types of distributions
 	/// </summary>
 	public static class Probability {
-
 		public static Random Rand = new Random();
-
 		/// <summary>
 		/// Negative exponential probability distribution
 		/// </summary>
@@ -32,7 +30,6 @@ namespace Utils {
 		public static double NegEx(double ExpectedValue) {
 			return -ExpectedValue * Math.Log(Rand.NextDouble(), Math.E);
 		}
-
 		/// <summary>
 		/// Poisson distributes the specified expected value.
 		/// </summary>
