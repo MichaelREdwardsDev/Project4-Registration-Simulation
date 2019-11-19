@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConventionRegistration.cs" />
+    <Compile Include="Event.cs" />
     <Compile Include="Line.cs" />
     <Compile Include="PriorityQueue.cs" />
     <Compile Include="Probability.cs" />
@@ -58,6 +60,7 @@
     <Compile Include="RegistrationSimulationForm.designer.cs">
       <DependentUpon>RegistrationSimulationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utility.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -67,6 +70,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistrationSimulationForm.resx">
+      <DependentUpon>RegistrationSimulationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Project4WriteUp.docx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

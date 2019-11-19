@@ -1,14 +1,15 @@
-﻿//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+﻿////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //	Project:		Project 4 - Registration Simulation
 //	File Name:		PriorityQueue.cs
 //	Description:	Customized queue that accounts for the priority of the objects contained 
 //	Course:			CSCI 2210-001 - Data Structures
-//	Author:			Michael Edwards, edwardsmr@etsu.edu
+//	Author:			Michael Edwards, edwardsmr@etsu.edu, Elizabeth Jennings, jenningsel@etsu.edu, William Jennings, jenningsw@etsu.edu
 //	Created:		Sunday November 14, 2019
-//	Copyright:		Michael Edwards, 2019
+//	Copyright:		Michael Edwards, Elizabeth Jennings, William Jennings, 2019
 //
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,8 +22,23 @@ namespace Project4 {
 	/// </summary>
 	/// <typeparam name="T">Generic object, must implement IComparable</typeparam>
 	public interface IContainer<T> {
+		/// <summary>
+		/// Clears this instance.
+		/// </summary>
 		void Clear();
+		/// <summary>
+		/// Determines whether this instance is empty.
+		/// </summary>
+		/// <returns>
+		///   <c>true</c> if this instance is empty; otherwise, <c>false</c>.
+		/// </returns>
 		bool IsEmpty();
+		/// <summary>
+		/// Gets or sets the count.
+		/// </summary>
+		/// <value>
+		/// The count.
+		/// </value>
 		int Count { get; set; }
 	}
 	/// <summary>
@@ -30,8 +46,20 @@ namespace Project4 {
 	/// </summary>
 	/// <typeparam name="T">Generic Object, must implement IComparable</typeparam>
 	public interface IPriorityQueue<T>:IContainer<T> where T : IComparable {
+		/// <summary>
+		/// Enqueues the specified item.
+		/// </summary>
+		/// <param name="item">The item.</param>
 		void Enqueue(T item);
-		void Dequeue();
+		/// <summary>
+		/// Dequeues this instance.
+		/// </summary>
+		/// <returns></returns>
+		T Dequeue();
+		/// <summary>
+		/// Peeks this instance.
+		/// </summary>
+		/// <returns></returns>
 		T Peek();
 	}
 	/// <summary>
@@ -39,7 +67,19 @@ namespace Project4 {
 	/// </summary>
 	/// <typeparam name="T">Generic object, must implement IComparable</typeparam>
 	public class Node<T> where T : IComparable {
+		/// <summary>
+		/// Gets or sets the item.
+		/// </summary>
+		/// <value>
+		/// The item.
+		/// </value>
 		public T Item { get; set; }
+		/// <summary>
+		/// Gets or sets the next.
+		/// </summary>
+		/// <value>
+		/// The next.
+		/// </value>
 		public Node<T> Next { get; set; }
 		/// <summary>
 		/// Node overloaded constructor - instantiates a node with the object passed in
@@ -60,6 +100,10 @@ namespace Project4 {
 		/// The top node in the queue
 		/// </summary>
 		private Node<T> top;
+		/// <summary>
+		/// The previous top, stored to determine top of queue has changed
+		/// </summary>
+		private Node<T> previousTop;
 		/// <summary>
 		/// The total nodes in the queue
 		/// </summary>
@@ -104,14 +148,16 @@ namespace Project4 {
 		/// <summary>
 		/// Removes the top of the queue
 		/// </summary>
-		public void Dequeue() {
+		public T Dequeue() {
 			if(IsEmpty()) {
 				throw new InvalidOperationException("Cannot remove from empty Queue.");
 			} else {
 				Node<T> oldNode = top;
 				top = top.Next;
 				Count--;
+				T item = oldNode.Item;
 				oldNode = null; // Garbage collected
+				return item;
 			}
 		}
 		/// <summary>
@@ -123,6 +169,19 @@ namespace Project4 {
 				return top.Item;
 			} else {
 				throw new InvalidOperationException("Cannot obtains top of empty priority queue");
+			}
+		}
+		/// <summary>
+		/// Checks to see if the top of the queue has been changed.
+		/// </summary>
+		/// <returns>true or false</returns>
+		public bool TopChanged() {
+			if(top != previousTop) {
+				previousTop = top;
+				return true;
+
+			} else {
+				return false;
 			}
 		}
 	}

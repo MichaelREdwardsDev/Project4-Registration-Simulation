@@ -1,58 +1,62 @@
-﻿//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+﻿////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 //	Project:		Project 4 - Registration Simulation
-//	File Name:		PriorityQueue.cs
-//	Description:	Customized queue that accounts for the priority of the objects contained 
+//	File Name:		Registrant.cs
+//	Description:	Registrant object to hold information of a specific registrant
 //	Course:			CSCI 2210-001 - Data Structures
-//	Author:			Michael Edwards, edwardsmr@etsu.edu
+//	Author:			Michael Edwards, edwardsmr@etsu.edu, Elizabeth Jennings, jenningsel@etsu.edu, William Jennings, jenningsw@etsu.edu
 //	Created:		Sunday November 14, 2019
-//	Copyright:		Michael Edwards, 2019
+//	Copyright:		Michael Edwards, Elizabeth Jennings, William Jennings, 2019
 //
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static Utils.Probability;
+using System.Windows.Forms;
 
 namespace Project4 {
 	/// <summary>
 	/// A Registrant to be put through the registration system, determines the time taken to complete the registration process. as well as picks the shortest line
 	/// </summary>
-	class Registrant : IComparable {
-		/// <summary>
-		/// The priority of a registrant, will allow those with higher priority to move ahead in an already populated line
-		/// </summary>
-		public int Priority { get; set; }
+	public class Registrant {
 		/// <summary>
 		/// Registrant's ID number
 		/// </summary>
-		public int RegistrantID { get; set; }
+		public String RegistrantID { get; set; }
 		/// <summary>
 		/// How long the registrant takes to complete the registration.
 		/// </summary>
-		public double CompletionTime { get; set; }
-
+		public TimeSpan CompletionTime { get; set; }
+		/// <summary>
+		/// Gets or sets the line identifier.
+		/// </summary>
+		public int LineID { get; set; }
+		/// <summary>
+		/// Registrant Default Constructor - Initializes a new default instance of the <see cref="Registrant"/> class.
+		/// </summary>
+		public Registrant() {
+			RegistrantID = "";
+			CompletionTime = new TimeSpan(0);
+		}
 		/// <summary>
 		/// Registrant Overloaded Constructor - takes in Registrant's ID number and their priority
 		/// </summary>
 		/// <param name="registrantID"></param>
 		/// <param name="priority"></param>
-		public Registrant(int registrantID, int priority) {
-			Priority = priority;
+		public Registrant(String registrantID, TimeSpan expectedDuration) {
 			RegistrantID = registrantID;
+			CompletionTime = DetermineCompletionTime(expectedDuration);
 		}
-		public int CompareTo(object obj) {
-			if(Priority > (obj as Registrant).Priority) {
-				return 1;
-			}else if(Priority == (obj as Registrant).Priority) {
-				return 0;
-			} else {
-				return -1;
-			}
-		}
-		public int Pickline(List<Line> lines) {
+		/// <summary>
+		/// Picks a the leftmost shortest line and adds the registrant to that queue
+		/// </summary>
+		/// <param name="lines">The lines.</param>
+		/// <returns>Shortest Line ID</returns>
+		public int PickLine(List<Line> lines) {
 			Line shortestLine = null;
 			Nullable<int> lowestLineCount = null;
 			foreach(Line line in lines) {
@@ -63,6 +67,17 @@ namespace Project4 {
 			}
 			shortestLine.Enqueue(this);
 			return shortestLine.LineID;
+		}
+		/// <summary>
+		/// Determines the completion time.
+		/// </summary>
+		/// <returns>Time Span</returns>
+		public TimeSpan DetermineCompletionTime(TimeSpan expectedDuration) {
+			int timeInSeconds = (int)NegEx(expectedDuration.TotalSeconds);
+			if(timeInSeconds < 90)
+				return new TimeSpan(0, 0, 90);
+			else
+				return new TimeSpan(0, 0, timeInSeconds);
 		}
 	}
 }
